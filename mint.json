@@ -85,11 +85,17 @@
     },
     {
       "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+          "pages": [
+            {
+              "group": "Hosted Payment Page",
+                "pages": [
+                "api-reference/endpoint/get",
+                "api-reference/endpoint/create",
+                "api-reference/endpoint/delete"
+                ]
+            }
+          ]
+
     }
   ],
   "footerSocials": {
