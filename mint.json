@@ -141,9 +141,10 @@
     {
       "group": "Logs",
       "pages": [
-        "logs/httpresponse",
-        "logs/responsecodes",
-        "logs/gatewayerrors"
+        "logs/revisions",
+        "logs/apiupdate",
+        "logs/releasenotes",
+        "logs/productupdates"
       ]
     }
   ],
