@@ -124,11 +124,9 @@
     {
       "group": "Error Codes",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication",
-        "api-reference/merchantdetails",
-        "api-reference/postmancollection",
-        "api-reference/webhookhandler"
+        "api-reference/httpresponse",
+        "api-reference/responsecodes",
+        "api-reference/gatewayerrors"
       ]
     }
   ],
