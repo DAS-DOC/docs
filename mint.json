@@ -133,9 +133,9 @@
     {
       "group": "Error Codes",
       "pages": [
-        "api-reference/httpresponse",
-        "api-reference/responsecodes",
-        "api-reference/gatewayerrors"
+        "api-reference/errors/httpresponse",
+        "api-reference/errors/responsecodes",
+        "api-reference/errors/gatewayerrors"
       ]
     },
     {
@@ -145,6 +145,21 @@
         "logs/apiupdate",
         "logs/releasenotes",
         "logs/productupdates"
+      ]
+    },
+    {
+      "group": "Guide",
+      "pages": [
+        "support/merchantguide",
+        "support/productguide"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "support/faqs",
+        "support/aichat",
+        "support/contact"
       ]
     }
   ],
