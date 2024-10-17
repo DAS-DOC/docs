@@ -101,9 +101,35 @@
                 "api-reference/endpoint/create",
                 "api-reference/endpoint/delete"
                 ]
+            },
+            {
+              "group": "Tokenisation",
+                "pages": [
+                "api-reference/endpoint/get",
+                "api-reference/endpoint/create",
+                "api-reference/endpoint/delete"
+                ]
+            },
+            {
+              "group": "Subscriptions",
+                "pages": [
+                "api-reference/endpoint/get",
+                "api-reference/endpoint/create",
+                "api-reference/endpoint/delete"
+                ]
             }
           ]
 
+    },
+    {
+      "group": "Payment Options API",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/merchantdetails",
+        "api-reference/postmancollection",
+        "api-reference/webhookhandler"
+      ]
     }
   ],
   "footerSocials": {
