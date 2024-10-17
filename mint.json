@@ -39,10 +39,10 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "createaccount",
-        "checklist",
-        "glossary"
+        "documentation/introduction",
+        "documentation/createaccount",
+        "documentation/checklist",
+        "documentation/glossary"
       ]
     },
     {
