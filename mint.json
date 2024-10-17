@@ -57,6 +57,26 @@
       ]
     },
     {
+      "group": "Payment Methods",
+      "pages": [
+        "paymentmethods/Card Schemes",
+        "paymentmethods/Currency",
+        "paymentmethods/E-Wallets",
+        "paymentmethods/Secure Payment",
+        "paymentmethods/Test Cards"
+      ]
+    },
+     {
+      "group": "Partner Account",
+      "pages": [
+        "partner/Card Schemes",
+        "partner/Currency",
+        "partner/E-Wallets",
+        "partner/Secure Payment",
+        "partner/Test Cards"
+      ]
+    },
+    {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
