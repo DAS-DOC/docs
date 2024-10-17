@@ -33,6 +33,10 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Change Logs",
+      "url": "logs"
     }
   ],
   "navigation": [
@@ -132,6 +136,14 @@
         "api-reference/httpresponse",
         "api-reference/responsecodes",
         "api-reference/gatewayerrors"
+      ]
+    },
+    {
+      "group": "Logs",
+      "pages": [
+        "logs/httpresponse",
+        "logs/responsecodes",
+        "logs/gatewayerrors"
       ]
     }
   ],
