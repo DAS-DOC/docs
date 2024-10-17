@@ -17,10 +17,6 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "/support" 
-    },
-    {
       "name": "JP Version",
       "url": "http://docs.jp.paymentoptions.com"
     }
@@ -37,6 +33,11 @@
     {
       "name": "Change Logs",
       "url": "logs"
+    }
+    ,
+    {
+      "name": "Support",
+      "url": "support"
     }
   ],
   "navigation": [
