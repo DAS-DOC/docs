@@ -122,7 +122,7 @@
 
     },
     {
-      "group": "Payment Options API",
+      "group": "Error Codes",
       "pages": [
         "api-reference/introduction",
         "api-reference/authentication",
