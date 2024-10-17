@@ -89,33 +89,38 @@
             {
               "group": "Hosted Payment Page",
                 "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/delete"
+                "api-reference/endpoint/generatehpp",
+                "api-reference/endpoint/apple-google",
+                "api-reference/endpoint/ewallet"
                 ]
             },
             {
               "group": "Payments",
                 "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/delete"
+                "api-reference/endpoint/authorisation",
+                "api-reference/endpoint/purchase",
+                "api-reference/endpoint/void",
+                "api-reference/endpoint/capture",
+                "api-reference/endpoint/refund",
+                "api-reference/endpoint/status"
                 ]
             },
             {
               "group": "Tokenisation",
                 "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/delete"
+                "api-reference/endpoint/generatetoken",
+                "api-reference/endpoint/usetoken"
                 ]
             },
             {
               "group": "Subscriptions",
                 "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/delete"
+                "api-reference/endpoint/createsubscription",
+                "api-reference/endpoint/subscriptionlist",
+                "api-reference/endpoint/subscriptiondetails",
+                "api-reference/endpoint/pausesubscription",
+                "api-reference/endpoint/resumesubscription",
+                "api-reference/endpoint/cancelsubscription"
                 ]
             }
           ]
