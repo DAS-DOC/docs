@@ -18,7 +18,11 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "support"
+    },
+    {
+      "name": "JP Version",
+      "url": "http://docs.jp.paymentoptions.com"
     }
   ],
   "topbarCtaButton": {
