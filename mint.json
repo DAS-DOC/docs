@@ -85,7 +85,8 @@
         "api-reference/authentication",
         "api-reference/merchantdetails",
         "api-reference/postmancollection",
-        "api-reference/webhookhandler"
+        "api-reference/webhookhandler",
+        "api-reference/3dSintegration"
       ]
     },
     {
