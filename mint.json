@@ -61,11 +61,11 @@
       "group": "Payments",
       "pages": [
         "documentation/payments/onlinepayment",
-        "payments/paybylink",
-        "payments/qrcode",
-        "payments/virtualterminal",
-        "payments/subscription",
-        "payments/scheduler"
+        "documentation/payments/paybylink",
+        "documentation/payments/qrcode",
+        "documentation/payments/virtualterminal",
+        "documentation/payments/subscription",
+        "documentation/payments/scheduler"
       ]
     },
     {
