@@ -17,14 +17,6 @@
   },
 
 "versions": ["English", "日本語"],
-/*
-  "topbarLinks": [
-    {
-      "name": "Versions",
-      "url": "http://docs.jp.paymentoptions.com"
-    }
-  ],
-  */
   "topbarCtaButton": {
     "name": "Create an Account",
     "url": "https://me.paymentoptions.com"
