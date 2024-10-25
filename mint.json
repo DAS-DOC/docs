@@ -36,7 +36,7 @@
     },
     {
       "name": "ドキュメント",
-      "url": "documentation",
+      "url": "documentation-jp",
       "version": "日本語"
     },
 
@@ -63,7 +63,18 @@
         "documentation/createaccount",
         "documentation/checklist",
         "documentation/glossary"
-      ]
+      ],
+      "version":"English"
+    },
+    {
+      "group": "Get Started",
+      "pages": [
+        "documentation-jp/introduction",
+        "documentation/createaccount",
+        "documentation/checklist",
+        "documentation/glossary"
+      ],
+      "version":"日本語"
     },
     {
       "group": "Payments",
