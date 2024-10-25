@@ -30,6 +30,10 @@
   },
   "tabs": [
     {
+      "name": "Documentation",
+      "url": "documentation"
+    },
+    {
       "name": "API Reference",
       "url": "api-reference"
     },
