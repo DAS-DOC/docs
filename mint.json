@@ -15,6 +15,9 @@
       "to": "#F18A00"
     }
   },
+
+"versions": ["v2", "v1"],
+
   "topbarLinks": [
     {
       "name": "JP Version",
