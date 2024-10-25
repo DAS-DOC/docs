@@ -16,17 +16,23 @@
     }
   },
 
-"versions": ["English", "日本語"],
-"topbarLinks": [
+  "versions": ["English", "日本語"],
+  "topbarLinks": [
     {
       "name": "Create an Account",
-      "url": "https://me.paymentoptions.com/onboarding/choose-account"
+      "url": "https://me.paymentoptions.com/onboarding/choose-account",
+      "version": "English"
+    },
+    {
+      "name": "アカウント作成",
+      "url": "https://me.paymentoptions.com/onboarding/choose-account",
+      "version": "日本語"
     }
   ],
-
   "topbarCtaButton": {
     "name": "Sign in",
-    "url": "https://me.paymentoptions.com"
+    "url": "https://me.paymentoptions.com",
+    "version": "English"
   },
   "tabs": [
     {
@@ -39,22 +45,37 @@
       "url": "documentation-jp",
       "version": "日本語"
     },
-
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "api-reference",
+      "version": "English"
+    },
+    {
+      "name": "API 参照",
+      "url": "api-reference-jp",
+      "version": "日本語"
     },
     {
       "name": "Change Logs",
-      "url": "logs"
-    }
-    ,
+      "url": "logs",
+      "version": "English"
+    },
+    {
+      "name": "変更ログ",
+      "url": "logs-jp",
+      "version": "日本語"
+    },
     {
       "name": "Support",
-      "url": "support"
+      "url": "support",
+      "version": "English"
+    },
+    {
+      "name": "サポート",
+      "url": "support-jp",
+      "version": "日本語"
     }
   ],
-
   "navigation": [
     {
       "group": "Get Started",
@@ -64,17 +85,17 @@
         "documentation/checklist",
         "documentation/glossary"
       ],
-      "version":"English"
+      "version": "English"
     },
     {
-      "group": "Get Started",
+      "group": "はじめに",
       "pages": [
         "documentation-jp/introduction",
-        "documentation/createaccount",
-        "documentation/checklist",
-        "documentation/glossary"
+        "documentation-jp/createaccount",
+        "documentation-jp/checklist",
+        "documentation-jp/glossary"
       ],
-      "version":"日本語"
+      "version": "日本語"
     },
     {
       "group": "Payments",
@@ -85,7 +106,20 @@
         "documentation/payments/virtualterminal",
         "documentation/payments/subscription",
         "documentation/payments/scheduler"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "支払い",
+      "pages": [
+        "documentation-jp/payments/onlinepayment",
+        "documentation-jp/payments/paybylink",
+        "documentation-jp/payments/qrcode",
+        "documentation-jp/payments/virtualterminal",
+        "documentation-jp/payments/subscription",
+        "documentation-jp/payments/scheduler"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Payment Methods",
@@ -95,14 +129,35 @@
         "documentation/paymentmethods/ewallets",
         "documentation/paymentmethods/securepayment",
         "documentation/paymentmethods/testcards"
-      ]
+      ],
+      "version": "English"
     },
-     {
+    {
+      "group": "支払い方法",
+      "pages": [
+        "documentation-jp/paymentmethods/cardschemes",
+        "documentation-jp/paymentmethods/currency",
+        "documentation-jp/paymentmethods/ewallets",
+        "documentation-jp/paymentmethods/securepayment",
+        "documentation-jp/paymentmethods/testcards"
+      ],
+      "version": "日本語"
+    },
+    {
       "group": "Partner Account",
       "pages": [
         "documentation/partner/createpartner",
         "documentation/partner/partnerchecklist"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "パートナーアカウント",
+      "pages": [
+        "documentation-jp/partner/createpartner",
+        "documentation-jp/partner/partnerchecklist"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Payment Options API",
@@ -113,50 +168,107 @@
         "api-reference/postmancollection",
         "api-reference/webhookhandler",
         "api-reference/3dSintegration"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "支払いオプションAPI",
+      "pages": [
+        "api-reference-jp/introduction",
+        "api-reference-jp/authentication",
+        "api-reference-jp/merchantdetails",
+        "api-reference-jp/postmancollection",
+        "api-reference-jp/webhookhandler",
+        "api-reference-jp/3dSintegration"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Endpoint Examples",
+      "pages": [
+        {
+          "group": "Hosted Payment Page",
           "pages": [
-            {
-              "group": "Hosted Payment Page",
-                "pages": [
-                "api-reference/endpoint/generatehpp",
-                "api-reference/endpoint/apple-google",
-                "api-reference/endpoint/ewallet"
-                ]
-            },
-            {
-              "group": "Payments",
-                "pages": [
-                "api-reference/endpoint/authorisation",
-                "api-reference/endpoint/purchase",
-                "api-reference/endpoint/void",
-                "api-reference/endpoint/capture",
-                "api-reference/endpoint/refund",
-                "api-reference/endpoint/status"
-                ]
-            },
-            {
-              "group": "Tokenisation",
-                "pages": [
-                "api-reference/endpoint/generatetoken",
-                "api-reference/endpoint/usetoken"
-                ]
-            },
-            {
-              "group": "Subscriptions",
-                "pages": [
-                "api-reference/endpoint/createsubscription",
-                "api-reference/endpoint/subscriptionlist",
-                "api-reference/endpoint/subscriptiondetails",
-                "api-reference/endpoint/pausesubscription",
-                "api-reference/endpoint/resumesubscription",
-                "api-reference/endpoint/cancelsubscription"
-                ]
-            }
-          ]
-
+            "api-reference/endpoint/generatehpp",
+            "api-reference/endpoint/apple-google",
+            "api-reference/endpoint/ewallet"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "ホステッド支払いページ",
+          "pages": [
+            "api-reference-jp/endpoint/generatehpp",
+            "api-reference-jp/endpoint/apple-google",
+            "api-reference-jp/endpoint/ewallet"
+          ],
+          "version": "日本語"
+        },
+        {
+          "group": "Payments",
+          "pages": [
+            "api-reference/endpoint/authorisation",
+            "api-reference/endpoint/purchase",
+            "api-reference/endpoint/void",
+            "api-reference/endpoint/capture",
+            "api-reference/endpoint/refund",
+            "api-reference/endpoint/status"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "支払い",
+          "pages": [
+            "api-reference-jp/endpoint/authorisation",
+            "api-reference-jp/endpoint/purchase",
+            "api-reference-jp/endpoint/void",
+            "api-reference-jp/endpoint/capture",
+            "api-reference-jp/endpoint/refund",
+            "api-reference-jp/endpoint/status"
+          ],
+          "version": "日本語"
+        },
+        {
+          "group": "Tokenisation",
+          "pages": [
+            "api-reference/endpoint/generatetoken",
+            "api-reference/endpoint/usetoken"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "トークン化",
+          "pages": [
+            "api-reference-jp/endpoint/generatetoken",
+            "api-reference-jp/endpoint/usetoken"
+          ],
+          "version": "日本語"
+        },
+        {
+          "group": "Subscriptions",
+          "pages": [
+            "api-reference/endpoint/createsubscription",
+            "api-reference/endpoint/subscriptionlist",
+            "api-reference/endpoint/subscriptiondetails",
+            "api-reference/endpoint/pausesubscription",
+            "api-reference/endpoint/resumesubscription",
+            "api-reference/endpoint/cancelsubscription"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "サブスクリプション",
+          "pages": [
+            "api-reference-jp/endpoint/createsubscription",
+            "api-reference-jp/endpoint/subscriptionlist",
+            "api-reference-jp/endpoint/subscriptiondetails",
+            "api-reference-jp/endpoint/pausesubscription",
+            "api-reference-jp/endpoint/resumesubscription",
+            "api-reference-jp/endpoint/cancelsubscription"
+          ],
+          "version": "日本語"
+        }
+      ]
     },
     {
       "group": "Error Codes",
@@ -164,7 +276,17 @@
         "api-reference/errors/httpresponse",
         "api-reference/errors/responsecodes",
         "api-reference/errors/gatewayerrors"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "エラーコード",
+      "pages": [
+        "api-reference-jp/errors/httpresponse",
+        "api-reference-jp/errors/responsecodes",
+        "api-reference-jp/errors/gatewayerrors"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Logs",
@@ -173,14 +295,34 @@
         "logs/apiupdate",
         "logs/releasenotes",
         "logs/productupdates"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "変更履歴",
+      "pages": [
+        "logs-jp/revisions",
+        "logs-jp/apiupdate",
+        "logs-jp/releasenotes",
+        "logs-jp/productupdates"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Guide",
       "pages": [
         "support/merchantguide",
         "support/productguide"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "ガイド",
+      "pages": [
+        "support-jp/merchantguide",
+        "support-jp/productguide"
+      ],
+      "version": "日本語"
     },
     {
       "group": "Support",
@@ -188,7 +330,17 @@
         "support/faqs",
         "support/aichat",
         "support/contact"
-      ]
+      ],
+      "version": "English"
+    },
+    {
+      "group": "サポート",
+      "pages": [
+        "support-jp/faqs",
+        "support-jp/aichat",
+        "support-jp/contact"
+      ],
+      "version": "日本語"
     }
   ],
   "footerSocials": {
