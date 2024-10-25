@@ -20,19 +20,12 @@
   "topbarLinks": [
     {
       "name": "Create an Account",
-      "url": "https://me.paymentoptions.com/onboarding/choose-account",
-      "version": "English"
-    },
-    {
-      "name": "アカウント作成",
-      "url": "https://me.paymentoptions.com/onboarding/choose-account",
-      "version": "日本語"
+      "url": "https://me.paymentoptions.com/onboarding/choose-account"
     }
   ],
   "topbarCtaButton": {
     "name": "Sign in",
-    "url": "https://me.paymentoptions.com",
-    "version": "English"
+    "url": "https://me.paymentoptions.com"
   },
   "tabs": [
     {
