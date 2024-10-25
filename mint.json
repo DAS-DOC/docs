@@ -20,13 +20,13 @@
 
   "topbarLinks": [
     {
-      "name": "JP Version",
+      "name": "Versions",
       "url": "http://docs.jp.paymentoptions.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Signup",
+    "url": "https://me.paymentoptions.com.sg"
   },
   "tabs": [
     {
