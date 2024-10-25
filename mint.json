@@ -71,18 +71,18 @@
     {
       "group": "Payment Methods",
       "pages": [
-        "paymentmethods/cardschemes",
-        "paymentmethods/currency",
-        "paymentmethods/ewallets",
-        "paymentmethods/securepayment",
-        "paymentmethods/testcards"
+        "documentation/paymentmethods/cardschemes",
+        "documentation/paymentmethods/currency",
+        "documentation/paymentmethods/ewallets",
+        "documentation/paymentmethods/securepayment",
+        "documentation/paymentmethods/testcards"
       ]
     },
      {
       "group": "Partner Account",
       "pages": [
-        "partner/createpartner",
-        "partner/partnerchecklist"
+        "documentation/partner/createpartner",
+        "documentation/partner/partnerchecklist"
       ]
     },
     {
