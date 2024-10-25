@@ -17,36 +17,68 @@
   },
 
 "versions": ["English", "日本語"],
-"topbarLinks": [
-    {
-      "name": "Create an Account",
-      "url": "https://me.paymentoptions.com/onboarding/choose-account"
+  "content": {
+    "English": {
+      "topbarLinks": [
+        {
+          "name": "Create an Account",
+          "url": "https://me.paymentoptions.com/onboarding/choose-account"
+        }
+      ],
+      "topbarCtaButton": {
+        "name": "Sign in",
+        "url": "https://me.paymentoptions.com"
+      },
+      "tabs": [
+        {
+          "name": "Documentation",
+          "url": "documentation"
+        },
+        {
+          "name": "API Reference",
+          "url": "api-reference"
+        },
+        {
+          "name": "Change Logs",
+          "url": "logs"
+        },
+        {
+          "name": "Support",
+          "url": "support"
+        }
+      ]
+    },
+    "日本語": {
+      "topbarLinks": [
+        {
+          "name": "アカウント作成",
+          "url": "https://me.paymentoptions.com/onboarding/choose-account"
+        }
+      ],
+      "topbarCtaButton": {
+        "name": "サインイン",
+        "url": "https://me.paymentoptions.com"
+      },
+      "tabs": [
+        {
+          "name": "ドキュメント",
+          "url": "documentation"
+        },
+        {
+          "name": "API 参照",
+          "url": "api-reference"
+        },
+        {
+          "name": "変更ログ",
+          "url": "logs"
+        },
+        {
+          "name": "サポート",
+          "url": "support"
+        }
+      ]
     }
-  ],
-
-  "topbarCtaButton": {
-    "name": "Sign in",
-    "url": "https://me.paymentoptions.com"
   },
-  "tabs": [
-    {
-      "name": "Documentation",
-      "url": "documentation"
-    },
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    },
-    {
-      "name": "Change Logs",
-      "url": "logs"
-    }
-    ,
-    {
-      "name": "Support",
-      "url": "support"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
