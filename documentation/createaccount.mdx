@@ -1,86 +1,65 @@
 ---
 title: 'Create An Account'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Welcome to Payment Options! We offer a streamlined onboarding process to get your merchant account set up quickly and easily. Below is the step-by-step flow and the required documents to help you prepare for a successful onboarding experience.'
 ---
 
-## Setup your development
+## **Merchant Onboarding Flow**
 
-Learn how to update your docs locally and deploy them to the public.
+```mermaid
+graph TD
+    A[Merchant Meeting with Sales Representative or Self-Onboarding] --> B[Merchant Submits Documents]
+    B --> C[Sales Team Reviews Information]
+    C --> D[Sales Team Fills ISA Form]
+    D --> E[Sales Submits to BPU]
+    E --> F[Internal Checks by Relevant Teams]
+    F --> G[Sales Team Sends Pricing Sheet & Merchant Agreement]
+    G --> H[Merchant Submits Pricing Sheet & Signed Agreement]
+    H --> I[Final Approval]
+    I --> J[Approval and Account Activation Email]
+```
 
-### Edit and preview
+## **Checklist of Required Documents**
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
-
-### Deploy your changes
-
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
+<Accordion title="Business Owner / UBO (Ultimate Beneficial Owner)">
+  - **Name**
+  - **Personal Address**
+  - **Date of Birth**
+  - **Face Image**
+  - **Gender**
+  - **ID CARD**: Passport, My Number, or Driver's License with:
+    - ID Number
+    - Issue Date
+    - Expiry Date
 </Accordion>
 
-</AccordionGroup>
+<Accordion title="Person of Contact">
+  - **Name**
+  - **Personal Address**
+  - **Date of Birth**
+  - **Face Image**
+  - **Gender**
+  - **ID CARD**: Passport, My Number, or Driver's License
+  - **Email Address**
+  - **Phone Number**
+</Accordion>
 
-## Update your docs
+<Accordion title="Sole Proprietor">
+  - **Business Certificate**: Proof of business registration.
+  - **ID Card**
+  - **Screenshot of Bank Account Details**: Must include bank account number and name.
+  - **Business Address**: If using a rental address, provide proof of rental.
+  - **Website URL**
+  - **Email Address**
+  - **Phone Number**
+</Accordion>
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
-</CardGroup>
+<Accordion title="Entity (For Registered Businesses)">
+  - **Company History**: Full business background and relevant matters.
+  - **ID Card for Boss and UBO**: Identification details as mentioned for Business Owners.
+  - **Screenshot of Bank Account Details**: Must include bank account number and name.
+  - **Shareholder Registry**
+  - **Proof of Business Address**
+  - **Website URL**
+  - **Email Address**
+  - **Phone Number**
+</Accordion>
