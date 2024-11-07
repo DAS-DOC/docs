@@ -1,33 +1,64 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'API Reference - Introduction'
+description: 'Welcome to the Payment Options Gateway API documentation. This API follows RESTful principles, providing a secure and efficient way for third-party software (such as acquirers or merchant websites) to interact with the Payment Options Gateway.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## **REST Architectural Style**
 
-## Welcome
+Our API adheres to the REST (Representational State Transfer) architectural style, enabling standardized and efficient communication:
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+- **Standard HTTP Methods**: The API uses standard HTTP methods such as **GET** and **POST** for seamless communication.
+- **Resource-Oriented URLs**: Each request is structured with resource-oriented URLs, ensuring clear and predictable interactions with the API.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
 
-## Authentication
+## **Interaction with Payment Options Gateway**
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+The API allows seamless interaction between third-party software (e.g., acquirers, merchant websites) and the PO Gateway through structured HTTP payloads.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+- **Request and Response**: Using structured HTTP payloads, clients send requests and receive responses in a standardized format, enhancing compatibility across systems.
+- **Endpoints and Resources**: The API utilizes specific resource-oriented URLs, each representing a particular resource or action within the gateway.
+
+
+## **Compatibility Features**
+
+To ensure secure and efficient operation, the **Payment Options Gateway API** includes the following compatibility features:
+
+### **HTTP Authentication**
+
+- **Secure Access**: The API requires secure access via HTTP authentication, ensuring only authorized users can access endpoints.
+
+### **HTTP Verbs**
+
+- **Standard Methods**: The API supports standard HTTP methods:
+  - **GET**: Retrieve information or resources.
+  - **POST**: Create new resources or perform actions.
+- These methods provide a familiar and intuitive interaction model for developers.
+
+### **HTTP Response Codes**
+
+- **Standard Codes**: The API uses standard HTTP response codes to indicate request status:
+  - **200 OK**: Request successful.
+  - **404 Not Found**: The requested resource was not found.
+  - **401 Unauthorized**: Authentication required or failed.
+  - **500 Internal Server Error**: An error occurred on the server.
+- Familiarity with these codes allows developers to handle responses effectively.
+
+## **Base URL**
+
+The API is accessible only over HTTPS to ensure secure communication.
+
+- **LIVE URL**: `https://api.paymentoptions.com`
+- **Secure Communication**: All API requests and responses are encrypted, ensuring that sensitive data remains protected during transmission.
+
+## **Best Practices for API Integration**
+
+To ensure a smooth integration experience, keep the following in mind:
+
+- **HTTP Client Compatibility**: Ensure that HTTP clients are compatible with RESTful APIs and support necessary features like authentication.
+- **Understanding HTTP Methods**: Familiarize yourself with standard HTTP methods (GET, POST) to correctly interact with the API.
+- **Handling Response Codes**: Implement logic to handle different HTTP response codes, enabling effective error handling and debugging.
+
+<Callout title="Note" emoji="information">
+  Make sure to review the specific documentation for each API endpoint, including request and response formats, example payloads, and detailed descriptions of expected parameters.
+</Callout>
+
