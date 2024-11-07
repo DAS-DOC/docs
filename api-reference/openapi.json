@@ -17,7 +17,7 @@
     }
   ],
   "paths": {
-    "dev/api/v1/server-to-server-interface/hpp/generate/link": {
+    "/dev/api/v1/server-to-server-interface/hpp/generate/link": {
       "post": {
         "summary": "Generate HPP Link",
         "description": "This endpoint allows you to generate a Hosted Payment Page (HPP) link.",
