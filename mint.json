@@ -157,8 +157,7 @@
         "api-reference/authentication",
         "api-reference/merchantdetails",
         "api-reference/postmancollection",
-        "api-reference/webhookhandler",
-        "api-reference/3dSintegration"
+        "api-reference/webhookhandler"
       ],
       "version": "English"
     },
@@ -169,8 +168,7 @@
         "api-reference-jp/authentication",
         "api-reference-jp/merchantdetails",
         "api-reference-jp/postmancollection",
-        "api-reference-jp/webhookhandler",
-        "api-reference-jp/3dSintegration"
+        "api-reference-jp/webhookhandler"
       ],
       "version": "日本語"
     },
