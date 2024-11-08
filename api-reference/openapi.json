@@ -100,9 +100,9 @@
                       "type": "object",
                       "properties": {
                         "webhook_url": { "type": "string", "example": "https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b" },
-                        "success_url": { "type": "string", "example": "http://www.bing.com/" },
-                        "decline_url": { "type": "string", "example": "http://www.google.com/" },
-                        "cancel_url": { "type": "string", "example": "http://tinkfactory.com/" }
+                        "success_url": { "type": "string", "example": "https://www.bing.com/" },
+                        "decline_url": { "type": "string", "example": "https://www.google.com/" },
+                        "cancel_url": { "type": "string", "example": "https://tinkfactory.com/" }
                       }
                     },
                     "billing_address": {
