@@ -25,15 +25,22 @@ description: 'Overview of API Key Authentication and Header Requirements'
 - - Some HTTP clients automatically handle this encoding (e.g., using the -u flag with bash cURL).
 - - Others may require manual encoding (e.g., using CURLOPT_HTTPHEADER in PHP cURL).
 
-## API Headers
+## **API Headers**
 
-- API headers provide additional metadata for each API call, including crucial information about the request and response.
+API headers provide additional metadata for each API call, including crucial information about the request and response.
 
 | **Header**       | **Description**                                                                 |
 |:-----------------|:--------------------------------------------------------------------------------|
 | `x-api-key`      | Provided along with credentials.                                                |
-| `Authorization`  | Live API Key obtained from merchant details on PO Gateway.                      |
+| `Authorization`  | Live API Key obtained from merchant details on PO Gateway. **Ensure "Basic" is included before the API key in this field** (e.g., `Authorization: Basic YOUR_BASE64_ENCODED_API_KEY`). |
 | `Content-Type`   | Indicates that all response attributes will be in JSON format (set to `application/json`). |
+
+### **Important Note**
+For the **Authorization** header, include **"Basic"** before the base64-encoded API key to authenticate requests properly. 
+
+<Info title="Example" emoji="information">
+  Authorization: Basic YOUR_BASE64_ENCODED_API_KEY
+</Info>
 
 
 
