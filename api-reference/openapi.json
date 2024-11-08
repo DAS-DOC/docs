@@ -353,18 +353,20 @@
     }
   },
   "components": {
-    "securitySchemes": {
-      "apiKeyAuth": {
-        "type": "apiKey",
-        "name": "Authorization",
-        "in": "header"
-      },
-      "xApiKeyAuth": {
-        "type": "apiKey",
-        "name": "x-api-key",
-        "in": "header"
-      }
+  "securitySchemes": {
+    "apiKeyAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE'"
+    },
+    "xApiKeyAuth": {
+      "type": "apiKey",
+      "name": "x-api-key",
+      "in": "header",
+      "description": "API Key specific to x-api-key."
     }
   }
+}
 }
 
