@@ -39,7 +39,7 @@
                       "cancel_url": { "type": "string", "example": "http://tinkfactory.com/" }
                     }
                   },
-                  "amount": { "type": "string", "example": "100.00" },
+                  "amount": { "type": "string", "example": "1000" },
                   "currency": { "type": "string", "example": "JPY", "default":"JPY" },
                   "merchant_id": { "type": "string", "example": "JP00000275" },
                   "merchant_email": { "type": "string", "example": "info@tinkfactory.com" },
