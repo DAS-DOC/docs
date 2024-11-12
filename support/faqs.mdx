@@ -1,4 +1,102 @@
 ---
 title: 'FAQs & Troubleshooting'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Frequently asked questions and troubleshooting guide for merchants using the Gateway.'
 ---
+
+Welcome to the **FAQs & Troubleshooting** section. Here, you’ll find answers to commonly asked questions, along with solutions for common issues you might encounter while using the Gateway. This section is designed to help you get the most out of our products and resolve issues quickly.
+
+## **Frequently Asked Questions**
+
+<Accordion title="Getting Started">
+  <Accordion title="How do I create a Merchant Account?">
+    Visit our [Create an Account](./guides/create-account) page for step-by-step instructions on setting up your merchant account.
+  </Accordion>
+  
+  <Accordion title="What documents are needed to onboard as a merchant?">
+    For a full list of required documents, see our [Onboarding Checklist](./guides/onboarding-checklist).
+  </Accordion>
+  
+  <Accordion title="How do I add products to my account?">
+    Once your account is set up, navigate to the **Products** tab and select the products you want to enable. Each product guide provides further details.
+  </Accordion>
+</Accordion>
+
+<Accordion title="Payment Processing">
+  <Accordion title="What payment methods does the Gateway support?">
+    Our Gateway supports multiple payment methods, including credit cards, e-wallets, QR codes, and more. Check the [Supported Card Schemes](./guides/card-schemes) and [E-Wallets](./guides/e-wallets) sections for details.
+  </Accordion>
+
+  <Accordion title="How do I enable 3D Secure (3DS) transactions?">
+    3D Secure is enabled at the product level. Visit the **Secure Payment** section to understand how to configure 3DS for enhanced transaction security.
+  </Accordion>
+  
+  <Accordion title="Can I process multi-currency payments?">
+    Yes, our Gateway supports multiple currencies. For a list of supported currencies, refer to the [Currency Guide](./guides/currency).
+  </Accordion>
+</Accordion>
+
+<Accordion title="Technical Integration">
+  <Accordion title="How do I generate an HPP (Hosted Payment Page) link?">
+    You can generate HPP links directly from the HPP product dashboard. For details, see the [HPP Guide](./guides/hosted-payment-page).
+  </Accordion>
+  
+  <Accordion title="What are the authentication requirements for API calls?">
+    Our API uses HTTP Basic Authentication with an API key in the `Authorization` header. Refer to the [API Authentication](./guides/authentication) page for details.
+  </Accordion>
+  
+  <Accordion title="Where can I download e-commerce plugins?">
+    Plugins for platforms like WooCommerce, Magento, and Shopify are available on our [Website Plugins](./guides/website-plugins) page.
+  </Accordion>
+</Accordion>
+
+---
+
+## **Troubleshooting Guide**
+
+This section addresses common issues users encounter. If you’re experiencing a specific problem, review the solutions below.
+
+<Accordion title="Account Issues">
+  <Accordion title="I forgot my password. How can I reset it?">
+    Go to the login page and click **Forgot Password**. Follow the instructions to reset your password via email.
+  </Accordion>
+
+  <Accordion title="Why am I receiving a 'Login Failed' error?">
+    Double-check your username and password. Ensure you’re using the correct credentials associated with your account. If the issue persists, contact support.
+  </Accordion>
+</Accordion>
+
+<Accordion title="Payment Errors">
+  <Accordion title="What does the 'Insufficient Funds' error mean?">
+    This error occurs when the cardholder's account has insufficient funds. Ask the customer to try another card or contact their bank.
+  </Accordion>
+
+  <Accordion title="How can I resolve a '3DS Authentication Failed' error?">
+    Ensure the customer has completed the 3D Secure authentication step. For more on 3DS, see the [Secure Payment](./guides/secure-payment) page.
+  </Accordion>
+
+  <Accordion title="Transaction was declined without a clear reason. What should I do?">
+    Review the [Gateway Error Codes](./guides/gateway-error-codes) page for information on decline codes. Contact support if the issue is unresolved.
+  </Accordion>
+</Accordion>
+
+<Accordion title="Technical Issues">
+  <Accordion title="API request is returning a 401 Unauthorized error. What does this mean?">
+    This error indicates incorrect API credentials. Verify the `Authorization` header in your request and ensure your API key is correctly formatted.
+  </Accordion>
+
+  <Accordion title="My plugin installation failed. How can I fix this?">
+    Ensure you’re using the correct plugin version for your e-commerce platform. Follow the instructions in the relevant [Installation Guide](./guides/website-plugins).
+  </Accordion>
+
+  <Accordion title="Webhook events aren’t being received. What should I check?">
+    Make sure the webhook URL is publicly accessible and registered correctly in the API payload. Refer to [Webhook Handler Setup](./guides/webhook-handler) for configuration steps.
+  </Accordion>
+</Accordion>
+
+---
+
+## **Need More Help?**
+
+<Card title="Contact Support" icon="life-ring" href="/support/contact">
+  If you need further assistance, please [reach out to our support team](./support/contact). Our team is here to help you troubleshoot and resolve any issues you may be experiencing.
+</Card>
