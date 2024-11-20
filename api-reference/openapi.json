@@ -5,11 +5,7 @@
     "description": "API for generating Hosted Payment Page (HPP) links and processing payments.",
     "version": "1.0.0"
   },
-  "servers": [
-    {
-      "url": "https://2d1uj551b4.execute-api.ap-southeast-1.amazonaws.com"
-    }
-  ],
+ 
   "security": [
     {
       "apiKeyAuth": [],
