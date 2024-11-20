@@ -41,6 +41,7 @@
     {
       "name": "API Reference",
       "url": "api-reference",
+      "openapi": "api-reference/openapi.json",
       "version": "English"
     },
     {
