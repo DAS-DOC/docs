@@ -17,7 +17,7 @@
     }
   ],
   "paths": {
-    "hpp/generate/link": {
+    "/hpp/generate/link": {
       "post": {
         "summary": "Generate HPP Link",
         "description": "This endpoint allows you to generate a Hosted Payment Page (HPP) link.",
