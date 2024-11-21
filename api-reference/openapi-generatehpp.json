@@ -33,11 +33,28 @@
                 "return_url": {
                   "type": "object",
                   "properties": {
-                    "webhook_url": { "type": "string", "example": "https://webhook.site/" },
-                    "success_url": { "type": "string", "example": "http://www.successurl.com/" },
-                    "decline_url": { "type": "string", "example": "http://www.declineurl.com/" },
-                    "cancel_url": { "type": "string", "example": "http://cancelurl.com/" }
-                  },
+                      "webhook_url": { 
+                        "type": "string", 
+                        "example": "https://webhook.site/", 
+                        "description": "The webhook URL where payment status updates will be sent." 
+                      },
+                      "success_url": { 
+                        "type": "string", 
+                        "example": "http://www.successurl.com/", 
+                        "description": "The URL to redirect the cardholder to after a successful payment." 
+                      },
+                      "decline_url": { 
+                        "type": "string", 
+                        "example": "http://www.declineurl.com/", 
+                        "description": "The URL to redirect the cardholder to after a failed payment." 
+                      },
+                      "cancel_url": { 
+                        "type": "string", 
+                        "example": "http://cancelurl.com/", 
+                        "description": "The URL to redirect the cardholder to if the payment is canceled." 
+                      }
+                    },
+
                   "description": "A JSON object containing the Return URL."
                 },
                 "amount": { 
