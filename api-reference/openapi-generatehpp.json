@@ -17,134 +17,218 @@
     }
   ],
   "paths": {
-    "/api/v1/server-to-server-interface/hpp/generate/link": {
-      "post": {
-        "summary": "Generate HPP Link",
-        "description": "This endpoint allows you to generate a Hosted Payment Page (HPP) link.",
-        "operationId": "generateHppLink",
-        "requestBody": {
-          "description": "The request payload to generate an HPP link.",
-          "required": true,
+  "/api/v1/server-to-server-interface/hpp/generate/link": {
+    "post": {
+      "summary": "Generate HPP Link",
+      "description": "This endpoint allows you to generate a Hosted Payment Page (HPP) link.",
+      "operationId": "generateHppLink",
+      "requestBody": {
+        "description": "The request payload to generate an HPP link.",
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "return_url": {
+                  "type": "object",
+                  "properties": {
+                    "webhook_url": { "type": "string", "example": "https://webhook.site/" },
+                    "success_url": { "type": "string", "example": "http://www.successurl.com/" },
+                    "decline_url": { "type": "string", "example": "http://www.declineurl.com/" },
+                    "cancel_url": { "type": "string", "example": "http://cancelurl.com/" }
+                  },
+                  "description": "A JSON object containing the Return URL."
+                },
+                "amount": { 
+                  "type": "string", 
+                  "example": "1000",
+                  "description": "The amount of the transaction. If left blank, the cardholder can manually enter the amount in the HPP."
+                },
+                "currency": { 
+                  "type": "string", 
+                  "example": "JPY",
+                  "description": "The abbreviation of the processing currency (e.g., JPY for Japanese Yen)." 
+                },
+                "merchant_id": { 
+                  "type": "string", 
+                  "example": "JP00000275",
+                  "description": "The merchant ID (DASMID)." 
+                },
+                "merchant_email": { 
+                  "type": "string", 
+                  "example": "merchant@testemail.com",
+                  "description": "The email address of the merchant." 
+                },
+                "merchant_txn_ref": { 
+                  "type": "string", 
+                  "example": "2003089893366DTEST",
+                  "description": "The merchant transaction reference ID." 
+                },
+                "payment_method": {
+                  "type": "object",
+                  "properties": {
+                    "type": { 
+                      "type": "string", 
+                      "example": "scheme",
+                      "description": "The payment method type, e.g., 'scheme' for credit cards." 
+                    },
+                    "store_payment_method": { 
+                      "type": "boolean", 
+                      "example": true,
+                      "description": "True to generate a token, or False not to generate one." 
+                    }
+                  },
+                  "description": "A JSON object containing the Payment Method."
+                },
+                "billing_address": {
+                  "type": "object",
+                  "properties": {
+                    "country": { 
+                      "type": "string", 
+                      "example": "JP",
+                      "description": "The cardholder’s billing country code." 
+                    },
+                    "email": { 
+                      "type": "string", 
+                      "example": "billing@testemail.com",
+                      "description": "The cardholder’s billing email address." 
+                    },
+                    "phone": { 
+                      "type": "string", 
+                      "example": "8112345678",
+                      "description": "The cardholder’s billing phone number." 
+                    },
+                    "address1": { 
+                      "type": "string", 
+                      "example": "1-2-3 Shinjuku",
+                      "description": "The cardholder’s billing address line." 
+                    },
+                    "city": { 
+                      "type": "string", 
+                      "example": "Shinjuku-ku",
+                      "description": "The cardholder’s billing city." 
+                    },
+                    "state": { 
+                      "type": "string", 
+                      "example": "Tokyo",
+                      "description": "The cardholder’s billing state." 
+                    },
+                    "postal_code": { 
+                      "type": "string", 
+                      "example": "1600022",
+                      "description": "The cardholder’s billing postal code." 
+                    }
+                  },
+                  "description": "A JSON object containing the billing address of the cardholder."
+                },
+                "shipping_address": {
+                  "type": "object",
+                  "properties": {
+                    "country": { 
+                      "type": "string", 
+                      "example": "JP",
+                      "description": "The cardholder’s shipping country code." 
+                    },
+                    "email": { 
+                      "type": "string", 
+                      "example": "shipping@testemail.com",
+                      "description": "The cardholder’s shipping email address." 
+                    },
+                    "phone": { 
+                      "type": "string", 
+                      "example": "8112345678",
+                      "description": "The cardholder’s shipping phone number." 
+                    },
+                    "address1": { 
+                      "type": "string", 
+                      "example": "1-2-3 Shinjuku",
+                      "description": "The cardholder’s shipping address line." 
+                    },
+                    "city": { 
+                      "type": "string", 
+                      "example": "Shinjuku-ku",
+                      "description": "The cardholder’s shipping city." 
+                    },
+                    "state": { 
+                      "type": "string", 
+                      "example": "Tokyo",
+                      "description": "The cardholder’s shipping state." 
+                    },
+                    "postal_code": { 
+                      "type": "string", 
+                      "example": "1600022",
+                      "description": "The cardholder’s shipping postal code." 
+                    }
+                  },
+                  "description": "A JSON object containing the shipping address of the cardholder."
+                }
+              },
+              "required": ["return_url", "currency", "merchant_id", "merchant_email", "merchant_txn_ref", "payment_method", "billing_address"]
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "HPP link generated successfully",
           "content": {
             "application/json": {
               "schema": {
                 "type": "object",
                 "properties": {
+                  "id": { "type": "string", "example": "e7abc56b-856a-4ee8-a1a5-70608d84d81c" },
+                  "url": { "type": "string", "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/O5dcEznp" },
+                  "amount": { "type": "integer", "example": 1000 },
+                  "currency": { "type": "string", "example": "JPY" },
+                  "merchant_txn_ref": { "type": "string", "example": "2003089893366DTEST" },
+                  "merchant_id": { "type": "string", "example": "JP00000275" },
+                  "merchant_email": { "type": "string", "example": "merchant@testemail.com" },
                   "return_url": {
                     "type": "object",
                     "properties": {
-                      "webhook_url": { "type": "string", "example": "https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b" },
-                      "success_url": { "type": "string", "example": "https://www.bing.com/", "default": "https://www.bing.com/" },
-                      "decline_url": { "type": "string", "example": "https://www.google.com/" },
-                      "cancel_url": { "type": "string", "example": "https://tinkfactory.com/" }
-                    }
-                  },
-                  "amount": { "type": "string", "example": "1000" },
-                  "currency": { "type": "string", "example": "JPY", "default":"JPY" },
-                  "merchant_id": { "type": "string", "example": "JP00000275" },
-                  "merchant_email": { "type": "string", "example": "info@tinkfactory.com" },
-                  "merchant_txn_ref": { "type": "string", "example": "2003089893366DTEST" },
-                  "payment_method": {
-                    "type": "object",
-                    "properties": {
-                      "type": { "type": "string", "example": "scheme" },
-                      "store_payment_method": { "type": "boolean", "example": false }
+                      "webhook_url": { "type": "string", "example": "https://webhook.site/" },
+                      "success_url": { "type": "string", "example": "http://www.successurl.com/" },
+                      "decline_url": { "type": "string", "example": "http://www.declineurl.com/" },
+                      "cancel_url": { "type": "string", "example": "http://cancelurl.com/" }
                     }
                   },
                   "billing_address": {
                     "type": "object",
                     "properties": {
-                      "city": { "type": "string", "example": "Ebene" },
-                      "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                      "state": { "type": "string", "example": "Rose-Hill" },
-                      "country": { "type": "string", "example": "Japan" },
-                      "address1": { "type": "string", "example": "Ebene Junction" },
-                      "postal_code": { "type": "string", "example": "1234567" },
-                      "phone_number": { "type": "string", "example": "52553305" }
+                      "city": { "type": "string", "example": "Shinjuku-ku" },
+                      "email": { "type": "string", "example": "billing@testemail.com" },
+                      "phone": { "type": "string", "example": "8112345678" },
+                      "state": { "type": "string", "example": "Tokyo" },
+                      "country": { "type": "string", "example": "JP" },
+                      "address1": { "type": "string", "example": "1-2-3 Shinjuku" },
+                      "postal_code": { "type": "string", "example": "1600022" }
                     }
                   },
                   "shipping_address": {
                     "type": "object",
                     "properties": {
-                      "city": { "type": "string", "example": "Ebene" },
-                      "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                      "state": { "type": "string", "example": "Rose-Hill" },
-                      "country": { "type": "string", "example": "Japan" },
-                      "address1": { "type": "string", "example": "Ebene Junction" },
-                      "postal_code": { "type": "string", "example": "1234567" },
-                      "phone_number": { "type": "string", "example": "52553305" }
-                    }
-                  }
-                },
-                "required": ["return_url", "currency", "merchant_id", "merchant_email", "merchant_txn_ref", "payment_method", "billing_address"]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "HPP link generated successfully",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "id": { "type": "string", "example": "6469eb3a-812a-4262-9f7c-2328a71b16c5" },
-                    "url": { "type": "string", "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/aPT5J_0d" },
-                    "amount": { "type": "string", "example": "1000" },
-                    "currency": { "type": "string", "example": "JPY" },
-                    "merchant_txn_ref": { "type": "string", "example": "2003089893366DTEST" },
-                    "merchant_id": { "type": "string", "example": "JP00000275" },
-                    "merchant_email": { "type": "string", "example": "info@tinkfactory.com" },
-                    "return_url": {
-                      "type": "object",
-                      "properties": {
-                        "webhook_url": { "type": "string", "example": "https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b" },
-                        "success_url": { "type": "string", "example": "https://www.bing.com/" },
-                        "decline_url": { "type": "string", "example": "https://www.google.com/" },
-                        "cancel_url": { "type": "string", "example": "https://tinkfactory.com/" }
-                      }
-                    },
-                    "billing_address": {
-                      "type": "object",
-                      "properties": {
-                        "city": { "type": "string", "example": "Ebene" },
-                        "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                        "state": { "type": "string", "example": "Rose-Hill" },
-                        "country": { "type": "string", "example": "" },
-                        "address1": { "type": "string", "example": "Ebene Junction" },
-                        "postal_code": { "type": "string", "example": "1234567" },
-                        "phone_number": { "type": "string", "example": "52553305" }
-                      }
-                    },
-                    "shipping_address": {
-                      "type": "object",
-                      "properties": {
-                        "city": { 
-                        "type": "string", 
-                        "example": "Ebene", 
-                        "default": "Ebene"
-                        },
-                        "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                        "state": { "type": "string", "example": "Rose-Hill" },
-                        "country": { "type": "string", "example": "" },
-                        "address1": { "type": "string", "example": "Ebene Junction" },
-                        "postal_code": { "type": "string", "example": "1234567" },
-                        "phone_number": { "type": "string", "example": "52553305" }
-                      }
+                      "city": { "type": "string", "example": "Shinjuku-ku" },
+                      "email": { "type": "string", "example": "shipping@testemail.com" },
+                      "phone": { "type": "string", "example": "8112345678" },
+                      "state": { "type": "string", "example": "Tokyo" },
+                      "country": { "type": "string", "example": "JP" },
+                      "address1": { "type": "string", "example": "1-2-3 Shinjuku" },
+                      "postal_code": { "type": "string", "example": "1600022" }
                     }
                   }
                 }
               }
             }
-          },
-          "400": {
-            "description": "Invalid request"
           }
+        },
+        "400": {
+          "description": "Invalid request"
         }
       }
     }
-  },
+  }
+},
   "components": {
   "securitySchemes": {
     "apiKeyAuth": {
