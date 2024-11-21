@@ -120,7 +120,11 @@
                     "shipping_address": {
                       "type": "object",
                       "properties": {
-                        "city": { "type": "string", "example": "Ebene" },
+                        "city": { 
+                        "type": "string", 
+                        "example": "Ebene", 
+                        "default": "Ebene"
+                        },
                         "email": { "type": "string", "example": "kavi@ghunowa.com" },
                         "state": { "type": "string", "example": "Rose-Hill" },
                         "country": { "type": "string", "example": "" },
