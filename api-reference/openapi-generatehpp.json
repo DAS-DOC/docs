@@ -360,7 +360,7 @@
           "type": "string"
         },
         "example": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
-        "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE2'"
+        "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HEREkavi2'"
       },
       {
         "name": "x-api-key",
