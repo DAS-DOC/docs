@@ -58,11 +58,8 @@
                   "description": "A JSON object containing the Return URL."
                 },
                 "amount": { 
-                  "anyOf": [
-                            { "type": "string", "pattern": "^[0-9]+(\\.[0-9]{1,2})?$", "example": "1000" },
-                            { "type": "string", "example": "" },
-                            { "type": "null" }
-                          ],
+                 "type": "string", 
+                 "example": "1000",
                   "description": "The amount of the transaction. If left blank, the cardholder can manually enter the amount in the HPP."
                 },
                 "currency": { 
