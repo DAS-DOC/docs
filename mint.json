@@ -339,7 +339,8 @@
     "linkedin": "https://www.linkedin.com/company/payment-options/"
   },
   "modeToggle": {
-    "isHidden": true
+    "isHidden": true,
+     "default": "light"
   }
   
 }
