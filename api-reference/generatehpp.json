@@ -5,7 +5,7 @@
         "operationId": "generateHppLink",
         "requestBody": {
           "description": "The request payload to generate an HPP link.",
-          "required": false,
+          "required": true,
           "content": {
             "application/json": {
               "schema": {
