@@ -1,1 +1,249 @@
-
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Payment Options API",
+    "description": "API for generating Hosted Payment Page (HPP) links and processing payments.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api-dev.paymentoptions.com/api/v1"
+    }
+  ],
+  "security": [
+    {
+      "apiKeyAuth": [],
+      "xApiKeyAuth": []
+    }
+  ],
+  "paths": {
+    "/api/v1/server-to-server-interface/hpp/generate/link": {
+      "post": {
+        "summary": "Generate HPP Link for Apple Pay and Google Pay",
+        "description": "When a merchant is configured for Apple Pay and Google Pay, the Hosted Payment Page (HPP) will display buttons for Google Pay and Apple Pay, allowing customers to complete payments through these methods.",
+        "operationId": "generateHppLinkAppleGoogle",
+        "requestBody": {
+          "description": "The request payload to generate an HPP link for Apple Pay and Google Pay.",
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "return_url": {
+                    "type": "object",
+                    "properties": {
+                      "webhook_url": {
+                        "type": "string",
+                        "example": "https://webhook.site/",
+                        "description": "The webhook URL where payment status updates will be sent."
+                      },
+                      "success_url": {
+                        "type": "string",
+                        "example": "http://www.successurl.com/",
+                        "description": "The URL to redirect the cardholder to after a successful payment."
+                      },
+                      "decline_url": {
+                        "type": "string",
+                        "example": "http://www.declineurl.com/",
+                        "description": "The URL to redirect the cardholder to after a failed payment."
+                      },
+                      "cancel_url": {
+                        "type": "string",
+                        "example": "http://cancelurl.com/",
+                        "description": "The URL to redirect the cardholder to if the payment is canceled."
+                      }
+                    },
+                    "description": "A JSON object containing the Return URL."
+                  },
+                  "amount": {
+                    "type": "float",
+                    "example": 1000,
+                    "description": "The amount of the transaction. If left blank, the cardholder can manually enter the amount in the HPP."
+                  },
+                  "currency": {
+                    "type": "string",
+                    "example": "HKD",
+                    "description": "The abbreviation of the processing currency (e.g., HKD for Hong Kong Dollar)."
+                  },
+                  "merchant_id": {
+                    "type": "string",
+                    "example": "HK00001694",
+                    "description": "The merchant ID (DASMID)."
+                  },
+                  "merchant_email": {
+                    "type": "string",
+                    "example": "merchant@testemail.com",
+                    "description": "The email address of the merchant."
+                  },
+                  "merchant_txn_ref": {
+                    "type": "string",
+                    "example": "2003089893366DTEST",
+                    "description": "The merchant transaction reference ID."
+                  },
+                  "payment_method": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "example": "scheme",
+                        "description": "The payment method type, e.g., 'scheme' for credit cards."
+                      },
+                      "store_payment_method": {
+                        "type": "boolean",
+                        "example": true,
+                        "description": "True to generate a token, or False not to generate one."
+                      }
+                    },
+                    "description": "A JSON object containing the Payment Method."
+                  },
+                  "billing_address": {
+                    "type": "object",
+                    "properties": {
+                      "country": {
+                        "type": "string",
+                        "example": "HK",
+                        "description": "The cardholder’s billing country code."
+                      },
+                      "email": {
+                        "type": "string",
+                        "example": "billing@testemail.com",
+                        "description": "The cardholder’s billing email address."
+                      },
+                      "phone": {
+                        "type": "string",
+                        "example": "85212345678",
+                        "description": "The cardholder’s billing phone number."
+                      },
+                      "address1": {
+                        "type": "string",
+                        "example": "1-2-3 Central",
+                        "description": "The cardholder’s billing address line."
+                      },
+                      "city": {
+                        "type": "string",
+                        "example": "Central",
+                        "description": "The cardholder’s billing city."
+                      },
+                      "state": {
+                        "type": "string",
+                        "example": "Hong Kong",
+                        "description": "The cardholder’s billing state."
+                      },
+                      "postal_code": {
+                        "type": "string",
+                        "example": "999077",
+                        "description": "The cardholder’s billing postal code."
+                      }
+                    },
+                    "description": "A JSON object containing the billing address of the cardholder."
+                  },
+                  "shipping_address": {
+                    "type": "object",
+                    "properties": {
+                      "country": {
+                        "type": "string",
+                        "example": "HK",
+                        "description": "The cardholder’s shipping country code."
+                      },
+                      "email": {
+                        "type": "string",
+                        "example": "shipping@testemail.com",
+                        "description": "The cardholder’s shipping email address."
+                      },
+                      "phone": {
+                        "type": "string",
+                        "example": "85212345678",
+                        "description": "The cardholder’s shipping phone number."
+                      },
+                      "address1": {
+                        "type": "string",
+                        "example": "1-2-3 Central",
+                        "description": "The cardholder’s shipping address line."
+                      },
+                      "city": {
+                        "type": "string",
+                        "example": "Central",
+                        "description": "The cardholder’s shipping city."
+                      },
+                      "state": {
+                        "type": "string",
+                        "example": "Hong Kong",
+                        "description": "The cardholder’s shipping state."
+                      },
+                      "postal_code": {
+                        "type": "string",
+                        "example": "999077",
+                        "description": "The cardholder’s shipping postal code."
+                      }
+                    },
+                    "description": "A JSON object containing the shipping address of the cardholder."
+                  }
+                },
+                "required": ["return_url", "currency", "merchant_id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "HPP link generated successfully with Apple Pay and Google Pay.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "The unique identifier for the generated HPP link."
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "The URL of the Hosted Payment Page (HPP) for the transaction."
+                    },
+                    "amount": {
+                      "type": "float",
+                      "description": "The transaction amount processed on the HPP."
+                    },
+                    "currency": {
+                      "type": "string",
+                      "description": "The currency in which the transaction is processed (e.g., HKD for Hong Kong Dollar)."
+                    },
+                    "merchant_txn_ref": {
+                      "type": "string",
+                      "description": "The merchant-provided unique reference ID for the transaction."
+                    },
+                    "merchant_id": {
+                      "type": "string",
+                      "description": "The unique identifier of the merchant (DASMID)."
+                    },
+                    "merchant_email": {
+                      "type": "string",
+                      "description": "The email address associated with the merchant account."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "apiKeyAuth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header",
+        "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE'"
+      },
+      "xApiKeyAuth": {
+        "type": "apiKey",
+        "name": "x-api-key",
+        "in": "header",
+        "description": "API Key specific to x-api-key."
+      }
+    }
+  }
+}
