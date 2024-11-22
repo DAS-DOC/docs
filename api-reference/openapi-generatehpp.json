@@ -353,13 +353,14 @@
       "type": "apiKey",
       "name": "Authorization",
       "in": "header",
-      "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE'"
+      "example" : "",
+      "description": "API Key for Authorization. Example: 'Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6'"
     },
     "xApiKeyAuth": {
       "type": "apiKey",
       "name": "x-api-key",
       "in": "header",
-      "description": "API Key specific to x-api-key."
+      "description": "API Key specific to x-api-key. Example: 'bLm8c1C0fL3FtPzrjSr0'"
     }
   }
 }
