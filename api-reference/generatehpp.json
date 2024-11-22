@@ -1,23 +1,4 @@
-{
-  "openapi": "3.0.1",
-  "info": {
-    "title": "Payment Options API",
-    "description": "API for generating Hosted Payment Page (HPP) links and processing payments.",
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "https://api-dev.paymentoptions.com/api/v1"
-    }
-  ],
-  "security": [
-    {
-      "apiKeyAuth": [],
-      "xApiKeyAuth": []
-    }
-  ],
-  "paths": {
-    "/api/v1/server-to-server-interface/hpp/generate/link": {
+
       "post": {
         "summary": "Generate HPP Link",
         "description": "This endpoint allows you to generate a Hosted Payment Page (HPP) link.",
@@ -228,22 +209,3 @@
           }
         }
       }
-    }
-  },
-  "components": {
-    "securitySchemes": {
-      "apiKeyAuth": {
-        "type": "apiKey",
-        "name": "Authorization",
-        "in": "header",
-        "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE'."
-      },
-      "xApiKeyAuth": {
-        "type": "apiKey",
-        "name": "x-api-key",
-        "in": "header",
-        "description": "API Key specific to x-api-key."
-      }
-    }
-  }
-}
