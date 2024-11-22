@@ -60,7 +60,7 @@
                 "amount": { 
                   "type": "string", 
                   "example": "1000",
-                  "dfault" : "",
+                  "default" : "",
                   "description": "The amount of the transaction. If left blank, the cardholder can manually enter the amount in the HPP."
                 },
                 "currency": { 
