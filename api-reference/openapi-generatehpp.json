@@ -181,7 +181,7 @@
                   "description": "A JSON object containing the shipping address of the cardholder."
                 }
               },
-              "required": ["return_url", "amount", "currency", "merchant_id"]
+              "required": ["return_url", "currency", "merchant_id"]
             }
           }
         }
@@ -353,14 +353,13 @@
       "type": "apiKey",
       "name": "Authorization",
       "in": "header",
-      "example" : "",
-      "description": "API Key for Authorization. Example: 'Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6'"
+      "description": "API Key for Authorization. Format: 'Basic YOUR_API_KEY_HERE'"
     },
     "xApiKeyAuth": {
       "type": "apiKey",
       "name": "x-api-key",
       "in": "header",
-      "description": "API Key specific to x-api-key. Example: 'bLm8c1C0fL3FtPzrjSr0'"
+      "description": "API Key specific to x-api-key."
     }
   }
 }
