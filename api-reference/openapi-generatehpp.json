@@ -184,7 +184,7 @@
                   "description": "A JSON object containing the shipping address of the cardholder."
                 }
               },
-              "required": ["return_url", "currency", "merchant_id", "merchant_email", "merchant_txn_ref", "payment_method", "billing_address"]
+              "required": ["return_url", "amount", "currency", "merchant_id", "merchant_email"]
             }
           }
         }
