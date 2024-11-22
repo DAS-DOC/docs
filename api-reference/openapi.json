@@ -12,7 +12,8 @@
   ],
   "paths": {
     "/api/v1/server-to-server-interface/hpp/generate/link": {
-
+    "$ref": "./generatehpp.json"
+    }
   },
   "components": {
     "securitySchemes": {
@@ -30,4 +31,5 @@
       }
     }
   }
+}
 }
