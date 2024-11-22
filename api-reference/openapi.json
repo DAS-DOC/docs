@@ -12,7 +12,7 @@
   ],
   "paths": {
     "/api/v1/server-to-server-interface/hpp/generate/link": {
-      "$ref": "/api-reference/generatehpp.json"
+      "$ref": "generatehpp.json"
     }
   },
   "components": {
