@@ -58,7 +58,7 @@
                   "description": "A JSON object containing the Return URL."
                 },
                 "amount": { 
-                  "type": "string", 
+                  "type": "float", 
                   "example": "1000",
                   "description": "The amount of the transaction. If left blank, the cardholder can manually enter the amount in the HPP."
                 },
