@@ -211,166 +211,137 @@
             }
           }
         },
-       "responses": {
-                      "200": {
-                        "description": "HPP link generated successfully",
-                        "content": {
-                          "application/json": {
-                            "schema": {
-                              "type": "object",
-                              "properties": {
-                                "id": { 
-                                  "type": "string", 
-                                  "description": "The transaction reference ID", 
-                                  "example": "6ddde0d0-9f60-4e54-bf3a-a3e099eee800" 
-                                },
-                                "url": { 
-                                  "type": "string", 
-                                  "description": "The URL Link of the hosted payment page link generated", 
-                                  "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/WEYa6J-J" 
-                                },
-                                "amount": { 
-                                  "type": "string", 
-                                  "description": "The Amount of transaction", 
-                                  "example": "" 
-                                },
-                                "currency": { 
-                                  "type": "string", 
-                                  "description": "The processing currency of the transaction", 
-                                  "example": "JPY" 
-                                },
-                                "merchant_txn_ref": { 
-                                  "type": "string", 
-                                  "description": "The merchant transaction reference ID", 
-                                  "example": "2003089893366DTEST" 
-                                },
-                                "merchant_id": { 
-                                  "type": "string", 
-                                  "description": "The DAS merchant ID of the transaction performed", 
-                                  "example": "JP00000275" 
-                                },
-                                "merchant_email": { 
-                                  "type": "string", 
-                                  "description": "The email address of the Merchant", 
-                                  "example": "merchant@testemail.com" 
-                                },
-                                "return_url": {
-                                  "type": "object",
-                                  "description": "A JSON object containing the Return URL",
-                                  "properties": {
-                                    "webhook_url": { 
-                                      "type": "string", 
-                                      "description": "The webhook URL link", 
-                                      "example": "https://webhook.site/" 
-                                    },
-                                    "success_url": { 
-                                      "type": "string", 
-                                      "description": "The redirect URL link after payment gets successful.", 
-                                      "example": "http://www.successurl.com/" 
-                                    },
-                                    "decline_url": { 
-                                      "type": "string", 
-                                      "description": "The redirect URL link after payment gets failed.", 
-                                      "example": "http://www.declineurl.com/" 
-                                    },
-                                    "cancel_url": { 
-                                      "type": "string", 
-                                      "description": "The URL link of the cancellation page", 
-                                      "example": "http://cancelurl.com/" 
-                                    }
-                                  }
-                                },
-                                "billing_address": {
-                                  "type": "object",
-                                  "description": "A JSON object containing the billing address of the cardholder",
-                                  "properties": {
-                                    "city": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing city", 
-                                      "example": "Shinjuku-ku" 
-                                    },
-                                    "email": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing email address", 
-                                      "example": "billing@testemail.com" 
-                                    },
-                                    "phone": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing phone number", 
-                                      "example": "8112345678" 
-                                    },
-                                    "state": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing state", 
-                                      "example": "Tokyo" 
-                                    },
-                                    "country": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing country code", 
-                                      "example": "JP" 
-                                    },
-                                    "address1": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing address line", 
-                                      "example": "1-2-3 Shinjuku" 
-                                    },
-                                    "postal_code": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s billing postal code", 
-                                      "example": "1600022" 
-                                    }
-                                  }
-                                },
-                                "shipping_address": {
-                                  "type": "object",
-                                  "description": "A JSON object containing the shipping address of the cardholder",
-                                  "properties": {
-                                    "city": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping city", 
-                                      "example": "Shinjuku-ku" 
-                                    },
-                                    "email": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping email address", 
-                                      "example": "shipping@testemail.com" 
-                                    },
-                                    "phone": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping phone number", 
-                                      "example": "8112345678" 
-                                    },
-                                    "state": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping state", 
-                                      "example": "Tokyo" 
-                                    },
-                                    "country": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping country code", 
-                                      "example": "JP" 
-                                    },
-                                    "address1": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping address line", 
-                                      "example": "1-2-3 Shinjuku" 
-                                    },
-                                    "postal_code": { 
-                                      "type": "string", 
-                                      "description": "The cardholder’s shipping postal code", 
-                                      "example": "1600022" 
-                                    }
-                                  }
-                                }
+        "responses": {
+                "200": {
+                  "description": "HPP link generated successfully",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "properties": {
+                          "id": { 
+                            "description": "The transaction reference ID", 
+                            "example": "6ddde0d0-9f60-4e54-bf3a-a3e099eee800" 
+                          },
+                          "url": { 
+                            "description": "The URL Link of the hosted payment page link generated", 
+                            "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/WEYa6J-J" 
+                          },
+                          "amount": { 
+                            "description": "The Amount of transaction", 
+                            "example": "" 
+                          },
+                          "currency": { 
+                            "description": "The processing currency of the transaction", 
+                            "example": "JPY" 
+                          },
+                          "merchant_txn_ref": { 
+                            "description": "The merchant transaction reference ID", 
+                            "example": "2003089893366DTEST" 
+                          },
+                          "merchant_id": { 
+                            "description": "The DAS merchant ID of the transaction performed", 
+                            "example": "JP00000275" 
+                          },
+                          "merchant_email": { 
+                            "description": "The email address of the Merchant", 
+                            "example": "merchant@testemail.com" 
+                          },
+                          "return_url": {
+                            "description": "A JSON object containing the Return URL",
+                            "properties": {
+                              "webhook_url": { 
+                                "description": "The webhook URL link", 
+                                "example": "https://webhook.site/" 
+                              },
+                              "success_url": { 
+                                "description": "The redirect URL link after payment gets successful.", 
+                                "example": "http://www.successurl.com/" 
+                              },
+                              "decline_url": { 
+                                "description": "The redirect URL link after payment gets failed.", 
+                                "example": "http://www.declineurl.com/" 
+                              },
+                              "cancel_url": { 
+                                "description": "The URL link of the cancellation page", 
+                                "example": "http://cancelurl.com/" 
+                              }
+                            }
+                          },
+                          "billing_address": {
+                            "description": "A JSON object containing the billing address of the cardholder",
+                            "properties": {
+                              "city": { 
+                                "description": "The cardholder’s billing city", 
+                                "example": "Shinjuku-ku" 
+                              },
+                              "email": { 
+                                "description": "The cardholder’s billing email address", 
+                                "example": "billing@testemail.com" 
+                              },
+                              "phone": { 
+                                "description": "The cardholder’s billing phone number", 
+                                "example": "8112345678" 
+                              },
+                              "state": { 
+                                "description": "The cardholder’s billing state", 
+                                "example": "Tokyo" 
+                              },
+                              "country": { 
+                                "description": "The cardholder’s billing country code", 
+                                "example": "JP" 
+                              },
+                              "address1": { 
+                                "description": "The cardholder’s billing address line", 
+                                "example": "1-2-3 Shinjuku" 
+                              },
+                              "postal_code": { 
+                                "description": "The cardholder’s billing postal code", 
+                                "example": "1600022" 
+                              }
+                            }
+                          },
+                          "shipping_address": {
+                            "description": "A JSON object containing the shipping address of the cardholder",
+                            "properties": {
+                              "city": { 
+                                "description": "The cardholder’s shipping city", 
+                                "example": "Shinjuku-ku" 
+                              },
+                              "email": { 
+                                "description": "The cardholder’s shipping email address", 
+                                "example": "shipping@testemail.com" 
+                              },
+                              "phone": { 
+                                "description": "The cardholder’s shipping phone number", 
+                                "example": "8112345678" 
+                              },
+                              "state": { 
+                                "description": "The cardholder’s shipping state", 
+                                "example": "Tokyo" 
+                              },
+                              "country": { 
+                                "description": "The cardholder’s shipping country code", 
+                                "example": "JP" 
+                              },
+                              "address1": { 
+                                "description": "The cardholder’s shipping address line", 
+                                "example": "1-2-3 Shinjuku" 
+                              },
+                              "postal_code": { 
+                                "description": "The cardholder’s shipping postal code", 
+                                "example": "1600022" 
                               }
                             }
                           }
                         }
-                      },
-                      "400": {
-                        "description": "Invalid request"
                       }
                     }
+                  }
+                },
+                "400": {
+                  "description": "Invalid request"
+                }
+              }
 
       }
     },
