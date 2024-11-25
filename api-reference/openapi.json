@@ -219,8 +219,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": { "type": "string", "example": "6469eb3a-812a-4262-9f7c-2328a71b16c5", "description": "The transaction reference ID
-" },
+                    "id": { "type": "string", "example": "6469eb3a-812a-4262-9f7c-2328a71b16c5", "description": "The transaction reference ID" },
                     "url": { "type": "string", "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/aPT5J_0d" },
                     "amount": { "type": "string", "example": "1000" },
                     "currency": { "type": "string", "example": "JPY" },
