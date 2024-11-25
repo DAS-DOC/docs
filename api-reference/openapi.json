@@ -40,7 +40,7 @@
                       "cancel_url": { "type": "string", "maxLength": 255, "example": "http://cancelurl.com/" }
                     }
                   },
-                  "amount": { "type": "number", "description": "The amount of the transaction.", "maxLength": "as per Bank", "example": 1000 },
+                  "amount": { "type": "number", "description": "The amount of the transaction.", "maxLength": 5, "example": 1000 },
                   "currency": { "type": "string", "description": "The processing currency (e.g., JPY).", "maxLength": 3, "example": "JPY" },
                   "merchant_id": { "type": "string", "description": "The merchant ID (DASMID).", "maxLength": 128, "example": "JP00000275" },
                   "merchant_email": { "type": "string", "description": "The email address of the Merchant.", "maxLength": 45, "example": "merchant@testemail.com" },
