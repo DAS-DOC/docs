@@ -133,9 +133,6 @@
                 }
               }
             }
-          },
-          "400": {
-            "description": "Invalid request"
           }
         }
       }
