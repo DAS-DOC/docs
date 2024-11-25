@@ -63,8 +63,9 @@
                     "amount": { 
                       "type": "number", 
                       "nullable": true, 
+                      "maxLength": "as per Bank", 
                       "description": "The amount of the transaction. If passed \"\", cardholder enters amount manually in HPP.",
-                      "example": null 
+                      "example": 1000 
                     },
                     "currency": { 
                       "type": "string", 
