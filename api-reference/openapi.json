@@ -79,7 +79,7 @@
                     "properties": {
                       "country": { "type": "string", "description": "The cardholder’s billing country code.", "maxLength": 2, "example": "JP" },
                       "email": { "type": "string", "description": "The cardholder’s billing email address.", "maxLength": 45, "example": "billing@testemail.com" },
-                      "phone": { "type": "string", "description": "The cardholder’s billing phone number.", "maxLength": 15, "example": "8112345678" },
+                      "phone_number": { "type": "string", "description": "The cardholder’s billing phone number.", "maxLength": 15, "example": "8112345678" },
                       "address1": { "type": "string", "description": "The cardholder’s billing address line.", "maxLength": 199, "example": "1-2-3 Shinjuku" },
                       "city": { "type": "string", "description": "The cardholder’s billing city.", "maxLength": 65, "example": "Shinjuku-ku" },
                       "state": { "type": "string", "description": "The cardholder’s billing state.", "maxLength": 65, "example": "Tokyo" },
@@ -92,7 +92,7 @@
                     "properties": {
                       "country": { "type": "string", "description": "The cardholder’s shipping country code.", "maxLength": 2, "example": "JP" },
                       "email": { "type": "string", "description": "The cardholder’s shipping email address.", "maxLength": 45, "example": "shipping@testemail.com" },
-                      "phone": { "type": "string", "description": "The cardholder’s shipping phone number.", "maxLength": 20, "example": "8112345678" },
+                      "phone_number": { "type": "string", "description": "The cardholder’s shipping phone number.", "maxLength": 20, "example": "8112345678" },
                       "address1": { "type": "string", "description": "The cardholder’s shipping address line.", "maxLength": 199, "example": "1-2-3 Shinjuku" },
                       "city": { "type": "string", "description": "The cardholder’s shipping city.", "maxLength": 65, "example": "Shinjuku-ku" },
                       "state": { "type": "string", "description": "The cardholder’s shipping state.", "maxLength": 65, "example": "Tokyo" },
@@ -136,7 +136,7 @@
                       "properties": {
                         "city": { "type": "string", "description": "The cardholder’s billing city.", "example": "Shinjuku-ku" },
                         "email": { "type": "string", "description": "The cardholder’s billing email address.", "example": "billing@testemail.com" },
-                        "phone": { "type": "string", "description": "The cardholder’s billing phone number.", "example": "8112345678" },
+                        "phone_number": { "type": "string", "description": "The cardholder’s billing phone number.", "example": "8112345678" },
                         "state": { "type": "string", "description": "The cardholder’s billing state.", "example": "Tokyo" },
                         "country": { "type": "string", "description": "The cardholder’s billing country code.", "example": "JP" },
                         "address1": { "type": "string", "description": "The cardholder’s billing address line.", "example": "1-2-3 Shinjuku" },
@@ -149,7 +149,7 @@
                       "properties": {
                         "city": { "type": "string", "description": "The cardholder’s shipping city.", "example": "Shinjuku-ku" },
                         "email": { "type": "string", "description": "The cardholder’s shipping email address.", "example": "shipping@testemail.com" },
-                        "phone": { "type": "string", "description": "The cardholder’s shipping phone number.", "example": "8112345678" },
+                        "phone_number": { "type": "string", "description": "The cardholder’s shipping phone number.", "example": "8112345678" },
                         "state": { "type": "string", "description": "The cardholder’s shipping state.", "example": "Tokyo" },
                         "country": { "type": "string", "description": "The cardholder’s shipping country code.", "example": "JP" },
                         "address1": { "type": "string", "description": "The cardholder’s shipping address line.", "example": "1-2-3 Shinjuku" },
