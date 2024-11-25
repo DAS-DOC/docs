@@ -87,46 +87,120 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
                   "properties": {
-                    "id": { "type": "string", "example": "f49173ce-4916-445c-a831-3c1468acf14e" },
-                    "url": { "type": "string", "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/aPT5J_0d" },
-                    "amount": { "type": "string", "example": "1000" },
-                    "currency": { "type": "string", "example": "JPY" },
-                    "merchant_txn_ref": { "type": "string", "example": "2003089893366DTEST" },
-                    "merchant_id": { "type": "string", "example": "JP00000275" },
-                    "merchant_email": { "type": "string", "example": "info@tinkfactory.com" },
+                    "id": {
+                      "description": "The transaction reference ID",
+                      "example": "6ddde0d0-9f60-4e54-bf3a-a3e099eee800"
+                    },
+                    "url": {
+                      "description": "The URL Link of the hosted payment page link generated",
+                      "example": "https://checkout-dev.paymentoptions.com/jp/HostedPaymentPage/WEYa6J-J"
+                    },
+                    "amount": {
+                      "description": "The Amount of transaction",
+                      "example": ""
+                    },
+                    "currency": {
+                      "description": "The processing currency of the transaction",
+                      "example": "JPY"
+                    },
+                    "merchant_txn_ref": {
+                      "description": "The merchant transaction reference ID",
+                      "example": "2003089893366DTEST"
+                    },
+                    "merchant_id": {
+                      "description": "The DAS merchant ID of the transaction performed",
+                      "example": "JP00000275"
+                    },
+                    "merchant_email": {
+                      "description": "The email address of the Merchant",
+                      "example": "merchant@testemail.com"
+                    },
                     "return_url": {
-                      "type": "object",
+                      "description": "A JSON object containing the Return URL",
                       "properties": {
-                        "webhook_url": { "type": "string", "example": "https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b" },
-                        "success_url": { "type": "string", "example": "https://www.bing.com/" },
-                        "decline_url": { "type": "string", "example": "https://www.google.com/" },
-                        "cancel_url": { "type": "string", "example": "https://tinkfactory.com/" }
+                        "webhook_url": {
+                          "description": "The webhook URL link",
+                          "example": "https://webhook.site/"
+                        },
+                        "success_url": {
+                          "description": "The redirect URL link after payment gets successful.",
+                          "example": "http://www.successurl.com/"
+                        },
+                        "decline_url": {
+                          "description": "The redirect URL link after payment gets failed.",
+                          "example": "http://www.declineurl.com/"
+                        },
+                        "cancel_url": {
+                          "description": "The URL link of the cancellation page",
+                          "example": "http://cancelurl.com/"
+                        }
                       }
                     },
                     "billing_address": {
-                      "type": "object",
+                      "description": "A JSON object containing the billing address of the cardholder",
                       "properties": {
-                        "city": { "type": "string", "example": "Ebene" },
-                        "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                        "state": { "type": "string", "example": "Rose-Hill" },
-                        "country": { "type": "string", "example": "" },
-                        "address1": { "type": "string", "example": "Ebene Junction" },
-                        "postal_code": { "type": "string", "example": "1234567" },
-                        "phone_number": { "type": "string", "example": "52553305" }
+                        "city": {
+                          "description": "The cardholder’s billing city",
+                          "example": "Shinjuku-ku"
+                        },
+                        "email": {
+                          "description": "The cardholder’s billing email address",
+                          "example": "billing@testemail.com"
+                        },
+                        "phone": {
+                          "description": "The cardholder’s billing phone number",
+                          "example": "8112345678"
+                        },
+                        "state": {
+                          "description": "The cardholder’s billing state",
+                          "example": "Tokyo"
+                        },
+                        "country": {
+                          "description": "The cardholder’s billing country code",
+                          "example": "JP"
+                        },
+                        "address1": {
+                          "description": "The cardholder’s billing address line",
+                          "example": "1-2-3 Shinjuku"
+                        },
+                        "postal_code": {
+                          "description": "The cardholder’s billing postal code",
+                          "example": "1600022"
+                        }
                       }
                     },
                     "shipping_address": {
-                      "type": "object",
+                      "description": "A JSON object containing the shipping address of the cardholder",
                       "properties": {
-                        "city": { "type": "string", "example": "Ebene" },
-                        "email": { "type": "string", "example": "kavi@ghunowa.com" },
-                        "state": { "type": "string", "example": "Rose-Hill" },
-                        "country": { "type": "string", "example": "" },
-                        "address1": { "type": "string", "example": "Ebene Junction" },
-                        "postal_code": { "type": "string", "example": "1234567" },
-                        "phone_number": { "type": "string", "example": "52553305" }
+                        "city": {
+                          "description": "The cardholder’s shipping city",
+                          "example": "Shinjuku-ku"
+                        },
+                        "email": {
+                          "description": "The cardholder’s shipping email address",
+                          "example": "shipping@testemail.com"
+                        },
+                        "phone": {
+                          "description": "The cardholder’s shipping phone number",
+                          "example": "8112345678"
+                        },
+                        "state": {
+                          "description": "The cardholder’s shipping state",
+                          "example": "Tokyo"
+                        },
+                        "country": {
+                          "description": "The cardholder’s shipping country code",
+                          "example": "JP"
+                        },
+                        "address1": {
+                          "description": "The cardholder’s shipping address line",
+                          "example": "1-2-3 Shinjuku"
+                        },
+                        "postal_code": {
+                          "description": "The cardholder’s shipping postal code",
+                          "example": "1600022"
+                        }
                       }
                     }
                   }
