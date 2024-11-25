@@ -129,6 +129,32 @@
                         "decline_url": { "type": "string", "description": "The URL to redirect the user to after a failed payment.", "example": "http://www.declineurl.com/" },
                         "cancel_url": { "type": "string", "description": "The URL to redirect the user to if the payment is canceled.", "example": "http://cancelurl.com/" }
                       }
+                    },
+                    "billing_address": {
+                      "type": "object",
+                      "description": "A JSON object containing the billing address of the cardholder.",
+                      "properties": {
+                        "city": { "type": "string", "description": "The cardholder’s billing city.", "example": "Shinjuku-ku" },
+                        "email": { "type": "string", "description": "The cardholder’s billing email address.", "example": "billing@testemail.com" },
+                        "phone": { "type": "string", "description": "The cardholder’s billing phone number.", "example": "8112345678" },
+                        "state": { "type": "string", "description": "The cardholder’s billing state.", "example": "Tokyo" },
+                        "country": { "type": "string", "description": "The cardholder’s billing country code.", "example": "JP" },
+                        "address1": { "type": "string", "description": "The cardholder’s billing address line.", "example": "1-2-3 Shinjuku" },
+                        "postal_code": { "type": "string", "description": "The cardholder’s billing postal code.", "example": "1600022" }
+                      }
+                    },
+                    "shipping_address": {
+                      "type": "object",
+                      "description": "A JSON object containing the shipping address of the cardholder.",
+                      "properties": {
+                        "city": { "type": "string", "description": "The cardholder’s shipping city.", "example": "Shinjuku-ku" },
+                        "email": { "type": "string", "description": "The cardholder’s shipping email address.", "example": "shipping@testemail.com" },
+                        "phone": { "type": "string", "description": "The cardholder’s shipping phone number.", "example": "8112345678" },
+                        "state": { "type": "string", "description": "The cardholder’s shipping state.", "example": "Tokyo" },
+                        "country": { "type": "string", "description": "The cardholder’s shipping country code.", "example": "JP" },
+                        "address1": { "type": "string", "description": "The cardholder’s shipping address line.", "example": "1-2-3 Shinjuku" },
+                        "postal_code": { "type": "string", "description": "The cardholder’s shipping postal code.", "example": "1600022" }
+                      }
                     }
                   }
                 }
