@@ -1891,7 +1891,6 @@
                   "shipping_address": {
                     "type": "object",
                     "description": "Details of the cardholder's shipping address.",
-                    "required": ["country", "email", "phone_number", "address1", "city"],
                     "properties": {
                       "country": {
                         "type": "string",
