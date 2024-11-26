@@ -1700,7 +1700,6 @@
       }
   },
 
-"paths": {
     "/api/v1/server-to-server-interface/subscription/payment": {
       "post": {
         "summary": "Process Subscription Payment",
@@ -2410,7 +2409,6 @@
             }
           }
         }
-      }
     },
   
   "components": {
