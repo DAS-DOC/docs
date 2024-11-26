@@ -1719,9 +1719,7 @@
                   "merchant_txn_ref",
                   "customer_ip",
                   "merchant_id",
-                  "return_url",
                   "billing_address",
-                  "shipping_address",
                   "time_zone",
                   "subscription"
                 ],
@@ -1814,7 +1812,6 @@
                   "return_url": {
                     "type": "object",
                     "description": "URLs for handling different transaction outcomes.",
-                    "required": ["webhook_url", "success_url", "decline_url", "cancel_url"],
                     "properties": {
                       "webhook_url": {
                         "type": "string",
@@ -1845,7 +1842,7 @@
                   "billing_address": {
                     "type": "object",
                     "description": "Details of the cardholder's billing address.",
-                    "required": ["country", "email", "phone_number", "address1", "city", "postal_code"],
+                    "required": ["country", "email", "phone_number", "address1", "city"],
                     "properties": {
                       "country": {
                         "type": "string",
@@ -1894,7 +1891,7 @@
                   "shipping_address": {
                     "type": "object",
                     "description": "Details of the cardholder's shipping address.",
-                    "required": ["country", "email", "phone_number", "address1", "city", "postal_code"],
+                    "required": ["country", "email", "phone_number", "address1", "city"],
                     "properties": {
                       "country": {
                         "type": "string",
