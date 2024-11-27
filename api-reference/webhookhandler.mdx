@@ -7,7 +7,7 @@ description: 'Webhooks enable real-time notifications from the Payment Options G
 
 Webhooks provide a mechanism for **event-driven** notifications, allowing you to integrate with Payment Options Gateway and receive updates as they happen. Instead of polling the API for transaction status or other updates, your server receives data automatically when certain events occur.
 
----
+***
 
 ## **Configuring the Webhook URL**
 
@@ -19,27 +19,30 @@ In the request payload, define the URLs as follows:
 
 ```json
 "return_url": {
-    "webhook_url": "https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b",
-    "success_url": "http://www.bing.com/",
-    "decline_url": "http://www.google.com/",
-    "cancel_url": "http://tinkfactory.com/"
-}
+        "webhook_url": "https://webhook.site/543eeda4-b2cf-48c9-be09-4060018d1cfc",
+        "success_url": "http://www.successurl.com/",
+        "decline_url": "http://www.declineurl.com/",
+        "cancel_url": "http://cancelurl.com/"
+    }
 ```
+
 ## **Webhook URL Parameters**
 
 Define the following URLs within the `return_url` parameter in your API payload:
 
-- **webhook_url**: The URL where webhook events will be sent.
-- **success_url**: The URL customers are redirected to after a successful transaction.
-- **decline_url**: The URL customers are redirected to if their transaction is declined.
-- **cancel_url**: The URL customers are redirected to if they cancel the transaction.
+* **webhook\_url**: The URL where webhook events will be sent.
+
+* **success\_url**: The URL customers are redirected to after a successful transaction.
+
+* **decline\_url**: The URL customers are redirected to if their transaction is declined.
+
+* **cancel\_url**: The URL customers are redirected to if they cancel the transaction.
 
 ## **Setting Up Your Webhook Handler**
 
 To start receiving webhooks from PO Gateway, follow these steps:
 
 <Steps>
-
   <Step title="Step 1: Define Your Webhook URL">
     Specify the URL on your server where you want to receive webhook events. This URL should be publicly accessible over HTTPS for security.
   </Step>
@@ -55,7 +58,6 @@ To start receiving webhooks from PO Gateway, follow these steps:
   <Step title="Step 4: Handle the Webhook Payload">
     Write a function in your server-side application to process the incoming webhook payload. This function should parse the JSON payload, validate the signature (if provided), and respond with a 200 OK status to acknowledge receipt.
   </Step>
-
 </Steps>
 
-<Card title="Test Your Webhook" emoji="hammer"> Use the sandbox environment or test mode to simulate webhook events and ensure your webhook handler works as expected before going live. </Card> 
+<Card title="Test Your Webhook" emoji="hammer"> Use the sandbox environment or test mode to simulate webhook events and ensure your webhook handler works as expected before going live. </Card>
