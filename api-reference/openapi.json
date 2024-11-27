@@ -2018,7 +2018,7 @@
                             "number": {
                               "type": "string",
                               "description": "The card number (masked).",
-                              "example": "520000******1005"
+                              "example": "5200000000001005"
                             },
                             "exp_month": {
                               "type": "string",
@@ -2228,7 +2228,7 @@
                             "number": {
                               "type": "string",
                               "description": "The card number (masked).",
-                              "example": "520000******1005"
+                              "example": "5200000000001005"
                             },
                             "exp_month": {
                               "type": "string",
@@ -2957,7 +2957,7 @@
                             "number": {
                               "type": "string",
                               "description": "Masked card number.",
-                              "example": "400000******1091"
+                              "example": "4000000000001091"
                             },
                             "exp_month": {
                               "type": "string",
