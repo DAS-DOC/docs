@@ -1,0 +1,844 @@
+{
+	"info": {
+		"_postman_id": "5c93c931-7de6-485d-bcc7-3bfc97e8d451",
+		"name": "PO API References",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20624963"
+	},
+	"item": [
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "Purchase",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"1000\",\n    \"currency\": \"JPY\",\n    \"card\": {\n        \"cvc\": \"100\",\n        \"expiry_month\": \"12\",\n        \"expiry_year\": \"24\",\n        \"name\": \"John Doe\",\n        \"number\": \"5200000000001005\"\n    },\n    \"payment_method\": {\n        \"type\": \"scheme\",\n        \"store_payment_method\": false\n    },\n    \"merchant_txn_ref\": \"qwe\",\n    \"customer_ip\": \"10.10.0.0\",\n    \"merchant_id\": \"JP00000275\",\n    \"return_url\": {\n        \"webhook_url\": \"https://webhook.site/\",\n        \"success_url\": \"http://www.successurl.com/\",\n        \"decline_url\": \"http://www.declineurl.com/\",\n        \"cancel_url\": \"http://cancelurl.com/\"\n    },\n    \"billing_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"shipping_address\": {\n        \"country\": \"JP\",\n        \"email\": \"shipping@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"time_zone\": \"Asia/Kuala_Lumpur\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/payment",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authorisation",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-secret-key",
+								"value": "We@ve",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"1000\",\n    \"currency\": \"JPY\",\n    \"card\": {\n        \"cvc\": \"100\",\n        \"expiry_month\": \"12\",\n        \"expiry_year\": \"24\",\n        \"name\": \"John Doe\",\n        \"number\": \"5200000000001005\"\n    },\n    \"payment_method\": {\n        \"type\": \"scheme\",\n        \"store_payment_method\": false\n    },\n    \"merchant_txn_ref\": \"qwe\",\n    \"customer_ip\": \"10.10.0.0\",\n    \"merchant_id\": \"JP00000275\",\n    \"return_url\": {\n        \"webhook_url\": \"https://webhook.site/\",\n        \"success_url\": \"http://www.successurl.com/\",\n        \"decline_url\": \"http://www.declineurl.com/\",\n        \"cancel_url\": \"http://cancelurl.com/\"\n    },\n    \"billing_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"shipping_address\": {\n        \"country\": \"JP\",\n        \"email\": \"shipping@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"time_zone\": \"Asia/Kuala_Lumpur\"\n}"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/authorization",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"authorization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VoidAuth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionId\": \"ab8444e7-fec0-40dd-994d-0ad813785f74\",\n    \"merchant_id\": \"JP00000275\"\n}\n"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/void",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"void"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Capture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionId\": \"e0b0731e-7170-4b64-8a21-7d835eebd641\",\n    \"amount\": 1000,\n    \"merchant_id\": \"JP00000275\",\n    \"notes\": \"Capturing authorised amount\"\n}\n"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/capture",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"capture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refund",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionId\": \"9dfd39ec-eb4a-4f8b-a526-17abf140a717\",\n    \"amount\": 1000,\n    \"merchant_id\": \"JP00000275\",\n    \"notes\": \"Test Kavi\"\n}\n"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/refund",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"refund"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction Status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-secret-key",
+								"value": "We@ve"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=50ad6c5c-63a1-41b4-a501-06bb1d0f07d8"
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1api/v1/server-to-server-interface/transaction/status/fc565b43-26f5-4906-92ae-d849edc3c3a1",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1api",
+								"v1",
+								"server-to-server-interface",
+								"transaction",
+								"status",
+								"fc565b43-26f5-4906-92ae-d849edc3c3a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hosted Payment Page",
+			"item": [
+				{
+					"name": "Generating Hosted Payment Page",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic OUtPOTV6Znh0ZEdDb09DZC1jZ1hhMy1VWXNnQmEtdkI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"return_url\": { \n      \"webhook_url\": \"https://webhook.site/\",\n      \"success_url\": \"http://www.successurl.com/\",\n      \"decline_url\": \"http://www.declineurl.com/\",\n      \"cancel_url\" : \"http://cancelurl.com/\"\n   },\n  \"amount\": 1000,\n  \"currency\" : \"JPY\",\n  \"merchant_id\": \"JP00000275\",\n  \"merchant_email\": \"merchant@testemail.com\",\n  \"merchant_txn_ref\": \"2003089893366DTEST\",\n  \"payment_method\":\n  {\n    \"type\":\"scheme\",\n    \"store_payment_method\":true\n  },\n  \"billing_address\": \n  {\n    \"country\": \"JP\",\n    \"email\": \"billing@testemail.com\",\n    \"phone_number\": \"8112345678\",\n    \"address1\": \"1-2-3 Shinjuku\",\n    \"city\": \"Shinjuku-ku\",\n    \"state\":\"Tokyo\",\n    \"postal_code\":\"1600022\"\n  },\n\"shipping_address\": \n  {\n    \"country\": \"JP\",\n    \"email\": \"shipping@testemail.com\",\n    \"phone_number\": \"8112345678\",\n    \"address1\": \"1-2-3 Shinjuku\",\n    \"city\": \"Shinjuku-ku\",\n    \"state\":\"Tokyo\",\n    \"postal_code\":\"1600022\"\n  }\n}\n"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/hpp/generate/link",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"hpp",
+								"generate",
+								"link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apple Pay & Google Pay",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cTQzWFQwaVR5Z1BNcnBpQlM1c1NoTV9QYVBCOWRMeHU6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"return_url\": { \n      \"webhook_url\": \"https://webhook.site/3a0a9c01-cf27-40c7-ade4-28abdcba087b\",\n      \"success_url\": \"http://www.bing.com/\",\n      \"decline_url\": \"http://www.google.com/\",\n      \"cancel_url\" : \"http://tinkfactory.com/\"\n   },\n  \"amount\": \"1200\",\n  \"currency\" : \"JPY\",\n  \"merchant_id\": \"HK00001694\",\n  \"merchant_email\": \"info@tinkfactory.com\",\n  \"merchant_txn_ref\": \"2003089893366DTEST\",\n  \"payment_method\":\n  {\n    \"type\":\"scheme\",\n    \"store_payment_method\":true\n  },\n  \"billing_address\": \n  {\n    \"country\": \"JP\",\n    \"email\": \"kavi@ghunowa.com\",\n    \"phone\": \"52553305\",\n    \"address1\": \"Ebene Junction\",\n    \"city\": \"Ebene\",\n    \"state\":\"Rose-Hill\",\n    \"postal_code\":\"1234567\"\n  },\n\"shipping_address\": \n  {\n    \"country\": \"JP\",\n    \"email\": \"kavi@ghunowa.com\",\n    \"phone\": \"52553305\",\n    \"address1\": \"Ebene Junction\",\n    \"city\": \"Ebene\",\n    \"state\":\"Rose-Hill\",\n    \"postal_code\":\"1234567\"\n  }\n}\n\n"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/hpp/generate/link",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"hpp",
+								"generate",
+								"link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "E-Wallet (GCash)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic MVVQT2hIaTBpSzVRVlpYZ2g5eWNGTzNmMFp1Ulo2N1A6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"10\",\n    \"currency\": \"PHP\",\n    \"payment_method\": {\n        \"type\": \"gcash\"\n    },\n    \"merchant_txn_ref\": \"qwe\",\n    \"customer_ip\": \"127.0.0.1\",\n    \"merchant_id\": \"HK00001685\",\n    \"return_url\": {\n        \"webhook_url\": \"https://webhook.site/41d4da71-5d5a-4a93-8da2-146b8665cebc\",\n        \"success_url\": \"https://www.google.com/\",\n        \"decline_url\": \"https://www.amazon.com/\"\n    },\n    \"billing_address\": {\n        \"country\": \"JP\",\n        \"email\": \"test.tes@email.com\",\n        \"address1\": \"47A123\",\n        \"phone_number\": \"9999999999\",\n        \"city\": \"ACambridge\",\n        \"state\": \"Cambridgeshire\",\n        \"postal_code\": \"CB94BQ\"\n    },\n    \"shipping_address\": {\n        \"country\": \"IN\",\n        \"email\": \"shiptest@test.com\",\n        \"address1\": \"-------\",\n        \"phone_number\": \"111111\",\n        \"city\": \"ACambridge\",\n        \"state\": \"Cambridgeshire\",\n        \"postal_code\": \"3534534\"\n    },\n    \"time_zone\": \"Asia/Kuala_Lumpur\"\n}"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/payment",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tokenisation",
+			"item": [
+				{
+					"name": "Generate Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic N2JhVDhhdUNZbnhLTlh1eFRJcnhHeXpnOThjWVg1ZDI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"1000\",\n    \"currency\": \"JPY\",\n    \"card\": {\n        \"cvc\": \"100\",\n        \"expiry_month\": \"12\",\n        \"expiry_year\": \"24\",\n        \"name\": \"John Doe\",\n        \"number\": \"4000000000001091\"\n    },\n    \"payment_method\": {\n        \"type\": \"scheme\",\n        \"store_payment_method\": true\n    },\n    \"merchant_txn_ref\": \"qwe\",\n    \"customer_ip\": \"10.10.0.0\",\n    \"merchant_id\": \"JP00000282\",\n    \"return_url\": {\n        \"webhook_url\": \"https://webhook.site/\",\n        \"success_url\": \"http://www.successurl.com/\",\n        \"decline_url\": \"http://www.declineurl.com/\",\n        \"cancel_url\": \"http://cancelurl.com/\"\n    },\n    \"billing_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"shipping_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"time_zone\": \"Asia/Kuala_Lumpur\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/payment",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Use Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic N2JhVDhhdUNZbnhLTlh1eFRJcnhHeXpnOThjWVg1ZDI6",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\":\"2400\",\n  \"currency\":\"JPY\",\n   \"payment_method\":{\n        \"type\":\"scheme\",\n        \"store_payment_method\":true,\n        \"stored_payment_method_id\": \"0db1fac1-e064-4644-a387-08d143960c8f\"\n    },  \n  \"merchant_txn_ref\" :\"qwe\",\n  \"customer_ip\" : \"10.10.0.0\",\n  \"merchant_id\" : \"JP00000282\",\n  \"return_url\":{\n\n    \"webhook_url\": \"https://sme.dasgateway.com/v1/mc\",\n    \"success_url\": \"https://www.google.com/\",\n    \"decline_url\": \"https://www.bing.com/\"\n  },\n  \"billing_address\":{\n\n    \"country\": \"JP\",\n    \"email\": \"info@tinkfactory.com\",\n    \"address1\": \"47A123\",\n    \"phone_number\": \"9999999999\",\n    \"city\": \"ACambridge\",\n    \"state\": \"Cambridgeshire\",\n    \"postal_code\": \"CB94BQ\"\n  \n  },\n  \"shipping_address\":{\n\n    \"country\": \"IN\",\n    \"email\": \"info@tinkfactory.com\",\n    \"address1\": \"adfadfdsf\",\n    \"phone_number\": \"111111\",\n    \"city\": \"ACambridge\",\n    \"state\": \"Cambridgeshire\",\n    \"postal_code\": \"3534534\"\n  },\n  \"time_zone\": \"Asia/Kuala_Lumpur\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/payment",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscriptions",
+			"item": [
+				{
+					"name": "Create Subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-secret-key",
+								"value": "We@ve",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=28df26a4-2aba-4325-aa11-92eac298f51a; reqid=ad7df2f2-d38a-44dc-a9b4-97d14e395d38",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"1000\",\n    \"currency\": \"JPY\",\n    \"card\": {\n        \"cvc\": \"112\",\n        \"expiry_month\": \"12\",\n        \"expiry_year\": \"24\",\n        \"name\": \"John Doe\",\n        \"number\": \"4000000000001091\"\n    },\n    \"payment_method\": {\n        \"type\": \"scheme\",\n        \"store_payment_method\": false\n    },\n    \"merchant_txn_ref\": \"qwe\",\n    \"customer_ip\": \"127.0.0.1\",\n    \"merchant_id\": \"JP00000472\",\n    \"return_url\": {\n        \"webhook_url\": \"https://webhook.site/\",\n        \"success_url\": \"http://www.successurl.com/\",\n        \"decline_url\": \"http://www.declineurl.com/\",\n        \"cancel_url\": \"http://cancelurl.com/\"\n    },\n    \"billing_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"shipping_address\": {\n        \"country\": \"JP\",\n        \"email\": \"billing@testemail.com\",\n        \"phone_number\": \"8112345678\",\n        \"address1\": \"1-2-3 Shinjuku\",\n        \"city\": \"Shinjuku-ku\",\n        \"state\": \"Tokyo\",\n        \"postal_code\": \"1600022\"\n    },\n    \"time_zone\": \"Asia/Kuala_Lumpur\",\n    \"subscription\": {\n        \"plan_name\": \"Three weeks plan\",\n        \"plan_desc\": \"Billed every two days\",\n        \"cycle_type\": \"DAYS\",\n        \"subscription_end_type\": \"CYCLE\",\n        \"cycle_interval\": 2,\n        \"max_cycle_count\": 10,\n        \"has_trial_period\": false,\n        \"trial_period_duration_type\": \"DAYS\",\n        \"trial_period_duration\": 14,\n        \"has_discount\": true,\n        \"discount_percentage\": 10,\n        \"discount_duration\": 2\n    }\n}"
+						},
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/payment",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscription List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/list",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscription Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "x-secret-key",
+								"value": "We@ve",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=1d8a7921-67f5-46b0-b3e6-1a3ed78e886e",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/664dc930-88bd-4696-8807-5e0f1fedba0b",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"664dc930-88bd-4696-8807-5e0f1fedba0b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pause Subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "x-secret-key",
+								"value": "We@ve"
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=bc15e501-2178-4b9f-b680-2ca49fe6fd1e"
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/664dc930-88bd-4696-8807-5e0f1fedba0b/pause",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"664dc930-88bd-4696-8807-5e0f1fedba0b",
+								"pause"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resume Subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "x-secret-key",
+								"value": "We@ve"
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=1d8a7921-67f5-46b0-b3e6-1a3ed78e886e"
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/664dc930-88bd-4696-8807-5e0f1fedba0b/resume",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"664dc930-88bd-4696-8807-5e0f1fedba0b",
+								"resume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic Nm5lQkFmaTl0eW9DMzBLMVlhOFJuWG1ENTBpVkt5YlM6"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bLm8c1C0fL3FtPzrjSr0"
+							},
+							{
+								"key": "x-secret-key",
+								"value": "We@ve"
+							},
+							{
+								"key": "Cookie",
+								"value": "reqid=9bf3d619-1392-4dcf-bb5e-8c39bb019db1"
+							}
+						],
+						"url": {
+							"raw": "https://api-dev.paymentoptions.com/api/v1/api/v1/server-to-server-interface/subscription/664dc930-88bd-4696-8807-5e0f1fedba0b/cancel",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"paymentoptions",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"api",
+								"v1",
+								"server-to-server-interface",
+								"subscription",
+								"664dc930-88bd-4696-8807-5e0f1fedba0b",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
