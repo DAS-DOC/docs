@@ -83,6 +83,7 @@
       "group": "Get Started",
       "pages": [
         "documentation/introduction",
+        "documentation/introduction",
         "documentation/createaccount",
         "documentation/checklist",
         "documentation/glossary"
