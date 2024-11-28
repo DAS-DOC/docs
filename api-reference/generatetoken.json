@@ -444,7 +444,7 @@
                             "number": {
                               "type": "string",
                               "description": "The card number (masked).",
-                              "example": "400000******1091"
+                              "example": "4000000000001091"
                             },
                             "exp_month": {
                               "type": "string",
