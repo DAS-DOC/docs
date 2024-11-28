@@ -41,42 +41,6 @@
                     "example": "JPY",
                     "maxLength": 3
                   },
-                  "card": {
-                    "type": "object",
-                    "description": "A JSON object containing the card details.",
-                    "properties": {
-                      "cvc": {
-                        "type": "string",
-                        "description": "The security code of the card (3 digits for most, 4 digits for AMEX).",
-                        "example": "100",
-                        "maxLength": 4
-                      },
-                      "expiry_month": {
-                        "type": "string",
-                        "description": "The expiry month of the card (e.g., 12 for December).",
-                        "example": "12",
-                        "maxLength": 2
-                      },
-                      "expiry_year": {
-                        "type": "string",
-                        "description": "The expiry year of the card (e.g., 24 for 2024).",
-                        "example": "24",
-                        "maxLength": 2
-                      },
-                      "name": {
-                        "type": "string",
-                        "description": "The cardholder’s name on the card.",
-                        "example": "John Doe",
-                        "maxLength": 255
-                      },
-                      "number": {
-                        "type": "string",
-                        "description": "The card number.",
-                        "example": "4000000000001091",
-                        "maxLength": 16
-                      }
-                    }
-                  },
                   "payment_method": {
                     "type": "object",
                     "description": "A JSON object containing the payment method.",
@@ -91,6 +55,11 @@
                         "type": "boolean",
                         "description": "True to store the payment method or False not to store (for tokenization).",
                         "example": true
+                      },
+                      "store_payment_method_id": {
+                        "type": "string",
+                        "description": "True to store the payment method or False not to store (for tokenization).",
+                        "example": "0db1fac1-e064-4644-a387-08d143960c8f"
                       }
                     }
                   },
@@ -484,7 +453,7 @@
                         "id": {
                           "type": "string",
                           "description": "The transaction ID.",
-                          "example": "fc565b43-26f5-4906-92ae-d849edc3c3a1"
+                          "example": "0db1fac1-e064-4644-a387-08d143960c8f"
                         },
                         "ref": {
                           "type": "integer",
