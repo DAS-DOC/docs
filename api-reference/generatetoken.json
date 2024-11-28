@@ -504,7 +504,7 @@
                         "stored_payment_method_id": {
                           "type": "string",
                           "description": "The stored payment method ID (if applicable).",
-                          "example": null
+                          "example": "094db781-fabc-4c6d-8fcd-18bee06a527a"
                         }
                       }
                     },
