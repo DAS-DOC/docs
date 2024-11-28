@@ -343,8 +343,6 @@
   "modeToggle": {
     "isHidden": true,
      "default": "light"
-  },
-
-  "static": ["public"]
+  }
   
 }
