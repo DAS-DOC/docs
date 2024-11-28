@@ -70,18 +70,12 @@
     }
   ],
 
-"anchors": [
-    {
-        "name": "Overview",
-        "url": "overview"
-    }
-  ],
   "navigation": [
   {
-  pages:[
-  "documentation/overview"
-  ],
-   "version": "English"
+    "pages": [
+      "documentation/overview"
+    ],
+    "version": "English"
   },
     {
       "group": "Get Started",
