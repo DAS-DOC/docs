@@ -72,7 +72,7 @@
                       "number": {
                         "type": "string",
                         "description": "The card number.",
-                        "example": "400000******1091",
+                        "example": "4000000000001091",
                         "maxLength": 16
                       }
                     }
@@ -321,12 +321,12 @@
                         "legal_name": {
                           "type": "string",
                           "description": "The merchant’s legal name.",
-                          "example": "Tink15 Factory"
+                          "example": "アイベック株式会社"
                         },
                         "mid": {
                           "type": "string",
                           "description": "The merchant ID (DASMID).",
-                          "example": "JP00000275"
+                          "example": "JP00000282"
                         },
                         "merchant_txn_ref": {
                           "type": "string",
@@ -444,7 +444,7 @@
                             "number": {
                               "type": "string",
                               "description": "The card number (masked).",
-                              "example": "5200000000001005"
+                              "example": "400000******1091"
                             },
                             "exp_month": {
                               "type": "string",
