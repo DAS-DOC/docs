@@ -4269,7 +4269,7 @@
                         "number": {
                           "type": "string",
                           "description": "The card number.",
-                          "example": "5200000000001005",
+                          "example": "4000000000001091",
                           "maxLength": 16
                         }
                       }
@@ -4306,7 +4306,7 @@
                     "merchant_id": {
                       "type": "string",
                       "description": "The merchant ID (DASMID).",
-                      "example": "JP00000275",
+                      "example": "JP00000282",
                       "maxLength": 128
                     },
                     "return_url": {
