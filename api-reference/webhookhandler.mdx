@@ -48,7 +48,7 @@ To start receiving webhooks from PO Gateway, follow these steps:
   </Step>
 
   <Step title="Step 2: Register Your Webhook URL">
-    Include your webhook URL in the `return_url` parameter as shown in the example above. Ensure that it’s properly registered in the API request payload for each transaction.
+    Include your webhook URL in the `return_url` parameter as shown in the example above. Ensure that it's properly registered in the API request payload for each transaction.
   </Step>
 
   <Step title="Step 3: Secure Your Webhook">
@@ -61,3 +61,48 @@ To start receiving webhooks from PO Gateway, follow these steps:
 </Steps>
 
 <Card title="Test Your Webhook" emoji="hammer"> Use the sandbox environment or test mode to simulate webhook events and ensure your webhook handler works as expected before going live. </Card>
+
+## **Handling File Downloads**
+
+To link files for download through webhooks, you have several options:
+
+### **1. Direct Download URLs in Webhook Payload**
+
+When a file is ready for download, the webhook payload can include a secure download URL:
+
+```json
+{
+  "event_type": "file.ready",
+  "file": {
+    "download_url": "https://api.example.com/files/download/abc123",
+    "expires_at": "2024-01-01T00:00:00Z",
+    "file_name": "report.pdf"
+  }
+}
+```
+
+### **2. Creating Download Links**
+
+To create a download link in your application:
+
+```html
+<a href="https://api.example.com/files/download/abc123" download="report.pdf">
+  Download File
+</a>
+```
+
+### **3. Secure File Downloads**
+
+For secure file downloads:
+
+* Use signed URLs with expiration times
+* Implement authentication checks
+* Include proper Content-Disposition headers:
+
+```http
+Content-Disposition: attachment; filename="report.pdf"
+```
+
+<Warning>
+Always validate file download URLs and implement proper authentication before allowing downloads. Never expose direct file system paths in download URLs.
+</Warning>

@@ -57,3 +57,27 @@ Loads another HTML page within the document. Most commonly used for embedding vi
 ```html
 <iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
 ```
+
+## File Downloads
+
+### Using HTML
+
+You can create downloadable file links using the HTML anchor tag with the `download` attribute:
+
+```html
+<a href="/path/to/file.pdf" download>Download PDF</a>
+```
+
+### Using Markdown with Direct Links
+
+For simple file downloads, you can also use Markdown syntax with a direct link to the file:
+
+```md
+[Download PDF](/path/to/file.pdf)
+```
+
+<Tip>
+Make sure your files are hosted in an accessible location and the file size is reasonable for web downloading. For larger files, consider using a file hosting service.
+</Tip>
+</fileContent>
+</invoke>

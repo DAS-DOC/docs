@@ -1,0 +1,37 @@
+# Linking Files for Download
+
+There are several ways to link files for download in MDX documentation:
+
+## Basic Download Link
+You can create a basic download link using standard Markdown syntax:
+```md
+[Download Sample File](path/to/your/file.pdf)
+```
+
+## Download Link with HTML Attributes
+For more control, you can use HTML attributes:
+```html
+<a href="path/to/your/file.pdf" download>Download PDF</a>
+```
+
+## Download Link with Custom Filename
+To specify a custom filename for the downloaded file:
+```html
+<a href="path/to/your/file.pdf" download="custom-filename.pdf">Download with Custom Name</a>
+```
+
+## Tips for File Downloads
+- Ensure the file path is correct relative to your documentation
+- Use appropriate file extensions
+- Consider adding file size information for large downloads
+- Make sure the files are accessible from your documentation server
+
+## Example Implementation
+Here's a complete example:
+```mdx
+Download our [sample configuration file](./samples/config.json)
+
+<a href="./templates/report-template.xlsx" download="monthly-report-template.xlsx">
+  Download Excel Template
+</a>
+```

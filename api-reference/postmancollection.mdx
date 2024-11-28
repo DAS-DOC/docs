@@ -22,7 +22,8 @@ To use the Postman Collection, follow these steps:
 <Steps>
   <Step title="Download the Postman Collection">
     Download the Postman Collection from the link below and import it into your Postman app.
-    <a href="/downloads/PO-API-References-postman_collection.json.zip" download="/downloads/PO-API-References-postman_collection.json.zip">Download Postman Collection</a>
+    {/* Using the download attribute ensures the browser will download rather than navigate */}
+    <a href="/downloads/PO-API-References-postman_collection.json.zip" download>Download Postman Collection</a>
   </Step>
 
   <Step title="Set Environment Variables">
@@ -52,7 +53,7 @@ The Postman Collection provides a structured layout for testing each endpoint:
 
 ## **Best Practices**
 
-* **Keep Your Environment Variables Secure**: Store sensitive information (e.g., API keys) securely within Postman’s environment settings.
+* **Keep Your Environment Variables Secure**: Store sensitive information (e.g., API keys) securely within Postman's environment settings.
 
 * **Experiment in Sandbox**: Use sandbox or test environments whenever possible to avoid affecting live data.
 
@@ -66,4 +67,15 @@ The Postman Collection provides a structured layout for testing each endpoint:
 
 ## **Download Links**
 
-<a href="/downloads/PO-API-References-postman_collection.json.zip" download="/downloads/PO-API-References-postman_collection.json.zip">Download Postman Collection</a>
+{/* There are multiple ways to create download links: */}
+
+{/* Method 1: Using the download attribute without a value will use the original filename */}
+<a href="/downloads/PO-API-References-postman_collection.json.zip" download>Download Postman Collection</a>
+
+{/* Method 2: Using the download attribute with a custom filename */}
+<a href="/downloads/PO-API-References-postman_collection.json.zip" download="postman-collection.zip">Download with Custom Filename</a>
+
+{/* Method 3: For direct downloads of non-HTML content, you can also use just the href */}
+<a href="/downloads/PO-API-References-postman_collection.json.zip">Direct Download Link</a>
+
+{/* Note: Place your downloadable files in the public/downloads directory of your project */}

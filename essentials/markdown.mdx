@@ -53,6 +53,22 @@ Links to pages in your docs need to be root-relative. Basically, you should incl
 
 Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
 
+## Linking Files for Download
+
+To create a download link for a file, use the standard Markdown link syntax and point to your file's location. When users click the link, the file will download instead of opening in the browser.
+
+```md
+[Download PDF](/path/to/file.pdf)
+[Download Sample Data](/assets/sample.zip)
+```
+
+You can also add download attributes using HTML:
+
+```md
+<a href="/path/to/file.pdf" download>Download PDF</a>
+<a href="/path/to/file.pdf" download="custom-filename.pdf">Download with custom filename</a>
+```
+
 ## Blockquotes
 
 ### Singleline

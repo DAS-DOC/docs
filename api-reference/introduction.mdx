@@ -50,6 +50,17 @@ The API is accessible only over HTTPS to ensure secure communication.
 - **LIVE URL**: `https://api.paymentoptions.com`
 - **Secure Communication**: All API requests and responses are encrypted, ensuring that sensitive data remains protected during transmission.
 
+## **File Downloads**
+
+To download files through the API:
+
+- **Direct Download URLs**: Files can be downloaded by making a GET request to the file's URL with appropriate authentication headers.
+- **Download Response**: File downloads will return with:
+  - Content-Type header indicating the file type
+  - Content-Disposition header for the filename
+  - The file content in the response body
+- **Example Download URL**: `https://api.paymentoptions.com/v1/files/{fileId}/download`
+
 ## **Best Practices for API Integration**
 
 To ensure a smooth integration experience, keep the following in mind:
@@ -57,8 +68,8 @@ To ensure a smooth integration experience, keep the following in mind:
 - **HTTP Client Compatibility**: Ensure that HTTP clients are compatible with RESTful APIs and support necessary features like authentication.
 - **Understanding HTTP Methods**: Familiarize yourself with standard HTTP methods (GET, POST) to correctly interact with the API.
 - **Handling Response Codes**: Implement logic to handle different HTTP response codes, enabling effective error handling and debugging.
+- **File Downloads**: When downloading files, ensure your client can properly handle binary data and respect the Content-Disposition header.
 
 <Callout title="Note" emoji="information">
   Make sure to review the specific documentation for each API endpoint, including request and response formats, example payloads, and detailed descriptions of expected parameters.
 </Callout>
-

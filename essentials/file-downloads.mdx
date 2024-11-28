@@ -1,0 +1,58 @@
+# File Downloads
+
+To create downloadable file links in your application, you can use several approaches:
+
+## HTML Download Attribute
+
+The simplest way to create a downloadable link is to use the HTML `download` attribute:
+
+```html
+<a href="/path/to/file.pdf" download>Download PDF</a>
+```
+
+The `download` attribute can also specify a different filename:
+
+```html
+<a href="/path/to/file.pdf" download="custom-filename.pdf">Download PDF</a>
+```
+
+## File Types Best Practices
+
+- Always specify the correct file type in your downloads
+- Include the file size when possible to set user expectations
+- Use appropriate file icons or indicators to help users identify file types
+
+## Security Considerations
+
+- Validate file types before allowing downloads
+- Implement proper access controls for sensitive files
+- Consider using signed URLs for temporary access to protected files
+
+## Examples
+
+### Basic Download Link
+```html
+<a href="/documents/sample.pdf" download>Download Sample PDF</a>
+```
+
+### Download with Custom Filename
+```html
+<a href="/documents/report.xlsx" download="monthly-report.xlsx">Download Monthly Report</a>
+```
+
+### Download with File Size
+```html
+<a href="/documents/sample.pdf" download>
+  Download Sample PDF (2.5 MB)
+</a>
+```
+
+## Common Use Cases
+
+1. Document downloads (PDFs, DOCs, etc.)
+2. Image downloads
+3. Data file exports (CSV, Excel, etc.)
+4. Software installations
+5. Media files
+
+Remember to handle errors appropriately and provide feedback to users when downloads fail or require authentication.
