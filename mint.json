@@ -345,6 +345,6 @@
      "default": "light"
   },
 
-  "static": ["downloads"]
+  "static": ["public"]
   
 }
