@@ -343,7 +343,7 @@
   "modeToggle": {
     "isHidden": true,
      "default": "light"
-  }.
+  },
 
   "static": ["downloads"]
   
