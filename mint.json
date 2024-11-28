@@ -70,19 +70,11 @@
     }
   ],
 
-  "anchors": [
-    {
-        "name": "Overview",
-        "icon": "file",
-        "url": "/documentation/overview"
-    }
-],
-
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "documentation/introduction",
+        "documentation/overview",
         "documentation/introduction",
         "documentation/createaccount",
         "documentation/checklist",
