@@ -70,6 +70,12 @@
     }
   ],
   "navigation": [
+  {
+  pages:[
+  "documentation/overview"
+  ],
+   "version": "English"
+  },
     {
       "group": "Get Started",
       "pages": [
