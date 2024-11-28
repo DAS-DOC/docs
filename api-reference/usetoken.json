@@ -19,8 +19,6 @@
   "paths": {
     "/api/v1/server-to-server-interface/payment": {
       "post": {
-        "summary": "Process a Payment",
-        "description": "This endpoint allows merchants to process a payment transaction.",
         "operationId": "usetoken",
         "requestBody": {
           "description": "The request payload to process a payment transaction.",
