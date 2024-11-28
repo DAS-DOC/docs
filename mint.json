@@ -73,7 +73,7 @@
   "anchors": [
     {
         "name": "Overview",
-        "icon": "file-magnifying-glass",
+        "icon": "file",
         "url": "documentation/overview"
     }
 ],
