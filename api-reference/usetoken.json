@@ -216,7 +216,6 @@
                 "required": [
                   "amount",
                   "currency",
-                  "card",
                   "payment_method",
                   "merchant_txn_ref",
                   "customer_ip",
