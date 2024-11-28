@@ -344,9 +344,7 @@
     "isHidden": true,
      "default": "light"
   }.
-  {
-  "static": ["downloads"]
-}
 
+  "static": ["downloads"]
   
 }
