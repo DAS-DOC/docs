@@ -72,19 +72,9 @@
 
   "anchors": [
     {
-        "name": "API References",
-        "icon": "code",
-        "url": "api-references"
-    },
-    {
-        "name": "Content",
-        "icon": "pencil",
-        "url": "content"
-    },
-    {
-        "name": "Contact us",
-        "icon": "envelope",
-        "url": "https://mintlify.com/contact-us"
+        "name": "Overview",
+        "icon": "file-magnifying-glass",
+        "url": "documentation/overview"
     }
 ],
 
