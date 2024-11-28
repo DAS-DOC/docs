@@ -57,7 +57,7 @@
                       "store_payment_method_id": {
                         "type": "string",
                         "description": "True to store the payment method or False not to store (for tokenization).",
-                        "example": "0db1fac1-e064-4644-a387-08d143960c8f",
+                        "example": "094db781-fabc-4c6d-8fcd-18bee06a527a",
                           "maxLength": 128
                       }
                     }
