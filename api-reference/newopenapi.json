@@ -17,7 +17,7 @@
     }
   ],
   "paths": {
-    "test": {
+    "/test": {
       "post": {
         "summary": "Process a Payment",
         "description": "This endpoint allows merchants to process a payment transaction.",
