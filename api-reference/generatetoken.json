@@ -72,7 +72,7 @@
                       "number": {
                         "type": "string",
                         "description": "The card number.",
-                        "example": "4000000000001091",
+                        "example": "400000******1091",
                         "maxLength": 16
                       }
                     }
