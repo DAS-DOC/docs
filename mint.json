@@ -72,9 +72,8 @@
 
   "navigation": [
   {
-      "group": "Overview",
       "pages": [
-        "documentation/overviewc"
+        "documentation/overview"
       ],
       "version": "English"
     },
