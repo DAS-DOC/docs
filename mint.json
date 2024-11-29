@@ -6,7 +6,7 @@
     "light": "/logo/logo_light.svg"
   },
   "favicon": "/favicon.svg",
- "colors": {
+  "colors": {
     "primary": "#FFAB31",
     "light": "#FFAB31",
     "dark": "#F18A00",
@@ -15,8 +15,10 @@
       "to": "#F18A00"
     }
   },
-
-  "versions": ["English", "日本語"],
+  "versions": [
+    "English",
+    "日本語"
+  ],
   "topbarLinks": [
     {
       "name": "Create an Account",
@@ -69,16 +71,14 @@
       "version": "日本語"
     }
   ],
-
   "navigation": [
-  {
+    {
       "group": "",
       "pages": [
         "documentation/overview"
       ],
       "version": "English"
     },
-    
     {
       "group": "Get Started",
       "pages": [
@@ -351,7 +351,6 @@
   },
   "modeToggle": {
     "isHidden": true,
-     "default": "light"
+    "default": "light"
   }
-  
 }
