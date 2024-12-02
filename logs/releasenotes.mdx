@@ -12,94 +12,159 @@ This page provides a quick summary of each release, highlighting major updates a
 ## **Release History**
 
 <Update label="2024-12-03" description="Release 20">
-  <div style={{ fontSize: '14px' }}>
- ### Features or Enhancements Related to Merchants & Partners
+  <div style={{ fontSize: '12px' }}>
+    ### Features or Enhancements Related to Merchants & Partners
 
-* New feature: Onfido integration for Stakeholders KYC in Merchant onboarding
-* New feature: Highlight statements having updated statement transactions
-* New feature: Highlight transactions updated after statement generation
-* New feature: Deep link implementation throughout the Gateway
-* New feature: Implement the Skeleton by replacing loaders throughout the Gateway
-* New integration of NomuPay Acquirer (Acquirer Implementation)
-* New integration of Digital Garage Acquirer (Acquirer Implementation)
-* Integration of Asiabill 3DS (Acquirer Implementation)
-* New integration of PayPay, Pay-easy & Konbini (APM Implementation)
-* Minor enhancement: Add China as a country/entity on Public Holiday
-* Minor enhancement: Remove Subscription Type dropdown menu for Subscription
-* Technical debt item: Improve the logic of access/permission rules throughout the Gateway
-* Minor enhancement: Remove the time zone logic from the due date of a Chargeback Case
-* Minor enhancement: Remove X-API Key for the viewer user in the details drawer
-* Minor enhancement: Retain drawer state on Dispute Management screen
-* Minor enhancement: Add Corporate Website (API) in Merchant onboarding
-* Minor enhancement: Add validations on Corporate Website field
-* Minor enhancement: Update the Terms & Conditions on the Final Step page of self onboarding
-* Minor enhancement: Implement preference for additional column by saving in DB
-* Minor enhancement: Select all the columns by default on Additional Column UI
-* Minor enhancement: Add information marker description for maximum transaction amount in Merchant onboarding
-* Minor enhancement: Resellers as Reselling to Multiple Countries
+    * New feature: Onfido integration for Stakeholders KYC in Merchant onboarding
 
-### Defect Fixes
+    * New feature: Highlight statements having updated statement transactions
 
-* Asiabill Merchant receiving two responses against one request in webhook
-* Reseller is not able to see their referred approved Merchants list
-* Merchant Onboarding: Incorporation Date (of Company) is coming as invalid in a case
-* Gateway error response description for some transactions is different from the Acquirer error response description
-* Response Code saved as 7 (but the actual Response Code is 59) for a GooglePay transaction
-* Towa Net Limited: Refund Decline Error `HK00000649PO`, `HK00000651PO`
-* Update Response Code and Error Message of NOTSUCCESSFUL records for Merchant IBEC
-* Error "Something went wrong" to Merchant without transaction ID, although transaction created in Gateway
-</div>
+    * New feature: Highlight transactions updated after statement generation
 
+    * New feature: Deep link implementation throughout the Gateway
+
+    * New feature: Implement the Skeleton by replacing loaders throughout the Gateway
+
+    * New integration of NomuPay Acquirer (Acquirer Implementation)
+
+    * New integration of Digital Garage Acquirer (Acquirer Implementation)
+
+    * Integration of Asiabill 3DS (Acquirer Implementation)
+
+    * New integration of PayPay, Pay-easy & Konbini (APM Implementation)
+
+    * Minor enhancement: Add China as a country/entity on Public Holiday
+
+    * Minor enhancement: Remove Subscription Type dropdown menu for Subscription
+
+    * Technical debt item: Improve the logic of access/permission rules throughout the Gateway
+
+    * Minor enhancement: Remove the time zone logic from the due date of a Chargeback Case
+
+    * Minor enhancement: Remove X-API Key for the viewer user in the details drawer
+
+    * Minor enhancement: Retain drawer state on Dispute Management screen
+
+    * Minor enhancement: Add Corporate Website (API) in Merchant onboarding
+
+    * Minor enhancement: Add validations on Corporate Website field
+
+    * Minor enhancement: Update the Terms & Conditions on the Final Step page of self onboarding
+
+    * Minor enhancement: Implement preference for additional column by saving in DB
+
+    * Minor enhancement: Select all the columns by default on Additional Column UI
+
+    * Minor enhancement: Add information marker description for maximum transaction amount in Merchant onboarding
+
+    * Minor enhancement: Resellers as Reselling to Multiple Countries
+
+    ### Defect Fixes
+
+    * Asiabill Merchant receiving two responses against one request in webhook
+
+    * Reseller is not able to see their referred approved Merchants list
+
+    * Merchant Onboarding: Incorporation Date (of Company) is coming as invalid in a case
+
+    * Gateway error response description for some transactions is different from the Acquirer error response description
+
+    * Response Code saved as 7 (but the actual Response Code is 59) for a GooglePay transaction
+
+    * Towa Net Limited: Refund Decline Error `HK00000649PO`, `HK00000651PO`
+
+    * Update Response Code and Error Message of NOTSUCCESSFUL records for Merchant IBEC
+
+    * Error "Something went wrong" to Merchant without transaction ID, although transaction created in Gateway
+  </div>
 </Update>
 
 <Update label="2024-10-01" description="Release 19">
   ### Features or Enhancements Related to Merchants & Partners
 
-- Minor enhancement to remove dependency on business postal code for HK onboarding.
-- Minor enhancement to update the Swift Code list for HK entity in onboarding process.
-- Minor enhancement to set the Japan Country on top of the list when JP language is selected on the HPP Page.
-- Minor UI enhancements on HPP (like placeholder text and PCI DSS certified logo).
-- Minor enhancement to restrict the customer to enter numbers in the cardholder field on the HPP Page.
-- Minor enhancement to add Memo text field on the HPP page:
-  - Add Memo field on transaction details page.
-  - Add Memo field in confirmation email.
-  - Apply limit of 255 characters for response of Memo field on HPP page.
-- Minor enhancement for HPP configuration implementation (Merchant specific).
-- New feature: adding a link name for a generated PBL link:
-  - Displayed this link name on Transaction list as a new column.
-  - Displayed this link name on Transaction report as a new column.
-  - Added this link name on Additional Column list.
-- Minor enhancement to remove time zone offset from start date, end date, and link expiry date from subscription email notification.
-- Minor enhancement to display subsequent transaction IDs in the subscription history drawer.
-- Minor enhancement to have currency option to select while creating a Risk Rule for a Product.
-- Minor enhancement to update the API error message for refund restriction risk rule.
-- Minor enhancement to send chargeback notifications from `support@paymentoptions.com.sg`.
-- Minor enhancement to remove the time zone offset from the due date of a chargeback case.
-- Minor enhancement to synchronize email recipient list in v3 and v2 systems for email chargeback notifications.
-- Minor enhancement on subject & email content for chargeback notifications to Merchant.
-- Minor enhancement to remove columns from the list on Additional Columns that are mandatory on the Transaction list (including Action).
-- Minor enhancement to remove duplicate columns from Transaction list (like Currency & Transaction Type).
-- Minor enhancement to provide a default name to a merchant statement file.
-- Minor enhancement to prevent Internal User/Merchant from resetting passwords for inactive sub-users.
-- Minor enhancement to sort (ascending order) values for DASMID, Merchant Account, and Acquirer MID filters on various UIs.
-- Minor enhancement to update the email address from `support` to `BPU` in the payment receipt.
-- Minor enhancement to make the gateway screens more dynamic/data-filled as per screen size.
-- Minor enhancement to update the existing reset password page UI.
-- New feature: ability for users to input timestamp along with date values or relative date range in date filters on Transaction UI.
-- Minor enhancement to add referral count to the Partner list UI.
-- New feature: reset password after 90 days for internal/external users.
-- Minor enhancement to clear the transaction download reports after 14 days.
-- Minor enhancement to have a bell notification to gateway users about their password expiration.
-- Minor enhancement to set up preferences for a user (Internal/Merchant) on the Transaction list.
-- Minor enhancement to navigate to a specific page on various UIs (in Pagination).
-- Minor enhancement to display the legacy notice to users on legacy screens (Transaction, Statement & Dispute Management).
-- Minor enhancement to restrict the Merchant User from accessing Acquirer MID details on the Transaction details page through a drawer.
+  * Minor enhancement to remove dependency on business postal code for HK onboarding.
 
-### Defect Fixes
+  * Minor enhancement to update the Swift Code list for HK entity in onboarding process.
 
-- Advanced Filter is not working on the Transaction list when Merchant Name has special characters like ampersand (`&`) and comma (`,`).
-- Merchant Account filter not working on the Merchant (Merchant View) UI.
+  * Minor enhancement to set the Japan Country on top of the list when JP language is selected on the HPP Page.
 
+  * Minor UI enhancements on HPP (like placeholder text and PCI DSS certified logo).
+
+  * Minor enhancement to restrict the customer to enter numbers in the cardholder field on the HPP Page.
+
+  * Minor enhancement to add Memo text field on the HPP page:
+
+    * Add Memo field on transaction details page.
+
+    * Add Memo field in confirmation email.
+
+    * Apply limit of 255 characters for response of Memo field on HPP page.
+
+  * Minor enhancement for HPP configuration implementation (Merchant specific).
+
+  * New feature: adding a link name for a generated PBL link:
+
+    * Displayed this link name on Transaction list as a new column.
+
+    * Displayed this link name on Transaction report as a new column.
+
+    * Added this link name on Additional Column list.
+
+  * Minor enhancement to remove time zone offset from start date, end date, and link expiry date from subscription email notification.
+
+  * Minor enhancement to display subsequent transaction IDs in the subscription history drawer.
+
+  * Minor enhancement to have currency option to select while creating a Risk Rule for a Product.
+
+  * Minor enhancement to update the API error message for refund restriction risk rule.
+
+  * Minor enhancement to send chargeback notifications from `support@paymentoptions.com.sg`.
+
+  * Minor enhancement to remove the time zone offset from the due date of a chargeback case.
+
+  * Minor enhancement to synchronize email recipient list in v3 and v2 systems for email chargeback notifications.
+
+  * Minor enhancement on subject & email content for chargeback notifications to Merchant.
+
+  * Minor enhancement to remove columns from the list on Additional Columns that are mandatory on the Transaction list (including Action).
+
+  * Minor enhancement to remove duplicate columns from Transaction list (like Currency & Transaction Type).
+
+  * Minor enhancement to provide a default name to a merchant statement file.
+
+  * Minor enhancement to prevent Internal User/Merchant from resetting passwords for inactive sub-users.
+
+  * Minor enhancement to sort (ascending order) values for DASMID, Merchant Account, and Acquirer MID filters on various UIs.
+
+  * Minor enhancement to update the email address from `support` to `BPU` in the payment receipt.
+
+  * Minor enhancement to make the gateway screens more dynamic/data-filled as per screen size.
+
+  * Minor enhancement to update the existing reset password page UI.
+
+  * New feature: ability for users to input timestamp along with date values or relative date range in date filters on Transaction UI.
+
+  * Minor enhancement to add referral count to the Partner list UI.
+
+  * New feature: reset password after 90 days for internal/external users.
+
+  * Minor enhancement to clear the transaction download reports after 14 days.
+
+  * Minor enhancement to have a bell notification to gateway users about their password expiration.
+
+  * Minor enhancement to set up preferences for a user (Internal/Merchant) on the Transaction list.
+
+  * Minor enhancement to navigate to a specific page on various UIs (in Pagination).
+
+  * Minor enhancement to display the legacy notice to users on legacy screens (Transaction, Statement & Dispute Management).
+
+  * Minor enhancement to restrict the Merchant User from accessing Acquirer MID details on the Transaction details page through a drawer.
+
+  ### Defect Fixes
+
+  * Advanced Filter is not working on the Transaction list when Merchant Name has special characters like ampersand (`&`) and comma (`,`).
+
+  * Merchant Account filter not working on the Merchant (Merchant View) UI.
 </Update>
 
 <Note>
