@@ -5,13 +5,18 @@ description: 'This page provides a list of error codes returned by the gateway, 
 
 ## **Understanding Entity Level and Product Level**
 
-- **Entity Level**:  
-  Entity-level rules apply to the merchant's operational region or the country in which the merchant operates. These settings enforce specific restrictions or policies relevant to the geographical area.  
-  **Example**: Blocking transactions originating from certain card countries or IP addresses based on merchant location.  
+<CardGroup>
+  <Card title="Entity Level" icon="map-marker-alt">
+    Entity-level rules apply to the merchant's operational region or country. These settings enforce restrictions and policies specific to geographical areas.  
+    **Example**: Blocking transactions originating from certain card countries or IP addresses based on merchant location.
+  </Card>
 
-- **Product Level**:  
-  Product-level rules are specific to individual products or services within the gateway, such as "Pay by Link" or "Subscription." These rules manage product-specific behaviors and restrictions.  
-  **Example**: Setting refund velocity limits or transaction thresholds for a specific product.
+  <Card title="Product Level" icon="cogs">
+    Product-level rules are specific to individual products or services within the gateway, like "Pay by Link" or "Subscription." These manage behaviors and restrictions tied to each product.  
+    **Example**: Setting refund velocity limits or transaction thresholds for a specific product.
+  </Card>
+</CardGroup>
+
 
 This distinction helps merchants and developers troubleshoot errors effectively and ensures that compliance and restrictions are properly managed across regions and products.
 
