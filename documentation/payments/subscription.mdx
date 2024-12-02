@@ -25,6 +25,45 @@ With the Subscription product, you can create and manage multiple subscription p
   </Card>
 </CardGroup>
 
+## **Subscription Parameters**
+
+Here are the parameters you can use to configure and customize subscription plans:
+
+```json
+{
+  "subscription": {
+      "plan_name": "<string>",
+      "plan_desc": "<string>",
+      "cycle_type": "<DAYS/MONTHS>",
+      "subscription_end_type": "CYCLE",
+      "cycle_interval": <int>,
+      "max_cycle_count": <int>,
+      "has_trial_period": <boolean>,
+      "trial_period_duration_type": "DAYS",
+      "trial_period_duration": <int>,
+      "has_discount": <boolean>,
+      "discount_percentage": <int>,
+      "discount_duration": <int>
+  }
+}
+```
+## **Key Parameters**
+
+Here are the essential parameters for configuring your subscription plans:
+
+- **`plan_name`**: Name of the subscription plan.
+- **`plan_desc`**: Description of the subscription plan.
+- **`cycle_type`**: Frequency of recurrence (e.g., DAYS or MONTHS).
+- **`cycle_interval`**: Specifies how often the billing cycle repeats.
+- **`max_cycle_count`**: Maximum number of cycles for the subscription.
+- **`has_trial_period`**: Indicates if a trial period is included.
+- **`trial_period_duration_type`**: Unit for the trial period duration (e.g., DAYS).
+- **`trial_period_duration`**: Length of the trial period.
+- **`has_discount`**: Specifies whether a discount applies.
+- **`discount_percentage`**: Discount percentage on the subscription price.
+- **`discount_duration`**: Length of time the discount is applied.
+
+
 ## **Steps to Set Up Subscription**
 
 <Steps>
