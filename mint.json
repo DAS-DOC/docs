@@ -350,5 +350,8 @@
   "modeToggle": {
     "isHidden": true,
     "default": "light"
+  },
+  "theme": {
+    "contentWidth": "100%"
   }
 }
