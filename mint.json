@@ -291,8 +291,7 @@
       "pages": [
         "logs/revisions",
         "logs/apiupdate",
-        "logs/releasenotes",
-        "logs/productupdates"
+        "logs/releasenotes"
       ],
       "version": "English"
     },
@@ -301,8 +300,7 @@
       "pages": [
         "logs-jp/revisions",
         "logs-jp/apiupdate",
-        "logs-jp/releasenotes",
-        "logs-jp/productupdates"
+        "logs-jp/releasenotes"
       ],
       "version": "日本語"
     },
