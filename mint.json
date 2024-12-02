@@ -309,7 +309,6 @@
       "pages": [
         "support/merchantguide",
         "support/partnerguide",
-        "support/productguide",
         "support/websiteplugins"
       ],
       "version": "English"
@@ -319,7 +318,6 @@
       "pages": [
         "support-jp/merchantguide",
         "support-jp/partnerguide",
-        "support-jp/productguide",
         "support-jp/websiteplugins"
       ],
       "version": "日本語"
