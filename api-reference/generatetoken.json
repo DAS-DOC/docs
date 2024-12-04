@@ -135,12 +135,6 @@
                         "description": "The redirect URL after failed payment.",
                         "example": "http://www.declineurl.com/",
                         "maxLength": 255
-                      },
-                      "cancel_url": {
-                        "type": "string",
-                        "description": "The cancel URL link after the payment is cancelled.",
-                        "example": "http://cancelurl.com/",
-                        "maxLength": 255
                       }
                     }
                   },
