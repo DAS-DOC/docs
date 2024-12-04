@@ -5,7 +5,8 @@ description: 'Overview of API Key Authentication and Header Requirements'
 
 ## Purpose
 
-Access to the API is authenticated using **HTTP Basic Auth** ([Learn More](https://en.wikipedia.org/wiki/Basic_access_authentication)) along with the `x-api-key` header.
+Access to the API is authenticated using **HTTP Basic Auth** ([Learn More](https://en.wikipedia.org/wiki/Basic_access_authentication)) 
+along with the `x-api-key` header.
 
 ---
 
@@ -31,7 +32,7 @@ curl --location --request POST '<URL>' \
 ## Authenticating API Calls
 To authenticate each API request, include both the Authorization and x-api-key headers.
 
-```json
+```bash
 
 curl --location --request POST '<URL>' \
 --header 'Authorization: Basic <Encoded LIVE API KEY>' \
