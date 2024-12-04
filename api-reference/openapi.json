@@ -503,12 +503,6 @@
                         "description": "The redirect URL after failed payment.",
                         "example": "http://www.declineurl.com/",
                         "maxLength": 255
-                      },
-                      "cancel_url": {
-                        "type": "string",
-                        "description": "The cancel URL link after the payment is cancelled.",
-                        "example": "http://cancelurl.com/",
-                        "maxLength": 255
                       }
                     }
                   },
@@ -1019,12 +1013,6 @@
                         "type": "string",
                         "description": "The redirect URL after failed payment.",
                         "example": "http://www.declineurl.com/",
-                        "maxLength": 255
-                      },
-                      "cancel_url": {
-                        "type": "string",
-                        "description": "The cancel URL link after the payment is cancelled.",
-                        "example": "http://cancelurl.com/",
                         "maxLength": 255
                       }
                     }
@@ -2557,12 +2545,6 @@
                         "description": "URL to redirect the user after a declined transaction.",
                         "maxLength": 255,
                         "example": "http://www.declineurl.com/"
-                      },
-                      "cancel_url": {
-                        "type": "string",
-                        "description": "URL to redirect the user after a canceled transaction.",
-                        "maxLength": 255,
-                        "example": "http://cancelurl.com/"
                       }
                     }
                   },
