@@ -29,6 +29,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "return_url": {
                     "type": "object",
@@ -92,6 +93,7 @@
                   },
                   "payment_method": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing Payment Method.",
                     "properties": {
                       "type": {
