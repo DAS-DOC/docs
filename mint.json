@@ -188,7 +188,6 @@
           "group": "Hosted Payment Page",
           "pages": [
             "api-reference/endpoint/generatehpp",
-            "api-reference/endpoint/apple-google",
             "api-reference/endpoint/ewallet"
           ],
           "version": "English"
@@ -197,7 +196,6 @@
           "group": "ホステッド支払いページ",
           "pages": [
             "api-reference-jp/endpoint/generatehpp",
-            "api-reference-jp/endpoint/apple-google",
             "api-reference-jp/endpoint/ewallet"
           ],
           "version": "日本語"
