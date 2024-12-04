@@ -5,48 +5,60 @@ description: 'Overview of API Key Authentication and Header Requirements'
 
 ## Purpose
 
-* The API key is essential for authorisation and authentication.
+Access to the API is authenticated using **HTTP Basic Auth** ([Learn More](https://en.wikipedia.org/wiki/Basic_access_authentication)) along with the `x-api-key` header.
 
-* It determines whether the API will execute the request.-
+---
 
-* Each merchant is provided with a LIVE API KEY and an encoded key via the PO Gateway Merchant Access.
+### **Getting Started**
 
-![Live API Key](/images/flows-authentication.svg)
+Authentication information will be available after the account creation. Authentication can be used in the following ways:
 
-## HTTP Basic Authentication
+- **Using ‘LIVE API KEY’**:  
+   The **LIVE API KEY** details are available on the website. Provide your LIVE API KEY as the Basic Auth username value. A password is not required.
 
-* The API uses HTTP Basic Authentication, where the API key is passed as credentials in the Authorisation header.
+- **Using Encoded ‘LIVE API KEY’**:  
+   Encode the **LIVE API KEY** by using the **ENCODE BASE64** button available on the website. 
+   
+After encoding the **LIVE API KEY**, attach the string **Basic** in front of the encoded key followed by a space, and provide this value in the `Authorization` header.
 
-* Encoding
+```json
 
-*
+curl --location --request POST '<URL>' \
+--header 'Authorization: Basic <Encoded LIVE API KEY>' \
 
-* HTTP Basic Authentication expects credentials to be base64 encoded.
+```
 
-*
+## Authenticating API Calls
+To authenticate each API request, include both the Authorization and x-api-key headers.
 
-* Some HTTP clients automatically handle this encoding (e.g., using the -u flag with bash cURL).
+```json
 
-*
+curl --location --request POST '<URL>' \
+--header 'Authorization: Basic <Encoded LIVE API KEY>' \
+--header 'x-api-key: <x-api-key value>'
 
-* Others may require manual encoding (e.g., using CURLOPT\_HTTPHEADER in PHP cURL).
+```
+
+
+<Note> Always ensure that your **LIVE API KEY** is encoded securely and passed correctly in the headers for successful authentication. </Note> 
+
 
 ## **API Headers**
 
 API headers provide additional metadata for each API call, including crucial information about the request and response.
 
-| **Header**      | **Description**                                                                                                                                                                        |
-| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `x-api-key`     | Provided along with credentials.                                                                                                                                                       |
-| `Authorization` | Live API Key obtained from merchant details on PO Gateway. **Ensure "Basic" is included before the API key in this field** (e.g., `Authorization: Basic YOUR_BASE64_ENCODED_API_KEY`). |
-| `Content-Type`  | Indicates that all response attributes will be in JSON format (set to `application/json`).                                                                                             |
+| **Header**       | **Description**                                       |
+|:-----------------|:----------------------------------------------------|
+| **`x-api-key`**   | Provided along with credentials.                     |
+| **`Authorization`** | Basic `<Encoded LIVE API KEY>`.                     |
+
 
 ### **Important Note**
 
-For the **Authorization** header, include **"Basic"** before the base64-encoded API key to authenticate requests properly.
+If using plain LIVE API KEY for the **Authorization** header, include **"Basic"** before the base64-encoded API key to authenticate requests properly.
 
 <Info title="Example" emoji="information">
-  Authorization: Basic YOUR\_BASE64\_ENCODED\_API\_KEY
+  Authorization: Basic Encoded LIVE API KEY
 </Info>
 
 ![Live API Key](/images/flows-APIheader.svg)
