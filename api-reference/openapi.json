@@ -1428,6 +1428,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "transactionId": {
                     "type": "string",
@@ -1650,6 +1651,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "transactionId": {
                     "type": "string",
@@ -1884,6 +1886,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "transactionId": {
                     "type": "string",
@@ -1905,7 +1908,7 @@
                   "notes": {
                     "type": "string",
                     "description": "The reference of the refund transaction (optional).",
-                    "example": "Test Kavi",
+                    "example": "Refund amout captured/purchased",
                     "maxLength": 128
                   }
                 },
@@ -2422,6 +2425,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "required": [
                   "amount",
                   "currency",
@@ -2449,6 +2453,7 @@
                   },
                   "card": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "Details of the card used for the payment.",
                     "required": [
                       "cvc",
@@ -2492,6 +2497,7 @@
                   },
                   "payment_method": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "Payment method details.",
                     "required": [
                       "type",
@@ -2531,6 +2537,7 @@
                   },
                   "return_url": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "URLs for handling different transaction outcomes.",
                     "properties": {
                       "webhook_url": {
@@ -2561,6 +2568,7 @@
                   },
                   "billing_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "Details of the cardholder's billing address.",
                     "required": [
                       "country",
@@ -2616,6 +2624,7 @@
                   },
                   "shipping_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "Details of the cardholder's shipping address.",
                     "properties": {
                       "country": {
@@ -2670,6 +2679,7 @@
                   },
                   "subscription": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "Details of the subscription being processed.",
                     "required": [
                       "plan_name",
