@@ -395,6 +395,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "amount": {
                     "type": "string",
@@ -911,6 +912,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                 "additionalProperties": false,
                 "properties": {
                   "amount": {
                     "type": "string",
@@ -925,6 +927,7 @@
                   },
                   "card": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the card details.",
                     "properties": {
                       "cvc": {
@@ -961,6 +964,7 @@
                   },
                   "payment_method": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the payment method.",
                     "properties": {
                       "type": {
@@ -996,6 +1000,7 @@
                   },
                   "return_url": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the return URLs.",
                     "properties": {
                       "webhook_url": {
@@ -1026,6 +1031,7 @@
                   },
                   "billing_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the billing address of the cardholder.",
                     "properties": {
                       "country": {
@@ -1074,6 +1080,7 @@
                   },
                   "shipping_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the shipping address of the cardholder (optional).",
                     "properties": {
                       "country": {
