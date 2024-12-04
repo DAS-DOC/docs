@@ -32,6 +32,7 @@
                 "properties": {
                   "return_url": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the Return URLs.",
                     "properties": {
                       "webhook_url": {
@@ -108,6 +109,7 @@
                   },
                   "billing_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the billing address of the cardholder.",
                     "properties": {
                       "country": {
@@ -156,6 +158,7 @@
                   },
                   "shipping_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the shipping address of the cardholder.",
                     "properties": {
                       "country": {
@@ -261,6 +264,7 @@
                     },
                     "return_url": {
                       "type": "object",
+                       "additionalProperties": false,
                       "description": "A JSON object containing the Return URL.",
                       "properties": {
                         "webhook_url": {
@@ -287,6 +291,7 @@
                     },
                     "billing_address": {
                       "type": "object",
+                       "additionalProperties": false,
                       "description": "A JSON object containing the billing address of the cardholder.",
                       "properties": {
                         "city": {
@@ -328,6 +333,7 @@
                     },
                     "shipping_address": {
                       "type": "object",
+                       "additionalProperties": false,
                       "description": "A JSON object containing the shipping address of the cardholder.",
                       "properties": {
                         "city": {
@@ -401,6 +407,7 @@
                   },
                   "card": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the Card Details.",
                     "properties": {
                       "cvc": {
@@ -437,6 +444,7 @@
                   },
                   "payment_method": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing Payment Method.",
                     "properties": {
                       "type": {
@@ -472,6 +480,7 @@
                   },
                   "return_url": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the Return URL.",
                     "properties": {
                       "webhook_url": {
@@ -502,6 +511,7 @@
                   },
                   "billing_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the billing address of the cardholder.",
                     "properties": {
                       "country": {
@@ -550,6 +560,7 @@
                   },
                   "shipping_address": {
                     "type": "object",
+                     "additionalProperties": false,
                     "description": "A JSON object containing the shipping address of the cardholder (optional).",
                     "properties": {
                       "country": {
@@ -648,6 +659,7 @@
                     },
                     "gateway_response": {
                       "type": "object",
+                       "additionalProperties": false,
                       "description": "A JSON object containing the response from the gateway.",
                       "properties": {
                         "version": {
