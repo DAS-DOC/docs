@@ -165,7 +165,6 @@
         "api-reference/introduction",
         "api-reference/authentication",
         "api-reference/merchantdetails",
-        "api-reference/postmancollection",
         "api-reference/webhookhandler"
       ],
       "version": "English"
@@ -176,7 +175,6 @@
         "api-reference-jp/introduction",
         "api-reference-jp/authentication",
         "api-reference-jp/merchantdetails",
-        "api-reference-jp/postmancollection",
         "api-reference-jp/webhookhandler"
       ],
       "version": "日本語"
