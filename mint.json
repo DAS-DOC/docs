@@ -261,16 +261,6 @@
             "api-reference-jp/endpoint/cancelsubscription"
           ],
           "version": "日本語"
-        },
-        {  
-          "group": " ",
-          "pages": ["api-reference/webhookhandler"],
-          "version" : "English"
-        },
-        {    
-          "group": " ",
-          "pages": ["api-reference/webhookhandler"],
-          "version" : "日本語"
         }
       ]
     },
