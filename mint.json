@@ -164,8 +164,7 @@
       "pages": [
         "api-reference/introduction",
         "api-reference/authentication",
-        "api-reference/merchantdetails",
-        "api-reference/webhookhandler"
+        "api-reference/merchantdetails"
       ],
       "version": "English"
     },
@@ -261,6 +260,14 @@
             "api-reference-jp/endpoint/cancelsubscription"
           ],
           "version": "日本語"
+        },
+        {       
+        "pages": ["api-reference/webhookhandler"],
+        "version" : "English"
+        },
+        {       
+        "pages": ["api-reference/webhookhandler"],
+        "version" : "日本語"
         }
       ]
     },
