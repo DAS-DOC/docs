@@ -199,7 +199,7 @@
           "version": "日本語"
         },
         {
-          "group": "Payments",
+          "group": "Direct Payments",
           "pages": [
             "api-reference/endpoint/authorisation",
             "api-reference/endpoint/purchase",
@@ -211,7 +211,7 @@
           "version": "English"
         },
         {
-          "group": "支払い",
+          "group": "直接支払い",
           "pages": [
             "api-reference-jp/endpoint/authorisation",
             "api-reference-jp/endpoint/purchase",
