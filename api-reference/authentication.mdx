@@ -15,15 +15,11 @@ along with the `x-api-key` header.
 Authentication information will be available after the account creation. Authentication can be used in the following ways:
 
 * **Using ‘LIVE API KEY’**:
-  The **LIVE API KEY** details are available on the website. Provide your LIVE API KEY as the Basic Auth username value. A password is not required.
-
-  ![Payment Options Documentation](/images/flows-authentication-encode.svg)
+  The **LIVE API KEY** details are available on the website. Provide your LIVE API KEY as the Basic Auth username value. A password is not required.![Payment Options Documentation](/images/flows-authentication-encode.svg)
 
 * **Using Encoded ‘LIVE API KEY’**:
-  Encode the **LIVE API KEY** by using the **ENCODE BASE64** button available on the website.
+  Encode the **LIVE API KEY** by using the **ENCODE BASE64** button available on the website.![Payment Options Documentation](/images/flows-authentication-decode.svg)
 
-  ![Payment Options Documentation](/images/flows-authentication-decode.svg)
-  
 After encoding the **LIVE API KEY**, attach the string **Basic** in front of the encoded key followed by a space, and provide this value in the `Authorization` header.
 
 ```bash
@@ -69,3 +65,5 @@ If using plain LIVE API KEY for the **Authorization** header, include **"Basic"*
 <Card title="Need Help?" icon="life-ring" href="/support/contact">
   If you need assistance or have questions regarding setting up your authentication, please [contact our support team](./support/contact) for further guidance.
 </Card>
+
+![](favicon.svg)
