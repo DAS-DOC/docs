@@ -182,7 +182,6 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-      "api-reference/webhookhandler",
         {
           "group": "Hosted Payment Page",
           "pages": [
@@ -262,7 +261,8 @@
             "api-reference-jp/endpoint/cancelsubscription"
           ],
           "version": "日本語"
-        }
+        },
+        "api-reference/webhookhandler"
       ]
     },
     {
