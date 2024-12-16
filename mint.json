@@ -164,8 +164,7 @@
       "pages": [
         "api-reference/introduction",
         "api-reference/authentication",
-        "api-reference/merchantdetails",
-        "api-reference/webhookhandler"
+        "api-reference/merchantdetails"
       ],
       "version": "English"
     },
@@ -174,8 +173,7 @@
       "pages": [
         "api-reference-jp/introduction",
         "api-reference-jp/authentication",
-        "api-reference-jp/merchantdetails",
-        "api-reference-jp/webhookhandler"
+        "api-reference-jp/merchantdetails"
       ],
       "version": "日本語"
     },
@@ -187,16 +185,7 @@
           "pages": [
             "api-reference/endpoint/generatehpp",
             "api-reference/endpoint/ewallet"
-          ],
-          "version": "English"
-        },
-        {
-          "group": "ホステッド支払いページ",
-          "pages": [
-            "api-reference-jp/endpoint/generatehpp",
-            "api-reference-jp/endpoint/ewallet"
-          ],
-          "version": "日本語"
+          ]
         },
         {
           "group": "Direct Payments",
@@ -207,36 +196,13 @@
             "api-reference/endpoint/capture",
             "api-reference/endpoint/refund",
             "api-reference/endpoint/status"
-          ],
-          "version": "English"
-        },
-        {
-          "group": "直接支払い",
-          "pages": [
-            "api-reference-jp/endpoint/authorisation",
-            "api-reference-jp/endpoint/purchase",
-            "api-reference-jp/endpoint/void",
-            "api-reference-jp/endpoint/capture",
-            "api-reference-jp/endpoint/refund",
-            "api-reference-jp/endpoint/status"
-          ],
-          "version": "日本語"
-        },
+          ]
         {
           "group": "Tokenisation",
           "pages": [
             "api-reference/endpoint/generatetoken",
             "api-reference/endpoint/usetoken"
-          ],
-          "version": "English"
-        },
-        {
-          "group": "トークン化",
-          "pages": [
-            "api-reference-jp/endpoint/generatetoken",
-            "api-reference-jp/endpoint/usetoken"
-          ],
-          "version": "日本語"
+          ]
         },
         {
           "group": "Subscriptions",
@@ -247,23 +213,11 @@
             "api-reference/endpoint/pausesubscription",
             "api-reference/endpoint/resumesubscription",
             "api-reference/endpoint/cancelsubscription"
-          ],
-          "version": "English"
-        },
-        {
-          "group": "サブスクリプション",
-          "pages": [
-            "api-reference-jp/endpoint/createsubscription",
-            "api-reference-jp/endpoint/subscriptionlist",
-            "api-reference-jp/endpoint/subscriptiondetails",
-            "api-reference-jp/endpoint/pausesubscription",
-            "api-reference-jp/endpoint/resumesubscription",
-            "api-reference-jp/endpoint/cancelsubscription"
-          ],
-          "version": "日本語"
+          ]
         },
         "api-reference/webhookhandler"
-      ]
+      ],
+ 	 "version": "English"
     },
     {
       "group": "Error Codes",
