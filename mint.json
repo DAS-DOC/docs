@@ -197,6 +197,7 @@
             "api-reference/endpoint/refund",
             "api-reference/endpoint/status"
           ]
+          },
         {
           "group": "Tokenisation",
           "pages": [
@@ -219,6 +220,7 @@
       ],
  	 "version": "English"
     },
+    
     {
       "group": "Error Codes",
       "pages": [
