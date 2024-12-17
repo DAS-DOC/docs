@@ -1,0 +1,113 @@
+---
+title: 'Subscription'
+description: 'The Subscription product offers a recurring payment method via the gateway. This feature allows you to create subscription plans, assign them to customers, and manage all subscriptions in one place. Customers can subscribe to your plans by following a Hosted Payment Page (HPP) link, making the process seamless and automated.'
+---
+
+## **How Subscription Works**
+
+With the Subscription product, you can create and manage multiple subscription plans, each with its own settings for recurring billing. Once a plan is created, you can send a link to your customer, allowing them to subscribe and enter their payment information.
+
+![Subscription Flow](/images/flows-subscription.svg)
+
+## **Features of Subscription**
+
+<CardGroup>
+  <Card title="Recurring Billing" icon="calendar">
+    Automate payments on a regular schedule with our recurring billing feature.
+  </Card>
+
+  <Card title="Flexible Plan Creation" icon="plus">
+    Create and manage as many subscription plans as you need, each with unique settings.
+  </Card>
+
+  <Card title="Customer Self-Enrollment" icon="link">
+    Share an HPP link, enabling customers to subscribe to plans directly and securely.
+  </Card>
+</CardGroup>
+
+## **Subscription Parameters**
+
+Here are the parameters you can use to configure and customize subscription plans:
+
+```json
+{
+  "subscription": {
+      "plan_name": "<string>",
+      "plan_desc": "<string>",
+      "cycle_type": "<DAYS/MONTHS>",
+      "subscription_end_type": "CYCLE",
+      "cycle_interval": <int>,
+      "max_cycle_count": <int>,
+      "has_trial_period": <boolean>,
+      "trial_period_duration_type": "DAYS",
+      "trial_period_duration": <int>,
+      "has_discount": <boolean>,
+      "discount_percentage": <int>,
+      "discount_duration": <int>
+  }
+}
+```
+## **Key Parameters**
+
+Here are the essential parameters for configuring your subscription plans:
+
+- **`plan_name`**: Name of the subscription plan.
+- **`plan_desc`**: Description of the subscription plan.
+- **`cycle_type`**: Frequency of recurrence (e.g., DAYS or MONTHS).
+- **`cycle_interval`**: Specifies how often the billing cycle repeats.
+- **`max_cycle_count`**: Maximum number of cycles for the subscription.
+- **`has_trial_period`**: Indicates if a trial period is included.
+- **`trial_period_duration_type`**: Unit for the trial period duration (e.g., DAYS).
+- **`trial_period_duration`**: Length of the trial period.
+- **`has_discount`**: Specifies whether a discount applies.
+- **`discount_percentage`**: Discount percentage on the subscription price.
+- **`discount_duration`**: Length of time the discount is applied.
+
+
+## **Steps to Set Up Subscription**
+
+<Steps>
+  <Step title="Accessing the Subscription Product">
+    Go to your product list and select the Subscription feature to open the options for managing subscription plans, active subscriptions, and subscriber details.
+  </Step>
+
+  <Step title="Creating a Subscription Plan">
+    In the Subscription feature, create a new plan by setting up details such as the plan name, billing frequency, and payment amount.
+  </Step>
+
+  <Step title="Managing Subscription Plans">
+    Once a plan is created, it will be added to your list of available subscription plans. You can review and update plan details or create duplicates as needed.
+  </Step>
+
+  <Step title="Starting a New Subscription">
+    To start a subscription, select a plan and assign it to a customer. A unique link will be generated that can be sent to the customer for enrollment.
+  </Step>
+
+  <Step title="Sending Subscription Link">
+    Share the Hosted Payment Page (HPP) link with the customer. When they open the link, they can enter their payment information to subscribe.
+  </Step>
+
+  <Step title="Managing Subscriber Information">
+    After the customer subscribes, their details are stored in the subscriber management section, where you can view and update subscriber information as needed.
+  </Step>
+</Steps>
+
+## **Best Practices for Subscription Management**
+
+* **Create Distinct Plan Names**: Use clear and specific names for subscription plans to make management easier.
+
+* **Set Appropriate Billing Intervals**: Ensure the billing frequency and amount match customer expectations to reduce churn.
+
+* **Review Subscriber Details Regularly**: Keep subscriber information updated and review subscription statuses periodically.
+
+## **Next Steps**
+
+To start managing subscriptions, log in to your account and access the Subscription product. For further assistance or support, feel free to contact our team.
+
+<Card title="Download Merchant User Guide" icon="file-pdf" href="/static/downloads/PO-MerchantUserGuide-EN.pdf">
+  Download our comprehensive Merchant User Guide (PDF) for detailed instructions and best practices.
+</Card>
+
+<Card title="Need Assistance?" icon="life-ring" href="/support/contact">
+  If you have questions about setting up or managing subscriptions, please reach out to our support team.
+</Card>
