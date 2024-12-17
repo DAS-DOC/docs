@@ -171,9 +171,9 @@
     {
       "group": "支払いオプションAPI",
       "pages": [
-        "api-reference-jp/introduction",
-        "api-reference-jp/authentication",
-        "api-reference-jp/merchantdetails"
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/merchantdetails"
       ],
       "version": "日本語"
     },
@@ -277,9 +277,9 @@
     {
       "group": "エラーコード",
       "pages": [
-        "api-reference-jp/errors/httpresponse",
-        "api-reference-jp/errors/responsecodes",
-        "api-reference-jp/errors/gatewayerrors"
+        "api-reference/errors/httpresponse",
+        "api-reference/errors/responsecodes",
+        "api-reference/errors/gatewayerrors"
       ],
       "version": "日本語"
     },
