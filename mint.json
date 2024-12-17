@@ -79,6 +79,13 @@
       ],
       "version": "English"
     },
+     {
+      "group": "",
+      "pages": [
+        "documentation-jp/overview"
+      ],
+      "version": "日本語"
+    },
     {
       "group": "Get Started",
       "pages": [
@@ -227,40 +234,40 @@
         {
           "group": "Hosted Payment Page",
           "pages": [
-            "api-reference/endpoint/generatehpp",
-            "api-reference/endpoint/ewallet"
+            "api-reference-jp/endpoint/generatehpp",
+            "api-reference-jp/endpoint/ewallet"
           ]
         },
         {
           "group": "Direct Payments",
           "pages": [
-            "api-reference/endpoint/authorisation",
-            "api-reference/endpoint/purchase",
-            "api-reference/endpoint/void",
-            "api-reference/endpoint/capture",
-            "api-reference/endpoint/refund",
-            "api-reference/endpoint/status"
+            "api-reference-jp/endpoint/authorisation",
+            "api-reference-jp/endpoint/purchase",
+            "api-reference-jp/endpoint/void",
+            "api-reference-jp/endpoint/capture",
+            "api-reference-jp/endpoint/refund",
+            "api-reference-jp/endpoint/status"
           ]
           },
         {
           "group": "Tokenisation",
           "pages": [
-            "api-reference/endpoint/generatetoken",
-            "api-reference/endpoint/usetoken"
+            "api-reference-jp/endpoint/generatetoken",
+            "api-reference-jp/endpoint/usetoken"
           ]
         },
         {
           "group": "Subscriptions",
           "pages": [
-            "api-reference/endpoint/createsubscription",
-            "api-reference/endpoint/subscriptionlist",
-            "api-reference/endpoint/subscriptiondetails",
-            "api-reference/endpoint/pausesubscription",
-            "api-reference/endpoint/resumesubscription",
-            "api-reference/endpoint/cancelsubscription"
+            "api-reference-jp/endpoint/createsubscription",
+            "api-reference-jp/endpoint/subscriptionlist",
+            "api-reference-jp/endpoint/subscriptiondetails",
+            "api-reference-jp/endpoint/pausesubscription",
+            "api-reference-jp/endpoint/resumesubscription",
+            "api-reference-jp/endpoint/cancelsubscription"
           ]
         },
-        "api-reference/webhookhandler"
+        "api-reference-jp/webhookhandler"
       ],
  	 "version": "日本語"
     },
@@ -277,9 +284,9 @@
     {
       "group": "エラーコード",
       "pages": [
-        "api-reference/errors/httpresponse",
-        "api-reference/errors/responsecodes",
-        "api-reference/errors/gatewayerrors"
+        "api-reference-jp/errors/httpresponse",
+        "api-reference-jp/errors/responsecodes",
+        "api-reference-jp/errors/gatewayerrors"
       ],
       "version": "日本語"
     },
