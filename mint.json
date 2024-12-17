@@ -57,7 +57,7 @@
     },
     {
       "name": "変更ログ",
-      "url": "logs-jp",
+      "url": "logs",
       "version": "日本語"
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "name": "サポート",
-      "url": "support-jp",
+      "url": "support",
       "version": "日本語"
     }
   ],
