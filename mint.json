@@ -178,9 +178,9 @@
     {
       "group": "支払いオプションAPI",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication",
-        "api-reference/merchantdetails"
+        "api-reference-jp/introduction",
+        "api-reference-jp/authentication",
+        "api-reference-jp/merchantdetails"
       ],
       "version": "日本語"
     },
