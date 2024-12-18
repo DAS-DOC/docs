@@ -1,272 +1,274 @@
 ---
-title: 'FAQs & Troubleshooting'
-description: 'Frequently asked questions and troubleshooting guide for merchants using the Gateway.'
+title: 'よくある質問とトラブルシューティング'
+description: 'ゲートウェイをご利用いただく加盟店からよく寄せられる質問と、その解決策をご紹介しています。'
 ---
 
-Welcome to the **FAQs & Troubleshooting** section. Here, you’ll find answers to commonly asked questions, along with solutions for common issues you might encounter while using the Gateway. This section is designed to help you get the most out of our products and resolve issues quickly.
+**よくある質問とトラブルシューティング**のセクションへようこそ。
+ ここでは、よく寄せられる質問への回答と、ゲートウェイ使用中に遭遇する可能性のある一般的な問題の解決策をご案内します。このセクションは、製品を最大限に活用し、問題を迅速に解決できるようサポートすることを目的としています。
 
-## **Frequently Asked Questions**
+## **よくあるご質問**
 
-<Accordion title="Getting Started">
-  <Accordion title="How do I create a Merchant Account?">
-    Visit our [Create an Account](./guides/create-account) page for step-by-step instructions on setting up your merchant account.
+<Accordion title="はじめに">
+  <Accordion title="加盟店アカウントの作成方法">
+    加盟店アカウントの設定手順については、[アカウント作成ページ](./guides/create-account)をご覧ください。ステップバイステップの手順をご案内しています。
   </Accordion>
 
-  <Accordion title="What documents are needed to onboard as a merchant?">
-    For a full list of required documents, see our [Onboarding Checklist](./guides/onboarding-checklist).
+  <Accordion title="加盟店としてオンボーディングするために必要な書類は何ですか？">
+    必要書類の全リストについては、[オンボーディングチェックリスト](./guides/onboarding-checklist)をご覧ください。
   </Accordion>
 
-  <Accordion title="How do I add products to my account?">
-    Once your account is set up, navigate to the **Products** tab and select the products you want to enable. Each product guide provides further details.
+  <Accordion title="アカウントに商品を追加するにはどうすればよいですか？">
+    アカウントの設定が完了したら、**商品タブ**に移動し、有効にしたい商品を選択してください。各商品ガイドで詳細な手順をご確認いただけます。
   </Accordion>
 
-  <Accordion title="What is MID?">
-    A Payment MID (Merchant Identification Number) is a unique identifier assigned to a business by Payment Options. This number is used to track and authenticate transactions made by the merchant, ensuring that payments are processed and settled to the correct business account.
+  <Accordion title="MIDとは何ですか？">
+    MID（加盟店識別番号） とは、Payment Optionsがビジネスに割り当てる固有の識別番号です。この番号は、加盟店によって行われる取引を追跡および認証するために使用され、支払いが正しいビジネスアカウントに処理および決済されることを保証します。
   </Accordion>
 
-  <Accordion title="What is acquirer?">
-    An acquirer (also called an acquiring bank, acquiring financial institution, or merchant bank) is a financial institution or payment processor that partners with merchants to enable them to accept credit card, debit card, and other electronic payments. The acquirer provides the merchant with a merchant account and facilitates the authorization, processing, and settlement of transactions between the merchant and the customer's bank (the issuer).
+  <Accordion title="アクワイアラーとは何ですか？">
+    アクワイアラー（またはアクワイアリング銀行、金融機関、加盟店銀行とも呼ばれます）とは、加盟店がクレジットカード、デビットカード、その他の電子決済を受け入れられるようにする金融機関や決済処理業者のことです。アクワイアラーは加盟店に加盟店アカウントを提供し、加盟店と顧客の銀行（イシュアー）間の取引の認証、処理、および決済を支援します。
   </Accordion>
 
-  <Accordion title="What is merchant?">
-    Customers that will use Payment Options as their payment gateway are merchants.
+  <Accordion title="加盟店とは何ですか？">
+    Payment Optionsを決済ゲートウェイとして利用するお客様（事業者）は加盟店と呼ばれます。
   </Accordion>
 
-  <Accordion title="What is partner (reseller)?">
-    Customers that onboard other merchants onto the Payment Options gateway services are partners.
+  <Accordion title="パートナー（リセラー）とは何ですか？">
+    他の加盟店をPayment Optionsのゲートウェイサービスにオンボーディングするお客様はパートナーと呼ばれます。
   </Accordion>
 
-  <Accordion title="What is API?">
-    An API (Application Programming Interface) is a set of rules, protocols, and tools that allows different software applications to communicate and interact with each other. It defines the methods and data formats that applications can use to request and exchange information. For more information, [Click here](https://en.wikipedia.org/wiki/API).
+  <Accordion title="APIとは何ですか？">
+    API（アプリケーション・プログラミング・インターフェース） とは、異なるソフトウェアアプリケーションが互いに通信し、連携するためのルール、プロトコル、およびツールの集合です。APIは、アプリケーションが情報を要求および交換するために使用できるメソッドとデータ形式を定義します。詳細については、[こちら](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9)をクリックしてください。
   </Accordion>
 
-  <Accordion title="What is an issuer?">
-    An issuer is a bank or financial institution that provides credit cards, debit cards, or other payment cards to consumers (cardholders). The issuer is responsible for approving the cardholder's application, managing their account, and making sure the funds are available for purchases or withdrawals.
+  <Accordion title="イシュアーとは何ですか？">
+    イシュアー とは、消費者（カード保有者）にクレジットカード、デビットカード、またはその他の決済カードを提供する銀行や金融機関のことです。イシュアーは、カード保有者の申請を承認し、アカウントを管理し、購入や引き出しのための資金が利用可能であることを確認する責任を担います。
   </Accordion>
 
-  <Accordion title="What is Dasgateway?">
-    Dasgateway is the name of our payment gateway platform. To access Dasgateway, please log in to your merchant or partner account [here](https://me.paymentoptions.com/login).
+  <Accordion title="Dasgatewayとは何ですか？">
+    Dasgatewayは、当社の決済ゲートウェイプラットフォームの名称です。Dasgatewayにアクセスするには、[こちらから](https://me.paymentoptions.com/login)から加盟店またはパートナーアカウントにログインしてください。
   </Accordion>
 
-  <Accordion title="What is a payment gateway?">
-    A payment gateway is a service that authorizes and processes payments for online and in-store transactions. It securely transfers payment information between the customer, merchant, and bank.
+  <Accordion title="決済ゲートウェイとは何ですか？">
+    決済ゲートウェイ とは、オンラインおよび店舗での取引において、支払いを認証・処理するサービスです。顧客、加盟店、および銀行間で支払い情報を安全に転送します。
   </Accordion>
 
-  <Accordion title="How does the payment gateway work?">
-    The payment gateway encrypts sensitive payment information, verifies transaction details, and communicates with the bank to authorize the payment. It then returns the status of the transaction (approved/declined).
+  <Accordion title="決済ゲートウェイはどのように機能しますか？">
+    決済ゲートウェイは、機密性の高い支払い情報を暗号化し、取引内容を確認した上で銀行と通信し、支払いを認証します。その後、取引のステータス（承認/拒否）を返します。
   </Accordion>
 
-  <Accordion title="What types of payments can I accept using your gateway?">
-    Our payment gateway supports various payment methods, including credit/debit cards, digital wallets, and alternative payment methods like Google Pay, Apple Pay, and PayPay. For more information, please refer to the [payment methods](https://dasdoc.mintlify.app/documentation/paymentmethods/cardschemes) segment.
+  <Accordion title="ゲートウェイを利用してどのような支払い方法を受け付けられますか？">
+    当社の決済ゲートウェイは、クレジットカード/デビットカード、デジタルウォレット、およびGoogle Pay、Apple Pay、PayPayなどの代替決済方法を含む、さまざまな支払い方法に対応しています。詳細については、[支払い方法セクション](https://dasdoc.mintlify.app/documentation-jp/paymentmethods/cardschemes)セクションをご参照ください。
   </Accordion>
 
-  <Accordion title="Is the payment process secure?">
-    Yes, our payment gateway uses industry-standard security protocols such as SSL encryption, tokenization, and PCI-DSS compliance to ensure that your transactions are safe and secure.
+  <Accordion title="支払い処理は安全ですか？">
+    はい、当社の決済ゲートウェイは、SSL暗号化、トークナイゼーション、およびPCI-DSS準拠などの業界標準のセキュリティプロトコルを使用して、お客様の取引が安全かつ確実に処理されるようにしています。
   </Accordion>
 
-  <Accordion title="How can I integrate the payment gateway into my website?">
-    You can integrate our payment gateway using our API or pre-built plugins for popular platforms such as WooCommerce, Shopify, and Magento. We provide detailed documentation and developer support for the integration process in our [guide](https://dasdoc.mintlify.app/support/merchantguide) section.
+  <Accordion title="決済ゲートウェイを自分のウェブサイトに統合するにはどうすればよいですか？">
+    当社の決済ゲートウェイは、APIを使用するか、WooCommerce、Shopify、Magentoなどの人気プラットフォーム向けのプラグインを利用して統合できます。統合プロセスについては、[ガイドセクション](https://dasdoc.mintlify.app/support-jp/merchantguide)に詳細なドキュメントと開発者向けサポートをご用意しています。
   </Accordion>
 
-  <Accordion title="Are there any setup fees for using the payment gateway?">
-    The setup fees may vary depending on the plan you choose. Please refer to our [pricing page](https://www.paymentoptions.com/ja/pricing/) for detailed information about our fee structure and subscription plans.
+  <Accordion title="決済ゲートウェイの利用に設定費用はかかりますか？">
+    設定費用はお選びいただくプランによって異なる場合があります。料金体系やサブスクリプションプランの詳細については、[料金ページ](https://www.paymentoptions.com/ja/pricing/)をご参照ください。
   </Accordion>
 
-  <Accordion title="How long does it take for a payment to be processed?">
-     Most transactions are processed in real-time, meaning payments are authorized and confirmed instantly.
+  <Accordion title="支払いが処理されるまでにどれくらい時間がかかりますか？">
+    ほとんどの取引はリアルタイムで処理され、支払いは即座に認証・確認されます。
   </Accordion>
 
-  <Accordion title="What happens if a payment fails?">
-    If a payment fails, the payment gateway will notify both the customer and the merchant. The customer can attempt to re-enter payment details or use a different payment method.
+  <Accordion title="支払いが失敗した場合はどうなりますか？">
+    支払いが失敗した場合、決済ゲートウェイがお客様と加盟店の両方に通知します。お客様は支払い情報を再入力するか、別の支払い方法を試すことができます。
   </Accordion>
 
-  <Accordion title="Do you support recurring payments or subscriptions?">
-    Yes, our payment gateway supports recurring billing and subscription payments. You can set up automated payments for your customers based on your subscription model. For more information, please refer to the [Subscription](https://dasdoc.mintlify.app/documentation/payments/subscription) page.
+  <Accordion title="定期支払いやサブスクリプションに対応していますか？">
+    はい、当社の決済ゲートウェイは定期請求およびサブスクリプション支払いに対応しています。サブスクリプションモデルに基づいて、お客様向けに自動支払いを設定できます。詳細については、[サブスクリプション](https://dasdoc.mintlify.app/documentation-jp/payments/subscription)ページをご参照ください。
   </Accordion>
 
-  <Accordion title="Can I process international payments?">
-    Yes, depending on your needs, our payment gateway supports international payments. It allows you to accept payments in multiple currencies and from different countries. Please [contact support](https://dasdoc.mintlify.app/support/contact) for more information on the availability of multiple currencies on your account.
+  <Accordion title="国際決済を処理することはできますか？">
+    はい、ご要望に応じて、当社の決済ゲートウェイは国際決済に対応しています。複数の通貨での支払いや、さまざまな国からの支払いを受け付けることが可能です。お使いのアカウントで利用可能な通貨の詳細については、[サポート](https://dasdoc.mintlify.app/support-jp/contact)までお問い合わせください。
   </Accordion>
 
-  <Accordion title="What fees are associated with using the payment gateway?">
-    We charge transaction fees, which vary depending on the volume of payments processed and the payment methods used. Please refer to our [pricing page](https://www.paymentoptions.com/ja/pricing/) for a breakdown of fees.
+  <Accordion title="決済ゲートウェイの利用にかかる費用は何ですか？">
+    当社では、処理される支払いの取引量や利用される支払い方法に応じて異なる取引手数料を請求しています。手数料の詳細については、[料金ページ](https://www.paymentoptions.com/ja/pricing/)をご参照ください。
   </Accordion>
 
-  <Accordion title="How can I view my transaction history?">
-    You can access your transaction history through the merchant dashboard, where you can see details of all successful, pending, and failed transactions.
+  <Accordion title="取引履歴を確認するにはどうすればよいですか？">
+    加盟店ダッシュボードから取引履歴にアクセスできます。成功した取引、保留中の取引、失敗した取引の詳細をすべて確認することが可能です。
   </Accordion>
 
-  <Accordion title="What support do you offer if I have issues with a payment?">
-    Our [support](https://dasdoc.mintlify.app/support/contact) team is available via email, and phone. We also have a comprehensive help center with troubleshooting guides, FAQs, and tutorials.
+  <Accordion title="支払いに問題がある場合、どのようなサポートを受けられますか？">
+    当社のサ [サポート](https://dasdoc.mintlify.app/support-jp/contact)チームは、メールや電話で対応しています。また、トラブルシューティングガイド、FAQ、チュートリアルを含む包括的なヘルプセンターもご利用いただけます。
   </Accordion>
 
-  <Accordion title="Is it possible to issue refunds through the payment gateway?">
-    Yes, our payment gateway allows you to issue refunds directly from the merchant dashboard for both full and partial refunds.
+  <Accordion title="決済ゲートウェイを通じて返金を行うことは可能ですか？">
+    はい、当社の決済ゲートウェイでは、加盟店ダッシュボードから全額返金および一部返金を直接行うことが可能です。
   </Accordion>
 
-  <Accordion title="How do I know if my customer’s payment is secure?">
-    We use advanced fraud protection tools and 3D Secure authentication to help prevent unauthorized transactions. You will also receive alerts in case of any suspicious activity.
+  <Accordion title="顧客の支払いが安全であることをどのように確認できますか？">
+    当社では、高度な不正防止ツールと3Dセキュア認証を使用して、不正な取引を防止しています。また、不審な活動が検出された場合には、アラートでお知らせします。
   </Accordion>
 
-  <Accordion title="Can I customize the payment form for my website?">
-    Yes, you can customize the look and feel of the payment form to match your brand’s identity using our API.
+  <Accordion title="自分のウェブサイト用に決済フォームをカスタマイズできますか？">
+    はい、APIを使用して、決済フォームのデザインや雰囲気をブランドのアイデンティティに合わせてカスタマイズすることが可能です。
   </Accordion>
 
-  <Accordion title="What is PCI compliance, and do I need to worry about it?">
-    PCI (Payment Card Industry) compliance is a set of security standards to ensure the secure handling of cardholder data. Our payment gateway is PCI-DSS compliant, so you don’t need to worry about it, but we recommend that you follow best practices for your business as well.
+  <Accordion title="PCI準拠とは何ですか？また、それについて心配する必要がありますか？">
+    PCI（Payment Card Industry）準拠とは、カード保有者データを安全に取り扱うためのセキュリティ基準のことです。当社の決済ゲートウェイはPCI-DSS準拠をしていますので、ご心配いただく必要はありません。ただし、ビジネスのベストプラクティスを守ることをお勧めします。
   </Accordion>
 
-  <Accordion title="Can I accept payments through mobile apps?">
-    Yes, our payment gateway is fully compatible with mobile apps, however we do not provide SDKs for development.
+  <Accordion title="モバイルアプリを通じて支払いを受け付けることはできますか？">
+    はい、当社の決済ゲートウェイはモバイルアプリと完全に互換性があります。ただし、開発用のSDKは提供しておりません。
   </Accordion>
 
-  <Accordion title="How do I update my payment settings or account information?">
-    You can update your payment settings, bank details, and account information by contacting our [support](https://dasdoc.mintlify.app/support/contact) team.
+  <Accordion title="支払い設定やアカウント情報を更新するにはどうすればよいですか？">
+    支払い設定、銀行情報、アカウント情報の更新については、[サポート](https://dasdoc.mintlify.app/support-jp/contact)チームにお問い合わせください。
   </Accordion>
 
-  <Accordion title="Do you offer multi-user access to the merchant dashboard?">
-    Yes, we do have a sub user feature, please contact the [support](https://dasdoc.mintlify.app/support/contact) team to set up your new sub user.
+  <Accordion title="加盟店ダッシュボードに複数ユーザーでアクセスすることはできますか？">
+    はい、サブユーザー機能をご利用いただけます。新しいサブユーザーの設定については、[サポート](https://dasdoc.mintlify.app/support-jp/contact)チームにお問い合わせください。
   </Accordion>
 
-  <Accordion title="Can I test the payment gateway before going live?">
-    Yes, please contact the [support](https://dasdoc.mintlify.app/support/contact) team as we offer a sandbox or test environment where you can simulate payments and ensure that everything works correctly before you start processing live transactions.
-  </Accordion>
-</Accordion>
-
-<Accordion title="Payment Processing">
-  <Accordion title="What payment methods does the Gateway support?">
-    Our Gateway supports multiple payment methods, including credit cards, e-wallets, QR codes, and more. Check the [Supported Card Schemes](./guides/card-schemes) and [E-Wallets](./guides/e-wallets) sections for details.
-  </Accordion>
-
-  <Accordion title="How do I enable 3D Secure (3DS) transactions?">
-    3D Secure is enabled at the product level. Visit the **Secure Payment** section to understand how to configure 3DS for enhanced transaction security.
-  </Accordion>
-
-  <Accordion title="Can I process multi-currency payments?">
-    Yes, our Gateway supports multiple currencies. For a list of supported currencies, refer to the [Currency Guide](./guides/currency).
-  </Accordion>
-
-  <Accordion title="What is chargeback?">
-    A chargeback is a process in which a credit card or debit card transaction is reversed by the cardholder's bank (the issuer) after a customer disputes a charge. Essentially, a chargeback allows the customer to get their money back if they believe a transaction was fraudulent, erroneous, or otherwise problematic.
-  </Accordion>
-
-  <Accordion title="What is refund?">
-    A refund is the return of money to a customer after they have paid for goods or services, typically because the customer is dissatisfied with the purchase or because there was an issue with the product or service. A refund is a voluntary action by the merchant (or seller), unlike a chargeback, which is initiated by the customer through their bank.
+  <Accordion title="本稼働前に決済ゲートウェイをテストすることはできますか？">
+    はい、当社ではサンドボックスまたはテスト環境を提供しています。支払いをシミュレーションし、本稼働前にすべてが正常に動作することを確認できます。詳細については、[サポート](https://dasdoc.mintlify.app/support-jp/contact)チームにお問い合わせください。
   </Accordion>
 </Accordion>
 
-<Accordion title="Technical Integration">
-  <Accordion title="How do I generate an HPP (Hosted Payment Page) link?">
-    You can generate HPP links directly from the HPP product dashboard. For details, see the [HPP Guide](./guides/hosted-payment-page).
+<Accordion title="決済処理">
+  <Accordion title="ゲートウェイはどのような支払い方法に対応していますか？">
+    当社のゲートウェイは、クレジットカード、電子ウォレット、QRコードなど、さまざまな支払い方法に対応しています。詳細については、[対応カードスキーム](https://dasdoc.mintlify.app/documentation-jp/paymentmethods/cardschemes)および[電子ウォレット](https://dasdoc.mintlify.app/documentation-jp/paymentmethods/ewallets)のセクションをご覧ください。
   </Accordion>
 
-  <Accordion title="What are the authentication requirements for API calls?">
-    Our API uses HTTP Basic Authentication with an API key in the `Authorization` header. Refer to the [API Authentication](./guides/authentication) page for details.
+  <Accordion title="3Dセキュア（3DS）取引を有効にするにはどうすればよいですか？">
+    3Dセキュアは商品レベルで有効化されます。取引のセキュリティを強化するための3DSの設定方法については、セキュアペイメントセクションをご覧ください。
   </Accordion>
 
-  <Accordion title="Where can I download e-commerce plugins?">
-    Plugins for platforms like WooCommerce, Magento, and Shopify are available on our [Website Plugins](./guides/website-plugins) page.
+  <Accordion title="複数通貨での支払いを処理できますか？">
+    はい、当社のゲートウェイは複数の通貨に対応しています。対応通貨のリストについては、[通貨ガイド](https://dasdoc.mintlify.app/documentation-jp/paymentmethods/currency)をご参照ください。
   </Accordion>
 
-  <Accordion title="What currencies does the API support?">
-    The API supports JPY, PHP, USD. Please refer to the [Currencies](https://dasdoc.mintlify.app/documentation/paymentmethods/currency) section in the documentation for a complete list.
+  <Accordion title="チャージバックとは何ですか？">
+    チャージバックとは、顧客が請求に異議を申し立てた後、カード保有者の銀行（イシュアー）によってクレジットカードまたはデビットカードの取引が取り消されるプロセスです。簡単に言うと、取引が不正、エラー、またはその他の問題があると顧客が考えた場合、チャージバックによって顧客はお金を取り戻すことができます。
   </Accordion>
 
-  <Accordion title="What are the common error codes, and how do I resolve them?">
-    Please refer to the [Gateway Error Codes](https://dasdoc.mintlify.app/api-reference/errors/gatewayerrors) section for a detailed list of common errors and their solutions.
-  </Accordion>
-
-  <Accordion title="Where can I find updates or changes to the API?">
-    Please refer to the [changelog](https://dasdoc.mintlify.app/logs/apiupdate).
-  </Accordion>
-
-  <Accordion title=" Does the API support webhooks?">
-    Yes, please refer to the [webhook handler](https://dasdoc.mintlify.app/api-reference/webhookhandler) page.
+  <Accordion title="返金とは何ですか？">
+    返金とは、顧客が商品やサービスの代金を支払った後に、購入に不満がある場合や商品やサービスに問題があった場合に、顧客にお金を返すことを指します。返金は加盟店（または販売者）が自主的に行うものであり、顧客が銀行を通じて手続きを開始するチャージバックとは異なります。
   </Accordion>
 </Accordion>
 
-<Accordion title="Gateway">
-  <Accordion title="When will the statement come out?">
-    Weekly Statements:
-    Weekly statements cover the period from Monday to Sunday and are released on the following Monday of the next week.
-
-    Monthly Statements:
-    Monthly statements cover the period from the 1st to the end of the month and are released on the second Monday of the following month.
-    Note: If the scheduled Monday falls on a holiday, statements will be released on the next business day.
+<Accordion title="技術的な統合">
+  <Accordion title="HPP（ホステッドペイメントページ）リンクを生成するにはどうすればよいですか？">
+    HPPリンクは、HPPプロダクトダッシュボードから直接生成できます。詳細については、[HPPガイド](https://dasdoc.mintlify.app/api-reference-jp/endpoint/generatehpp)をご参照ください。 
   </Accordion>
 
-  <Accordion title="Can I see transactions in real time?">
-    Yes, you may see it in real time on your [Dasgateway](https://me.paymentoptions.com/login) page.
+  <Accordion title="APIコールの認証要件は何ですか？">
+    当社のAPIは、Authorizationヘッダー内にAPIキーを含むHTTP基本認証を使用しています。詳細については、[API認証](https://dasdoc.mintlify.app/api-reference-jp/authentication)ページをご参照ください。
   </Accordion>
 
-  <Accordion title="How do I add extra columns in the gateway?">
-    On the Transaction page, press the "Additional column" button on the top left and select the fields you wish to be added.
+  <Accordion title="Eコマースプラグインはどこでダウンロードできますか？">
+    WooCommerce、Magento、Shopifyなどのプラットフォーム向けプラグインは、[ウェブサイトプラグイン](https://dasdoc.mintlify.app/support-jp/websiteplugins)ページでご利用いただけます。
   </Accordion>
 
-  <Accordion title="How do I terminate my account?">
-    Please reach out to your sales representitive, or if you have any additional questions or concerns, please contact our [customer support team](./contact). We are happy to assist you with the account termination process.
-
-    Please note: Once your account is terminated, all data associated with it may be permanently deleted, and you will no longer have access to any services associated with your account.
-  </Accordion>
-</Accordion>
-
-<Accordion title="Developer Tools and Resources">
-  <Accordion title="Where can I find sample code for integration?">
-    Please refer to: [Generate HPP](https://dasdoc.mintlify.app/api-reference/endpoint/generatehpp)
+  <Accordion title="APIはどの通貨に対応していますか？">
+    APIは、JPY（日本円）、PHP（フィリピンペソ）、USD（米ドル）に対応しています。対応通貨の完全なリストについては、ドキュメント内の[通貨](https://dasdoc.mintlify.app/documentation-jp/paymentmethods/currency)セクションをご参照ください。
   </Accordion>
 
-  <Accordion title="Do you offer Postman collections for testing?">
-    Yes, we do. Please refer to: [Postman collection](https://dasdoc.mintlify.app/downloads/PO-API-References-postman_collection.json.zip)
-  </Accordion>
-</Accordion>
-***
-
-## **Troubleshooting Guide**
-
-This section addresses common issues users encounter. If you’re experiencing a specific problem, review the solutions below.
-
-<Accordion title="Account Issues">
-  <Accordion title="I forgot my password. How can I reset it?">
-    Go to the login page and click **Forgot Password**. Follow the instructions to reset your password via email.
+  <Accordion title="一般的なエラーコードとその解決方法は何ですか？">
+    一般的なエラーとその解決策の詳細なリストについては、[ゲートウェイエラーコード](https://dasdoc.mintlify.app/api-reference-jp/errors/gatewayerrors)セクションをご参照ください。
   </Accordion>
 
-  <Accordion title="Why am I receiving a 'Login Failed' error?">
-    Double-check your username and password. Ensure you’re using the correct credentials associated with your account. If the issue persists, contact support.
+  <Accordion title="APIの更新や変更はどこで確認できますか？">
+    [変更ログ](https://dasdoc.mintlify.app/logsjp/apiupdate)をご参照ください。
+  </Accordion>
+
+  <Accordion title=" APIはウェブフックに対応していますか？">
+    はい、対応しています。詳細については、[ウェブフックハンドラー](https://dasdoc.mintlify.app/api-reference-jp/webhookhandler)ページをご参照ください。
   </Accordion>
 </Accordion>
 
-<Accordion title="Payment Errors">
-  <Accordion title="What does the 'Insufficient Funds' error mean?">
-    This error occurs when the cardholder's account has insufficient funds. Ask the customer to try another card or contact their bank.
+<Accordion title="ゲートウェイ">
+  <Accordion title="明細書はいつ発行されますか？">
+    週次明細書:
+    週次明細書は月曜日から日曜日までの期間を対象とし、翌週の月曜日に発行されます。
+
+    月次明細書:
+    月次明細書は月初から月末までの期間を対象とし、翌月の第2月曜日に発行されます。
+    ※予定された月曜日が祝日の場合、明細書は次の営業日に発行されます。
   </Accordion>
 
-  <Accordion title="How can I resolve a '3DS Authentication Failed' error?">
-    Ensure the customer has completed the 3D Secure authentication step. For more on 3DS, see the [Secure Payment](./guides/secure-payment) page.
+  <Accordion title="取引をリアルタイムで確認することはできますか？">
+    はい、[Dasgateway](https://me.paymentoptions.com/login)ページでリアルタイムに確認できます。
   </Accordion>
 
-  <Accordion title="Transaction was declined without a clear reason. What should I do?">
-    Review the [Gateway Error Codes](./guides/gateway-error-codes) page for information on decline codes. Contact support if the issue is unresolved.
+  <Accordion title="ゲートウェイに追加の列を追加するにはどうすればよいですか？">
+    取引ページで、左上にある「追加列」ボタンを押し、追加したい項目を選択してください。
+  </Accordion>
+
+  <Accordion title="アカウントを解約するにはどうすればよいですか？">
+    営業担当者にお問い合わせいただくか、追加のご質問やご不明点がある場合は、[カスタマーサポートチーム](https://dasdoc.mintlify.app/support-jp/contact)までご連絡ください。アカウント解約の手続きについてサポートさせていただきます。
+
+    ご注意: アカウントが解約されると、それに関連するすべてのデータが永久に削除される可能性があり、アカウントに関連するサービスへのアクセスもできなくなります。
   </Accordion>
 </Accordion>
 
-<Accordion title="Technical Issues">
-  <Accordion title="API request is returning a 401 Unauthorized error. What does this mean?">
-    This error indicates incorrect API credentials. Verify the `Authorization` header in your request and ensure your API key is correctly formatted.
+<Accordion title="開発者向けツールおよびリソース">
+  <Accordion title="統合のためのサンプルコードはどこで見つけられますか？">
+    [Generate HPP](https://dasdoc.mintlify.app/api-reference-jp/endpoint/generatehpp)をご参照ください。
   </Accordion>
 
-  <Accordion title="My plugin installation failed. How can I fix this?">
-    Ensure you’re using the correct plugin version for your e-commerce platform. Follow the instructions in the relevant [Installation Guide](./guides/website-plugins).
-  </Accordion>
-
-  <Accordion title="Webhook events aren’t being received. What should I check?">
-    Make sure the webhook URL is publicly accessible and registered correctly in the API payload. Refer to [Webhook Handler Setup](./guides/webhook-handler) for configuration steps.
+  <Accordion title="テスト用のPostmanコレクションを提供していますか？">
+    はい、提供しています。[Postmanコレクション](https://dasdoc.mintlify.app/downloads/PO-API-References-postman_collection.json.zip)をご参照ください。
   </Accordion>
 </Accordion>
 
 ***
 
-## **Need More Help?**
+## **トラブルシューティングガイド**
 
-<Card title="Contact Support" icon="life-ring" href="/support/contact">
-  If you need further assistance, please [reach out to our support team](./support/contact). Our team is here to help you troubleshoot and resolve any issues you may be experiencing.
+このセクションでは、ユーザーが直面しやすい一般的な問題について説明しています。特定の問題が発生している場合は、以下の解決策をご確認ください。
+
+<Accordion title="アカウントの問題">
+  <Accordion title="パスワードを忘れました。どうすればリセットできますか？">
+    ログインページにアクセスし、**「パスワードを忘れた場合」**をクリックしてください。メールでパスワードをリセットする手順に従ってください。
+  </Accordion>
+
+  <Accordion title="「ログイン失敗」エラーが表示されるのはなぜですか？">
+    ユーザー名とパスワードを再度ご確認ください。アカウントに関連付けられた正しい認証情報を使用していることを確認してください。それでも問題が解決しない場合は、サポートまでお問い合わせください。
+  </Accordion>
+</Accordion>
+
+<Accordion title="決済エラー">
+  <Accordion title="「残高不足」エラーとは何ですか？">
+    このエラーは、カード保有者のアカウントに十分な残高がない場合に発生します。お客様に別のカードを試していただくか、銀行にお問い合わせいただくようご案内ください。
+  </Accordion>
+
+  <Accordion title="「3DS認証失敗」エラーを解決するにはどうすればよいですか？">
+    お客様が3Dセキュア認証の手順を完了していることを確認してください。3DSの詳細については、[セキュアペイメント](./guides/secure-payment)ページをご参照ください。
+  </Accordion>
+
+  <Accordion title="取引が明確な理由なしに拒否されました。どうすればよいですか？">
+    [ゲートウェイエラーコード](https://dasdoc.mintlify.app/api-reference-jp/errors/gatewayerrors)ページを確認し、拒否コードに関する情報をご覧ください。それでも問題が解決しない場合は、サポートまでお問い合わせください。
+  </Accordion>
+</Accordion>
+
+<Accordion title="技術的な問題">
+  <Accordion title="APIリクエストが401 Unauthorizedエラーを返しています。これはどういう意味ですか？">
+    このエラーは、API認証情報が間違っていることを示しています。リクエスト内のAuthorizationヘッダーを確認し、APIキーが正しくフォーマットされていることを確認してください。
+  </Accordion>
+
+  <Accordion title="プラグインのインストールに失敗しました。どうすれば修正できますか？">
+    ご利用のEコマースプラットフォームに適したプラグインのバージョンを使用していることを確認してください。該当する[インストールガイド](https://dasdoc.mintlify.app/support-jp/websiteplugins)の手順に従ってください。
+  </Accordion>
+
+  <Accordion title="Webhookイベントが受信されません。何を確認すればよいですか？">
+    WebhookのURLが公開アクセス可能であり、APIペイロードに正しく登録されていることを確認してください。設定手順については、[Webhookハンドラー](https://dasdoc.mintlify.app/api-reference-jp/webhookhandler)設定をご参照ください。
+  </Accordion>
+</Accordion>
+
+***
+
+## **さらにサポートが必要ですか？**
+
+<Card title="サポートへのお問い合わせ" icon="life-ring" href="/support/contact">
+  ご不明点がございましたら、当社[サポートチーム](./support/contact)までお問い合わせください。担当チームが問題の解決やトラブルシューティングを全力でサポートさせていただきます。
 </Card>
