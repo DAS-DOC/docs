@@ -1,83 +1,81 @@
 ---
-title: 'Gateway Release Notes'
-description: 'List of all releases with links to detailed notes for each version.'
+title: 'ゲートウェイ リリースノート'
+description: '各バージョンの詳細なリリースノートへのリンクを含むリリース一覧です。'
 ---
 
-## **Overview**
+## **概要**
 
-This page provides a quick summary of each release, highlighting major updates and new features. For detailed release information, click on a specific version to view the complete release notes.
+このページでは、各リリースの主要な更新内容と新機能の概要を提供します。詳細なリリース情報は、特定のバージョンをクリックしてご確認ください。
 
 ***
 
-## **Release History**
+## **リリース履歴**
 
-<Update label="2024-12-03" description="Release 20">
+<Update label="2024-12-03" description="リリース 20">
   <div style={{ fontSize: '12px', lineHeight: '1.1' }}>
-    ### Features or Enhancements Related to Merchants & Partners
+    ### 加盟店およびパートナー向けの機能強化
 
-    * e-KYC Integration on auto onboarding  (Onfido)
+    * e-KYC統合: 自動オンボーディングにOnfidoを導入
 
-    * Updated Links: Implemented across the Gateway for easier navigation
+    * リンク更新: ゲートウェイ全体でナビゲーションを容易にするリンクを実装
 
-    * Improved Loading Screens
+    * ローディング画面の改善
 
-    * New Payment Integrations: PayPay, Pay-easy, and Konbini (New APM options for JP region)
+    * 新決済統合: PayPay、Pay-easy、およびコンビニ決済（日本地域向けの新しいAPMオプション）
 
-    * UI Improvements:
+    * UIの改善:
 
-      * Default column selections in various interfaces
+      * 各インターフェースにおけるデフォルトの列選択
 
-      * Terms & Conditions updated
+      * 利用規約を更新
 
-    ### Minor Fixes and Enhancements
+    ### 軽微な修正と機能強化
 
-    * Updated Error Descriptions
-    
-    * Miscellaneous: Improved navigation, sub-user settings, and email notifications
+    * エラーメッセージの詳細を更新
 
-    ### Defect Fixes
+    * その他: ナビゲーションの改善、サブユーザー設定、メール通知
 
-    * Resolved the issue of multiple webhooks being sent for a single transaction
+    ### 不具合修正
 
-    * Resolved problems preventing resellers from viewing their approved merchants
+    * 単一のトランザクションに対して複数のWebhookが送信される問題を解決
 
-    * Fixed problems with transaction responses, including Google Pay and chargeback errors
+    * パートナーが承認済み加盟店を閲覧できない問題を解決
 
-    * Fixed the issue for some transaction having inconsistent response code
+    * Google Payおよびチャージバックエラーを含むトランザクション応答の問題を修正
 
-    * Resolved an issue where certain transactions returned inconsistent response codes
+    * 一部のトランザクションで応答コードが一貫しない問題を修正
+
   </div>
 </Update>
 
-<Update label="2024-10-01" description="Release 19">
+<Update label="2024-10-01" description="リリース 19">
   <div style={{ fontSize: '12px', lineHeight: '1.1' }}>
-    ### Features or Enhancements Related to Merchants & Partners
+    ### 加盟店およびパートナー向けの機能強化
 
-    * HPP Page Updates
+    * HPPページの更新
 
-      * Added new fields for enhanced cardholder input
+      * カード保有者入力のための新しいフィールドを追加
 
-      * Included accessibility options for better usability
+      * アクセシビリティオプションを追加し、操作性を向上
 
-      * Enhanced support for memo text input
+      * メモテキスト入力のサポートを強化
 
-    * Pay by Link enhancements: Added a link name column within the transaction lists and reports for easier identification
+    * Pay by Linkの強化: 取引リストおよびレポートにリンク名の列を追加し、識別を容易に
 
-    * Subscription Notifications: Enhancement to remove time zone offset from start date, end date, and link expiry date from subscription email notification
+    * サブスクリプション通知: サブスクリプション通知メールで、開始日、終了日、およびリンク有効期限の日付からタイムゾーンオフセットを除外
 
+    ### 軽微な修正と機能強化
 
-    ### Minor Fixes and Enhancements
+    * パスワード管理: ユーザーは90日ごとにパスワードをリセットする必要があります
 
-    * Password Management: Users will now be required to reset passwords every 90 days
+    * 取引管理: 取引のフィルタリングおよびソートを改善し、ゲートウェイ上で期限切れパスワードの新しい通知を追加
 
-    * Transaction Management: Improved filtering and sorting for transactions, and added new notifications for expired passwords on the gateway
+    * 旧画面の通知: システム上の古い画面を使用していることをユーザーに通知するメッセージを追加
 
-    * Legacy Screen Notices: Added messages to inform users when they are on outdated screens in the system
-
-    * Referrals: Added a referral count to the Partner list
+    * 紹介機能: パートナーリストに紹介数を追加
   </div>
 </Update>
 
 <Note>
-  This Release Notes section will continue to grow as new versions are released. Bookmark this page to stay up-to-date with the latest improvements and features.
+   新しいバージョンがリリースされるたびに、このリリースノートセクションは拡充されます。最新の改善内容や機能を確認するため、このページをブックマークしてください。
 </Note>
