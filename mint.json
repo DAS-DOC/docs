@@ -42,12 +42,12 @@
     },
     {
       "name": "API Reference",
-      "url": "api-reference",
+      "url": "api-reference/en",
       "version": "English"
     },
     {
       "name": "API 参照",
-      "url": "api-reference-jp",
+      "url": "api-reference/jp",
       "version": "日本語"
     },
     {
@@ -160,125 +160,151 @@
       "version": "日本語"
     },
     {
-      "group": "Payment Options API",
+      "group": "Getting Started",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication",
-        "api-reference/merchantdetails",
-        "api-reference/webhookhandler"
+        "api-reference/en/introduction",
+        "api-reference/en/authentication",
+        "api-reference/en/merchant-details"
       ],
       "version": "English"
     },
     {
-      "group": "支払いオプションAPI",
+      "group": "Getting Started",
       "pages": [
-        "api-reference-jp/introduction",
-        "api-reference-jp/authentication",
-        "api-reference-jp/merchantdetails",
-        "api-reference-jp/webhookhandler"
+        "api-reference/jp/introduction",
+        "api-reference/jp/authentication",
+        "api-reference/jp/merchant-details"
       ],
       "version": "日本語"
     },
     {
-      "group": "Endpoint Examples",
+      "group": "API Endpoints",
       "pages": [
         {
-          "group": "Hosted Payment Page",
+          "group": "Server To Server",
           "pages": [
-            "api-reference/endpoint/generatehpp",
-            "api-reference/endpoint/ewallet"
-          ],
-          "version": "English"
-        },
-        {
-          "group": "ホステッド支払いページ",
-          "pages": [
-            "api-reference-jp/endpoint/generatehpp",
-            "api-reference-jp/endpoint/ewallet"
-          ],
-          "version": "日本語"
-        },
-        {
-          "group": "Direct Payments",
-          "pages": [
-            "api-reference/endpoint/authorisation",
-            "api-reference/endpoint/purchase",
-            "api-reference/endpoint/void",
-            "api-reference/endpoint/capture",
-            "api-reference/endpoint/refund",
-            "api-reference/endpoint/status"
+            "api-reference/en/server-to-server/purchase",
+            "api-reference/en/server-to-server/authorization",
+            "api-reference/en/server-to-server/capture",
+            "api-reference/en/server-to-server/refund",
+            "api-reference/en/server-to-server/void-authorization",
+            "api-reference/en/server-to-server/transaction-status"
           ],
           "version": "English"
         },
         {
           "group": "直接支払い",
-          "pages": [
-            "api-reference-jp/endpoint/authorisation",
-            "api-reference-jp/endpoint/purchase",
-            "api-reference-jp/endpoint/void",
-            "api-reference-jp/endpoint/capture",
-            "api-reference-jp/endpoint/refund",
-            "api-reference-jp/endpoint/status"
+          "pages":  [
+            "api-reference/jp/server-to-server/purchase",
+            "api-reference/jp/server-to-server/authorization",
+            "api-reference/jp/server-to-server/capture",
+            "api-reference/jp/server-to-server/refund",
+            "api-reference/jp/server-to-server/void-authorization",
+            "api-reference/jp/server-to-server/transaction-status"
           ],
           "version": "日本語"
         },
         {
-          "group": "Tokenisation",
+          "group": "Tokenization",
           "pages": [
-            "api-reference/endpoint/generatetoken",
-            "api-reference/endpoint/usetoken"
+            "api-reference/en/tokenization/generate-token",
+            "api-reference/en/tokenization/use-token"
           ],
           "version": "English"
         },
         {
           "group": "トークン化",
           "pages": [
-            "api-reference-jp/endpoint/generatetoken",
-            "api-reference-jp/endpoint/usetoken"
+            "api-reference/jp/tokenization/generate-token",
+            "api-reference/jp/tokenization/use-token"
           ],
           "version": "日本語"
         },
         {
           "group": "Subscriptions",
           "pages": [
-            "api-reference/endpoint/createsubscription",
-            "api-reference/endpoint/subscriptionlist",
-            "api-reference/endpoint/subscriptiondetails",
-            "api-reference/endpoint/pausesubscription",
-            "api-reference/endpoint/resumesubscription",
-            "api-reference/endpoint/cancelsubscription"
+            "api-reference/en/Subscription/create-subscription",
+            "api-reference/en/Subscription/cancel-subscription",
+            "api-reference/en/Subscription/pause-subscription",
+            "api-reference/en/Subscription/resume-subscription",
+            "api-reference/en/Subscription/subscription-list",
+            "api-reference/en/Subscription/subscription-details"
           ],
           "version": "English"
         },
         {
           "group": "サブスクリプション",
           "pages": [
-            "api-reference-jp/endpoint/createsubscription",
-            "api-reference-jp/endpoint/subscriptionlist",
-            "api-reference-jp/endpoint/subscriptiondetails",
-            "api-reference-jp/endpoint/pausesubscription",
-            "api-reference-jp/endpoint/resumesubscription",
-            "api-reference-jp/endpoint/cancelsubscription"
+            "api-reference/jp/Subscription/create-subscription",
+            "api-reference/jp/Subscription/cancel-subscription",
+            "api-reference/jp/Subscription/pause-subscription",
+            "api-reference/jp/Subscription/resume-subscription",
+            "api-reference/jp/Subscription/subscription-list",
+            "api-reference/jp/Subscription/subscription-details"
+          ],
+          "version": "日本語"
+        },
+        {
+          "group": "Wallet",
+          "pages": [
+            "api-reference/en/wallet/wallet"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "サブスクリ",
+          "pages": [
+           "api-reference/jp/e-wallet/wallet"
+          ],
+          "version": "日本語"
+        },        
+        {
+          "group": "Hosted Payment Page",
+          "pages": [ 
+            "api-reference/en/hpp/generate-link",
+            "api-reference/en/hpp/generate-link-tokenization"
+          ],
+          "version": "English"
+        },
+        {
+          "group": "ホステッド支払いページ",
+          "pages": [ 
+            "api-reference/jp/hpp/generate-link",
+            "api-reference/jp/hpp/generate-link-tokenization"
           ],
           "version": "日本語"
         }
       ]
     },
     {
-      "group": "Error Codes",
+      "group": "Error and Response",
       "pages": [
-        "api-reference/errors/httpresponse",
-        "api-reference/errors/responsecodes",
-        "api-reference/errors/gatewayerrors"
+        "api-reference/en/error-and-reponse/httpresponse",
+        "api-reference/en/error-and-reponse/responsecodes",
+        "api-reference/en/error-and-reponse/gatewayerrors"
       ],
       "version": "English"
     },
     {
       "group": "エラーコード",
       "pages": [
-        "api-reference-jp/errors/httpresponse",
-        "api-reference-jp/errors/responsecodes",
-        "api-reference-jp/errors/gatewayerrors"
+        "api-reference/en/error-and-reponse/httpresponse",
+        "api-reference/en/error-and-reponse/responsecodes",
+        "api-reference/en/error-and-reponse/gatewayerrors"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "Webhook",
+      "pages": [
+        "api-reference/en/webhook-handler"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Webhook",
+      "pages": [
+        "api-reference/en/webhook-handler"
       ],
       "version": "日本語"
     },
