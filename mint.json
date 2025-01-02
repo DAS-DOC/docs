@@ -79,6 +79,13 @@
       ],
       "version": "English"
     },
+     {
+      "group": "",
+      "pages": [
+        "documentation-jp/overview"
+      ],
+      "version": "日本語"
+    },
     {
       "group": "Get Started",
       "pages": [
@@ -233,7 +240,25 @@
           "version": "English"
         },
         {
-          "group": "サブスクリプション",
+          "group": "Direct Payments",
+          "pages": [
+            "api-reference-jp/endpoint/authorisation",
+            "api-reference-jp/endpoint/purchase",
+            "api-reference-jp/endpoint/void",
+            "api-reference-jp/endpoint/capture",
+            "api-reference-jp/endpoint/refund",
+            "api-reference-jp/endpoint/status"
+          ]
+          },
+        {
+          "group": "Tokenisation",
+          "pages": [
+            "api-reference-jp/endpoint/generatetoken",
+            "api-reference-jp/endpoint/usetoken"
+          ]
+        },
+        {
+          "group": "Subscriptions",
           "pages": [
             "api-reference/jp/Subscription/create-subscription",
             "api-reference/jp/Subscription/cancel-subscription",
@@ -276,6 +301,7 @@
         }
       ]
     },
+    
     {
       "group": "Error and Response",
       "pages": [
