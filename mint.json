@@ -346,7 +346,7 @@
       "group": "Guide",
       "pages": [
         "support/merchantguide",
-        "support/partnerguide"
+        "support/partnerguide",
       ],
       "version": "English"
     },
@@ -362,6 +362,7 @@
     {
       "group": "Website Plugins",
       "pages": [
+        "support/websiteplugins",
         "support/plugins-woocommerce",
         "support/plugins-magento",
         "support/plugins-opencart"
@@ -371,6 +372,7 @@
     {
       "group": "Website Plugins",
       "pages": [
+        "support-jp/websiteplugins",
         "support-jp/plugins-woocommerce",
         "support-jp/plugins-magento",
         "support-jp/plugins-opencart"
