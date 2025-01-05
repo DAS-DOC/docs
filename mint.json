@@ -221,12 +221,12 @@
         {
           "group": "Subscriptions",
           "pages": [
-            "api-reference/en/Subscription/create-subscription",
-            "api-reference/en/Subscription/cancel-subscription",
-            "api-reference/en/Subscription/pause-subscription",
-            "api-reference/en/Subscription/resume-subscription",
-            "api-reference/en/Subscription/subscription-list",
-            "api-reference/en/Subscription/subscription-details"
+            "api-reference/en/subscription/create-subscription",
+            "api-reference/en/subscription/cancel-subscription",
+            "api-reference/en/subscription/pause-subscription",
+            "api-reference/en/subscription/resume-subscription",
+            "api-reference/en/subscription/subscription-list",
+            "api-reference/en/subscription/subscription-details"
           ],
           "version": "English"
         },
@@ -251,12 +251,12 @@
         {
           "group": "Subscriptions",
           "pages": [
-            "api-reference/jp/Subscription/create-subscription",
-            "api-reference/jp/Subscription/cancel-subscription",
-            "api-reference/jp/Subscription/pause-subscription",
-            "api-reference/jp/Subscription/resume-subscription",
-            "api-reference/jp/Subscription/subscription-list",
-            "api-reference/jp/Subscription/subscription-details"
+            "api-reference/jp/subscription/create-subscription",
+            "api-reference/jp/subscription/cancel-subscription",
+            "api-reference/jp/subscription/pause-subscription",
+            "api-reference/jp/subscription/resume-subscription",
+            "api-reference/jp/subscription/subscription-list",
+            "api-reference/jp/subscription/subscription-details"
           ],
           "version": "日本語"
         },
