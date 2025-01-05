@@ -360,7 +360,7 @@
     },
 
     {
-      "group": "Website Plugins",
+      "group": "Plugins",
       "pages": [
         "support/websiteplugins",
         "support/plugins-woocommerce",
@@ -370,7 +370,7 @@
       "version": "English"
     },
     {
-      "group": "Website Plugins",
+      "group": "Plugins",
       "pages": [
         "support-jp/websiteplugins",
         "support-jp/plugins-woocommerce",
