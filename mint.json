@@ -367,7 +367,7 @@
         "support/plugins-magento",
         "support/plugins-opencart"
       ],
-      "version": "English"
+      "version": "English" 
     },
     {
       "group": "Plugins",
