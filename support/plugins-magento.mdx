@@ -23,29 +23,71 @@ description: 'Integration Guide for Magento 2'
     Check your Magento Mode:
     Run `php bin/magento deploy:mode:show` to find your mode
     If your Magento mode is "production", please run the below commands:
-    * php bin/magento cache:clean
-    * php bin/magento cache:flush
-    * php bin/magento setup:upgrade
-    * php bin/magento setup:di:compile
-    * php bin/magento setup:static-content:deploy
+
+    * `php bin/magento cache:clean`
+
+    * `php bin/magento cache:flush`
+
+    * `php bin/magento setup:upgrade`
+
+    * `php bin/magento setup:di:compile`
+
+    * `php bin/magento setup:static-content:deploy`
+
+    If your Magento mode is "default" (or) "developer", please run the below commands:
     
+    * `php bin/magento setup:upgrade`
+
+    * `php bin/magento setup:di:compile`
+
+    * `php bin/magento setup:static-content:deploy -f`
+
+  </Step>
+  
+</Steps>
+
+## **Configure  Extension**
+
+<Steps>
+  <Step>
+    Log in to your Magento Store Backend
   </Step>
 
   <Step>
-    WordPress will now upload the plugin file from your computer and install it for you. You will see a success message like this after the installation is finished.
+    Choose Stores on the Admin sidebar to the left. Now go to Settings > Configuration.
   </Step>
 
   <Step>
-    Once installed, you need to click on the Activate Plugin link to start using the plugin.
+    In the Configuration page, click on Sales on the left and choose Payment Methods
   </Step>
 
   <Step>
-    After activation, you need to enable plugin & configure payment options like Merchant ID, API key provided by payment options.
+   On the Payment Methods page, navigate to “Payment Options” Payment Section.
+
+    * Enabled - select yes to enable the “Payment Options” Payment Method
+
+    * Mode - select sandbox or live mode
+
+    * Title - This title will show under the payment methods section on the checkout page of Magento
+
+    * Access Token - Enter Your <Secret Key> received from Payment Options.
+
+    * Merchant ID - Enter Your <Merchant ID> received from Payment Options.
+    
+    * Debug - select yes to enable the debug, this will log Payment Options API calls under var/log/debug.log file
+
+    * Countries - Allow all countries or select specific countries to access this payment method
+
+  </Step>
+  <Step>
+    Click Save Config.
   </Step>
 
   <Step>
-    After configured, click the 'Save' button.
+    Refresh Magento Cache.
+    ![Backend image](/images/plugins/plugins-woo-01.png)
   </Step>
+  
 </Steps>
 
 ## **Screenshots**
