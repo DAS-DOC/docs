@@ -289,41 +289,40 @@
             "api-reference/jp/hpp/generate-link-tokenization"
           ],
           "version": "日本語"
-        }
+        },
+        {
+              "group": "Error and Response",
+              "pages": [
+                "api-reference/en/error-and-reponse/httpresponse",
+                "api-reference/en/error-and-reponse/responsecodes",
+                "api-reference/en/error-and-reponse/gatewayerrors"
+              ],
+              "version": "English"
+            },
+            {
+              "group": "エラーコード",
+              "pages": [
+                "api-reference/jp/error-and-reponse/httpresponse",
+                "api-reference/jp/error-and-reponse/responsecodes",
+                "api-reference/jp/error-and-reponse/gatewayerrors"
+              ],
+              "version": "日本語"
+            },
+            {
+              "group": "Webhook",
+              "pages": [
+                "api-reference/en/webhook-handler"
+              ],
+              "version": "English"
+            },
+            {
+              "group": "Webhook",
+              "pages": [
+                "api-reference/jp/webhook-handler"
+              ],
+              "version": "日本語"
+            }        
       ]
-    },
-    
-    {
-      "group": "Error and Response",
-      "pages": [
-        "api-reference/en/error-and-reponse/httpresponse",
-        "api-reference/en/error-and-reponse/responsecodes",
-        "api-reference/en/error-and-reponse/gatewayerrors"
-      ],
-      "version": "English"
-    },
-    {
-      "group": "エラーコード",
-      "pages": [
-        "api-reference/en/error-and-reponse/httpresponse",
-        "api-reference/en/error-and-reponse/responsecodes",
-        "api-reference/en/error-and-reponse/gatewayerrors"
-      ],
-      "version": "日本語"
-    },
-    {
-      "group": "Webhook",
-      "pages": [
-        "api-reference/en/webhook-handler"
-      ],
-      "version": "English"
-    },
-    {
-      "group": "Webhook",
-      "pages": [
-        "api-reference/en/webhook-handler"
-      ],
-      "version": "日本語"
     },
     {
       "group": "Logs",
