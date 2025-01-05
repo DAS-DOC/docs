@@ -289,8 +289,10 @@
             "api-reference/jp/hpp/generate-link-tokenization"
           ],
           "version": "日本語"
-        },
-        {
+        }       
+      ]
+    },
+    {
               "group": "Error and Response",
               "pages": [
                 "api-reference/en/error-and-reponse/httpresponse",
@@ -321,9 +323,7 @@
                 "api-reference/jp/webhook-handler"
               ],
               "version": "日本語"
-            }        
-      ]
-    },
+            },
     {
       "group": "Logs",
       "pages": [
