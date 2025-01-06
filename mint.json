@@ -360,9 +360,8 @@
     },
 
     {
-      "group": "Plugins",
+      "group": "Website Plugins",
       "pages": [
-        "support/websiteplugins",
         "support/plugins-woocommerce",
         "support/plugins-magento",
         "support/plugins-opencart"
@@ -370,9 +369,8 @@
       "version": "English" 
     },
     {
-      "group": "Plugins",
+      "group": "Website Plugins",
       "pages": [
-        "support-jp/websiteplugins",
         "support-jp/plugins-woocommerce",
         "support-jp/plugins-magento",
         "support-jp/plugins-opencart"
