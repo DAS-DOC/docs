@@ -118,7 +118,7 @@
                         "mid": {
                           "type": "string",
                           "description": "The merchant ID (DASMID).",
-                          "example": "< Merchant ID >"
+                          "example": "JP00000275"
                         },
                         "merchant_txn_ref": {
                           "type": "string",

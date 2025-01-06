@@ -534,7 +534,7 @@
                             "customer_ip": {
                               "type": "string",
                               "description": "IP address of the customer.",
-                              "example": "127.0.0.1"
+                              "example": "102.119.60.151"
                             }
                           }
                         }

@@ -257,7 +257,7 @@
                     "merchant_id": {
                       "type": "string",
                       "description": "The DAS merchant ID of the transaction performed.",
-                      "example": "< Merchant ID >"
+                      "example": "JP00000275"
                     },
                     "merchant_email": {
                       "type": "string",
