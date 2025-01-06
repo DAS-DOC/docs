@@ -91,6 +91,24 @@
                     "maxLength": 45,
                     "example": "2003089893366DTEST"
                   },
+                  "payment_method": {
+                    "type": "object",
+                     "additionalProperties": false,
+                    "description": "A JSON object containing Payment Method.",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "description": "The payment method type (e.g., 'scheme').",
+                        "maxLength": 128,
+                        "example": "scheme"
+                      },
+                      "store_payment_method": {
+                        "type": "boolean",
+                        "description": "True to generate a token, or False not to generate one.",
+                        "example": true
+                      }
+                    }
+                  },
                   "billing_address": {
                     "type": "object",
                      "additionalProperties": false,

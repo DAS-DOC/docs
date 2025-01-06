@@ -79,7 +79,7 @@
                   "merchant_id": {
                     "type": "string",
                     "description": "The merchant ID (DASMID).",
-                    "example": "JP00000282",
+                    "example": "< Merchant ID >",
                     "maxLength": 128
                   },
                   "return_url": {
@@ -292,7 +292,7 @@
                         "mid": {
                           "type": "string",
                           "description": "The merchant ID (DASMID).",
-                          "example": "JP00000282"
+                          "example": "< Merchant ID >"
                         },
                         "merchant_txn_ref": {
                           "type": "string",
