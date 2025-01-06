@@ -90,7 +90,7 @@
                       "webhook_url": {
                         "type": "string",
                         "description": "The webhook URL link.",
-                        "example": "https://webhook.site/",
+                        "example": "< Webhook url >",
                         "maxLength": 255
                       },
                       "success_url": {

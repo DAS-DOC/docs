@@ -82,7 +82,7 @@
                             "type": "string",
                             "description": "The webhook URL for asynchronous notifications.",
                             "maxLength": 255,
-                            "example": "https://webhook.site/"
+                            "example": "< Webhook url >"
                           },
                           "success_url": {
                             "type": "string",
@@ -262,7 +262,7 @@
                             "webhook_url": {
                               "type": "string",
                               "description": "The webhook URL for notifications.",
-                              "example": "https://webhook.site/"
+                              "example": "< Webhook url >"
                             },
                             "success_url": {
                               "type": "string",

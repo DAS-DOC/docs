@@ -148,7 +148,7 @@
                         "type": "string",
                         "description": "URL for webhook notifications.",
                         "maxLength": 255,
-                        "example": "https://webhook.site/"
+                        "example": "< Webhook url >"
                       },
                       "success_url": {
                         "type": "string",
