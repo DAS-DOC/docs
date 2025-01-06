@@ -1,7 +1,7 @@
 ---
 title: 'Tokenization'
-openapi: /api-reference/en/open-api-config/hpp/generate-link.json POST /api/v1/server-to-server-interface/hpp/generate/link
-description: Generate a link to open the Hosted Payment Page (HPP) for capturing transactions
+openapi: /api-reference/en/open-api-config/hpp/generate-link-token.json POST /api/v1/server-to-server-interface/hpp/generate/link
+description: 'Generate a link to open the Hosted Payment Page (HPP) for capturing transactions'
 ---
 
 ### Key Points
@@ -14,27 +14,36 @@ description: Generate a link to open the Hosted Payment Page (HPP) for capturing
   * Ensure that the necessary headers and authentication details are included to successfully generate the HPP link.
 </Info>
 
-## Flow diagram 
-![Flow diagram image](/images/timeline-diagram/hpp-with-token.png)
+## Flow diagram
 
-## ApplePay & GooglePay
+![Flow diagram image](/images/timeline-diagram/flows-API-Tokenization.svg)
 
-When a merchant is configured for Apple Pay and Google Pay, the Hosted Payment Page (HPP) will display buttons for Google Pay and Apple Pay, allowing customers to complete payments through these methods
+### Notes
 
-### Key Points
+`store_payment_method`: Must be set to `true` in the payload to store the card token for future use.
 
-<Info>
-  Merchant Configuration
+```json Request Example
+{
+  "payment_method": {
+    "type": "scheme",
+    "store_payment_method": true
+  }
+```
 
-  * The Merchant ID for either Apple Pay or Google Pay must be included in the HPP payload when making a request to generate the payment link.
+Setting `store_payment_method` to `true` ensures that the card token is stored for future transactions without needing to re-enter card details.
 
-  * These payment options will automatically appear on the HPP if the merchant is properly configured for them.
+```json Response Example
+{
+  "transaction_details": {
+    "id": "<transaction_id>",
+    "ref": <ref>,
+    "timestamp": "yyyy-mm-ddThh:mm:ss.000Z",
+    "merchant_txn_ref": "<string>",
+    "stored_payment_method_id": "094db781-fabc-4c6d-8fcd-18bee06a527a"
+  }
+}
+```
 
-  Payment Buttons
-
-  * The HPP will dynamically display Google Pay and Apple Pay buttons based on the availability and configuration of the merchant’s account.
-
-  * Customers can seamlessly use either method to complete the transaction directly from the HPP.
-</Info>
+The `stored_payment_method_id` can be used in the Use of Card Token API for future transactions without needing to re-enter card details.
 
 ## Api Parameters
