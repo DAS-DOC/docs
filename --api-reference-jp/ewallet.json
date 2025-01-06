@@ -71,7 +71,7 @@
                         "type": "string",
                         "description": "The unique identifier of the merchant (DASMID).",
                         "maxLength": 128,
-                        "example": "HK00001685"
+                        "example": "< Webhook url >"
                       },
                       "return_url": {
                         "type": "object",
@@ -248,7 +248,7 @@
                         "merchant_id": {
                           "type": "string",
                           "description": "The merchant ID for the transaction.",
-                          "example": "HK00001685"
+                          "example": "< Webhook url >"
                         },
                         "merchant_email": {
                           "type": "string",

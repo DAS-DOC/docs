@@ -103,13 +103,13 @@
                   "customer_ip": {
                     "type": "string",
                     "description": "The IP address of the cardholder.",
-                    "example": "10.10.0.0",
+                    "example": "127.0.0.1",
                     "maxLength": 45
                   },
                   "merchant_id": {
                     "type": "string",
                     "description": "The merchant ID (DASMID).",
-                    "example": "JP00000275",
+                    "example": "< Merchant ID >",
                     "maxLength": 128
                   },
                   "return_url": {
@@ -326,7 +326,7 @@
                         "mid": {
                           "type": "string",
                           "description": "The merchant ID (DASMID).",
-                          "example": "JP00000275"
+                          "example": "< Merchant ID >"
                         },
                         "merchant_txn_ref": {
                           "type": "string",
@@ -387,12 +387,12 @@
                             "visited_ip": {
                               "type": "string",
                               "description": "IP address of the payment page.",
-                              "example": "10.10.0.0"
+                              "example": "127.0.0.1"
                             },
                             "customer_ip": {
                               "type": "string",
                               "description": "IP address of the cardholder.",
-                              "example": "102.119.90.186"
+                              "example": "127.0.0.1"
                             }
                           }
                         }
