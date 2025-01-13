@@ -195,7 +195,6 @@
                   "currency",
                   "merchant_id",
                   "merchant_email",
-                  "merchant_txn_ref",
                   "payment_method",
                   "billing_address"
                 ]
