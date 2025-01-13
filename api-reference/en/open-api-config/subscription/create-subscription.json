@@ -171,7 +171,8 @@
                       "email",
                       "phone_number",
                       "address1",
-                      "city"
+                      "city",
+                      postal_code
                     ],
                     "properties": {
                       "country": {
