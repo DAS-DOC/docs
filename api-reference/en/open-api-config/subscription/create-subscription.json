@@ -37,7 +37,6 @@
                   "payment_method",
                   "merchant_id",
                   "billing_address",
-                  "time_zone",
                   "subscription"
                 ],
                 "properties": {

@@ -232,8 +232,7 @@
                   "currency",
                   "card",
                   "merchant_id",
-                  "billing_address",
-                  "time_zone"
+                  "billing_address"
                 ]
               }
             }
