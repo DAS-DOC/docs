@@ -231,8 +231,6 @@
                   "amount",
                   "currency",
                   "card",
-                  "merchant_txn_ref",
-                  "customer_ip",
                   "merchant_id",
                   "billing_address",
                   "time_zone"

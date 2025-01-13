@@ -30,7 +30,7 @@
                   "schema": {
                     "type": "object",
                     "additionalProperties": false,
-                    "required": ["amount", "currency", "merchant_txn_ref", "merchant_id", "return_url"],
+                    "required": ["amount", "currency", "merchant_id", "return_url"],
                     "properties": {
                       "amount": {
                         "type": "string",

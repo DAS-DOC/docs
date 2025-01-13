@@ -248,8 +248,6 @@
                   "currency",
                   "card",
                   "payment_method",
-                  "merchant_txn_ref",
-                  "customer_ip",
                   "merchant_id",
                   "billing_address",
                   "time_zone"
