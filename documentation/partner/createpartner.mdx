@@ -5,29 +5,96 @@ description: 'To create a partner account with Payment Options, follow these ste
 
 ## **Features**
 
-* **Localization**: English and Japanese language selection.
+**1. Localization**
 
-* **Reseller Account & Password Creation**: Set up a secure account with a unique password.
+* Description: Provide the ability for partners to select their preferred language (English or Japanese) during the onboarding process.
 
-* **Email Verification through OTP**: Verify your email through a one-time password (OTP) sent to your registered email.
+* Implementation Details:
 
-* **Global Access**: Reseller can auto-onboard from any country.
+  * Display a language selection option at the beginning of the onboarding process.
 
-* **Application Form**: Fill in business, stakeholders, and payout details for a complete application.
+  * Ensure all steps, forms, and notifications are fully translated into the selected language.
 
-* **Session Management**: Log off and re-login at any time to continue registration.
+  * Allow partners to switch the language at any time without losing progress.
 
-* **Terms of Usage**: Agree to the Privacy Policy, Terms, and Conditions.
+**2. Partner Account & Password Creation**
 
-* **Pending Deletion**: Applications pending for 7 days without agreement to Terms & Conditions will be deleted.
+* Description: Enable partners to create a secure account with a unique username and password.
 
-* **Password Management**: Change and reset password options are available.
+* Implementation Details:
 
-* **Referral System**: Receive an email notification with a referral code and link upon application approval.
+  * Username: Ensure the username is unique and validate it for format and length.
 
-* **Onboard Merchants**: Reseller can onboard merchants on their behalf.
+  * Password: Enforce strong password policies (e.g., minimum 8 characters, at least one uppercase letter, one number, and one special character).
 
-* **Email Notifications**: Receive notifications when a merchant successfully onboards through your referral.
+**3. Email Verification through OTP**
+
+* Description: Ensure the user’s email is valid by sending a one-time password (OTP) for verification.
+
+* Implementation Details:
+
+  * Send a unique OTP to the email provided during registration.
+
+  * Allow the user to input the OTP into a verification field.
+
+**4. Session Management**
+
+* Enable partners to log off and resume the registration process later.
+
+* Implementation Details:
+
+  * Store progress in real-time and allowing users to resume from where they left off.
+
+  * Implement a secure authentication mechanism for re-login.
+
+  * Provide a session timeout for inactive users to enhance security.
+
+**5. Terms of Usage**
+
+* Require partners to accept the Terms and Conditions and Privacy Policy.
+
+* Implementation Details :
+
+  * Present the Terms & Conditions in a scrollable, easy-to-read format.
+
+  * Include a mandatory checkbox to indicate acceptance.
+
+**6. Pending Application Deletion**
+
+* Description: Automatically delete incomplete partner applications after 7 days of inactivity.
+
+* Implementation Details:
+
+  * Automate deletion of data after 7 days if no action is taken.
+
+**7. Interactive Website Tour**
+
+* Offer a guided tutorial to familiarize new partners with system features.
+
+* Implementation Details:
+
+  * Implemented an interactive tour with tooltips and highlights for key features.
+
+  * Offer an option to skip the tour at any time.
+
+**8. Password Management**
+
+* Enable partners to change or reset their password at any time.
+
+* Implementation Details :
+
+  * The user has a feature to change his password any time.
+
+  * Provided a Forgot Password option with email-based recovery.
+
+**9. Account Approval Notification**
+
+* Notify partners once their application is approved, including their Partner ID and relevant credentials.
+
+* Implementation Details:
+
+  * Send an approval email with the Secret API Key securely embedded.
+
 
 ![Self Onboarding Process](/images/flows-createPAccount.svg)
 
