@@ -21,7 +21,7 @@ description: 'This page provides a list of error codes returned by the gateway, 
 This distinction helps merchants and developers troubleshoot errors effectively and ensures that compliance and restrictions are properly managed across regions and products.
 
 
-| **Error Code** | **Applied Level** | **Risk Rule** | **Error Message (Public)** | **Suggested Action** |
+| **Error Code** | **Applied Level** | **Risk Rule** | **Error Message** | **Suggested Action** |
 | :------------- | :---------------- | :------------ | :-------------------------- | :------------------- |
 | **ERR3001**    | Entity Level      | Blacklist     | Transaction is restricted   | Verify if the card country is restricted intentionally in the blacklist. |
 | **ERR3002**    | Entity Level      | IP Address    | Transaction is restricted   | Check if the customer’s IP should be on the blacklist.                   |
@@ -43,8 +43,9 @@ This distinction helps merchants and developers troubleshoot errors effectively 
 | **ERR3018**    | Product Level     | BIN           | Transaction is restricted   | Include the BIN in the whitelist if required for the transaction.        |
 | **ERR3019**    | Product Level     | Refund Limit  | Insufficient refund balance | Review refund velocity limits in merchant settings.                      |
 | **ERR3020**    | Product Level     | Refund Volume | Insufficient refund balance | Modify refund volume restrictions based on transaction needs.            |
-| **VAL0035**    | Product Level     |               | Ensure correct cardholder name format in the request.                    |
-| **ERR0204**    | Product Level     |               | Check account balance or adjust refund processing settings.              |
+| **VAL0035**    | Product Level     |               |       | Ensure correct cardholder name format in the request.                    |
+| **ERR0204**    | Product Level     |               |   | Check account balance or adjust refund processing settings.              |
+
 
 ***
 
