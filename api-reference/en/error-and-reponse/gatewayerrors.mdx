@@ -21,30 +21,30 @@ description: 'This page provides a list of error codes returned by the gateway, 
 This distinction helps merchants and developers troubleshoot errors effectively and ensures that compliance and restrictions are properly managed across regions and products.
 
 
-| **Error Code** | **Applied Level** | **Risk Rule**    | **Error Message**                                                                              | **Suggested Action**                                                     |
-| :------------- | :---------------- | :--------------- | :--------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| **ERR3001**    | Entity Level      | Blacklist        | **"Card Country is found on Entity's blacklist"**                                              | Verify if the card country is restricted intentionally in the blacklist. |
-| **ERR3002**    | Entity Level      | IP Address       | **"Customer IP is found on Entity's blacklist"**                                               | Check if the customer’s IP should be on the blacklist.                   |
-| **ERR3003**    | Entity Level      | BIN Blocking     | **"Card BIN is found on Entity's blacklist"**                                                  | Review BIN settings in the blacklist configuration.                      |
-| **ERR3004**    | Entity Level      | PAN Blocking     | **"PAN is found on Entity's blacklist"**                                                       | Ensure the PAN is correctly blocked based on merchant preferences.       |
-| **ERR3005**    | Entity Level      | Blacklist        | **"Card Country '' is found on Issuing Country blacklist"**                                    | Confirm the issuing country restrictions align with business needs.      |
-| **ERR3006**    | Product Level     | Threshold Amount | **"Transaction amount 'undefined 0' has exceeded the max threshold limit"**                    | Adjust transaction threshold settings if required.                       |
-| **ERR3007**    | Product Level     | IP Address       | **"Customer IP Address '' is found on MID blacklist"**                                         | Check if the IP should remain in the MID blacklist.                      |
-| **ERR3008**    | Product Level     | PAN Limit        | **"Velocity check - Same card number has been used more than 0 times in the last 0 minutes."** | Review the velocity check limit for card usage in merchant settings.     |
-| **ERR3009**    | Product Level     | PAN Limit        | **"Velocity check - Same card number has been used more than 0 times in the last 0 hours."**   | Ensure the PAN limit settings are appropriately configured.              |
-| **ERR3010**    | Product Level     | PAN Limit        | **"Velocity check - Same card number has been used more than 0 times in the last 0 days."**    | Modify the card usage frequency as needed.                               |
-| **ERR3011**    | Product Level     | PAN Limit        | **"Velocity check - Same card number has been used more than 0 times in the last 0 months."**  | Adjust monthly velocity limits for recurring transactions.               |
-| **ERR3012**    | Product Level     | IP Limit         | **"Velocity check - Attempts from same IP Address exceeds 0 times over the last 0 minutes."**  | Review IP velocity limit settings.                                       |
-| **ERR3013**    | Product Level     | IP Limit         | **"Velocity check - Attempts from same IP Address exceeds 0 times over the last 0 hours."**    | Adjust IP limit settings if required.                                    |
-| **ERR3014**    | Product Level     | IP Limit         | **"Velocity check - Attempts from same IP Address exceeds 0 times over the last 0 days."**     | Review daily IP usage limits and adjust if needed.                       |
-| **ERR3015**    | Product Level     | IP Limit         | **"Velocity check - Attempts from same IP Address exceeds 0 times over the last 0 months."**   | Modify monthly IP usage restrictions as needed.                          |
-| **ERR3016**    | Product Level     | Threshold Amount | **"Transaction amount 'undefined 0' is less than the min threshold limit"**                    | Adjust minimum transaction threshold.                                    |
-| **ERR3017**    | Product Level     | IP Address       | **"Customer IP Address '' not whitelisted"**                                                   | Add the customer's IP to the whitelist if necessary.                     |
-| **ERR3018**    | Product Level     | BIN              | **"BIN '' not whitelisted"**                                                                   | Include the BIN in the whitelist if required for the transaction.        |
-| **ERR3019**    | Product Level     | Refund Limit     | **"Velocity check - Refund limit exceeded"**                                                   | Review refund velocity limits in merchant settings.                      |
-| **ERR3020**    | Product Level     | Refund Volume    | **"Velocity check - Refund Volume limit exceeded"**                                            | Modify refund volume restrictions based on transaction needs.            |
-| **VAL0035**    | Product Level     |                  | **"Invalid card holder name."**                                                                | Ensure correct cardholder name format in the request.                    |
-| **ERR0204**    | Product Level     |                  | **"You don't have balance amount for refund."**                                                | Check account balance or adjust refund processing settings.              |
+| **Error Code** | **Applied Level** | **Risk Rule** | **Error Message (Public)** | **Suggested Action** |
+| :------------- | :---------------- | :------------ | :-------------------------- | :------------------- |
+| **ERR3001**    | Entity Level      | Blacklist     | Transaction is restricted   | Verify if the card country is restricted intentionally in the blacklist. |
+| **ERR3002**    | Entity Level      | IP Address    | Transaction is restricted   | Check if the customer’s IP should be on the blacklist.                   |
+| **ERR3003**    | Entity Level      | BIN Blocking  | Transaction is restricted   | Review BIN settings in the blacklist configuration.                      |
+| **ERR3004**    | Entity Level      | PAN Blocking  | Transaction is restricted   | Ensure the PAN is correctly blocked based on merchant preferences.       |
+| **ERR3005**    | Entity Level      | Blacklist     | Transaction is restricted   | Confirm the issuing country restrictions align with business needs.      |
+| **ERR3006**    | Product Level     | Threshold Amount | Amount is outside the allowed range. | Adjust transaction threshold settings if required.                       |
+| **ERR3007**    | Product Level     | IP Address    | Transaction is restricted   | Check if the IP should remain in the MID blacklist.                      |
+| **ERR3008**    | Product Level     | PAN Limit     | Transaction is restricted   | Review the velocity check limit for card usage in merchant settings.     |
+| **ERR3009**    | Product Level     | PAN Limit     | Risk rule decline           | Ensure the PAN limit settings are appropriately configured.              |
+| **ERR3010**    | Product Level     | PAN Limit     | Risk rule decline           | Modify the card usage frequency as needed.                               |
+| **ERR3011**    | Product Level     | PAN Limit     | Risk rule decline           | Adjust monthly velocity limits for recurring transactions.               |
+| **ERR3012**    | Product Level     | IP Limit      | Risk rule decline           | Review IP velocity limit settings.                                       |
+| **ERR3013**    | Product Level     | IP Limit      | Risk rule decline           | Adjust IP limit settings if required.                                    |
+| **ERR3014**    | Product Level     | IP Limit      | Risk rule decline           | Review daily IP usage limits and adjust if needed.                       |
+| **ERR3015**    | Product Level     | IP Limit      | Risk rule decline           | Modify monthly IP usage restrictions as needed.                          |
+| **ERR3016**    | Product Level     | Threshold Amount | Amount is outside the allowed range. | Adjust minimum transaction threshold.                                    |
+| **ERR3017**    | Product Level     | IP Address    | Transaction is restricted   | Add the customer’s IP to the whitelist if necessary.                     |
+| **ERR3018**    | Product Level     | BIN           | Transaction is restricted   | Include the BIN in the whitelist if required for the transaction.        |
+| **ERR3019**    | Product Level     | Refund Limit  | Insufficient refund balance | Review refund velocity limits in merchant settings.                      |
+| **ERR3020**    | Product Level     | Refund Volume | Insufficient refund balance | Modify refund volume restrictions based on transaction needs.            |
+| **VAL0035**    | Product Level     |               | Ensure correct cardholder name format in the request.                    |
+| **ERR0204**    | Product Level     |               | Check account balance or adjust refund processing settings.              |
 
 ***
 
