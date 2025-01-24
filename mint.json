@@ -296,7 +296,8 @@
               "group": "Error and Response",
               "pages": [
                 "api-reference/en/error-and-reponse/httpresponse",
-                "api-reference/en/error-and-reponse/responsecodes"
+                "api-reference/en/error-and-reponse/responsecodes",
+                "api-reference/en/error-and-reponse/gatewayerrors"
               ],
               "version": "English"
             },
@@ -304,7 +305,8 @@
               "group": "エラーコード",
               "pages": [
                 "api-reference/jp/error-and-reponse/httpresponse",
-                "api-reference/jp/error-and-reponse/responsecodes"
+                "api-reference/jp/error-and-reponse/responsecodes",
+                "api-reference/jp/error-and-reponse/gatewayerrors"
               ],
               "version": "日本語"
             },
