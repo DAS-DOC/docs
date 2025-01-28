@@ -229,6 +229,62 @@
                       }
                     }
                   },
+
+                  "browser_info": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "description": "A JSON object containing details about the browser used by the cardholder (optional).",
+                      "properties": {
+                        "acceptHeader": {
+                          "type": "string",
+                          "description": "The value of the HTTP Accept header sent by the browser.",
+                          "example": "text/html",
+                          "maxLength": 200
+                        },
+                        "screenColorDepth": {
+                          "type": "string",
+                          "description": "The color depth of the screen in bits per pixel.",
+                          "example": "48",
+                          "maxLength": 2
+                        },
+                        "javaEnabled": {
+                          "type": "boolean",
+                          "description": "Indicates whether Java is enabled in the browser.",
+                          "example": false
+                        },
+                        "language": {
+                          "type": "string",
+                          "description": "The language of the browser, typically the language set in the browser settings.",
+                          "example": "en",
+                          "maxLength": 10
+                        },
+                        "screenHeight": {
+                          "type": "string",
+                          "description": "The height of the screen in pixels.",
+                          "example": "1200",
+                          "maxLength": 5
+                        },
+                        "screenWidth": {
+                          "type": "string",
+                          "description": "The width of the screen in pixels.",
+                          "example": "1600",
+                          "maxLength": 5
+                        },
+                        "challengeWindow": {
+                          "type": "string",
+                          "description": "The size of the challenge window that the cardholder's browser supports.",
+                          "example": "4",
+                          "maxLength": 2
+                        },
+                        "userAgent": {
+                          "type": "string",
+                          "description": "The User-Agent string of the browser.",
+                          "example": "Mozilla/4.0 (MSIE 6.0; Windows NT 5.0)",
+                          "maxLength": 500
+                        }
+                      }
+                    },
+                  
                   "time_zone": {
                     "type": "string",
                     "description": "The country time zone of the transaction.",
