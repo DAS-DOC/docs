@@ -229,7 +229,6 @@
                       }
                     }
                   },
-
                   "browser_info": {
                       "type": "object",
                       "additionalProperties": false,
@@ -284,7 +283,6 @@
                         }
                       }
                     },
-                  
                   "time_zone": {
                     "type": "string",
                     "description": "The country time zone of the transaction.",
