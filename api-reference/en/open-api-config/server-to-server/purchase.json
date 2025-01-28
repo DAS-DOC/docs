@@ -287,7 +287,8 @@
                     "type": "string",
                     "description": "The country time zone of the transaction.",
                     "example": "Asia/Kuala_Lumpur",
-                    "maxLength": 128
+                    "maxLength": 128,
+                    "order": 1
                   }
                 },
                 "required": [
