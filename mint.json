@@ -231,24 +231,6 @@
           "version": "English"
         },
         {
-          "group": "Direct Payments",
-          "pages": [
-            "api-reference-jp/endpoint/authorisation",
-            "api-reference-jp/endpoint/purchase",
-            "api-reference-jp/endpoint/void",
-            "api-reference-jp/endpoint/capture",
-            "api-reference-jp/endpoint/refund",
-            "api-reference-jp/endpoint/status"
-          ]
-          },
-        {
-          "group": "Tokenisation",
-          "pages": [
-            "api-reference-jp/endpoint/generatetoken",
-            "api-reference-jp/endpoint/usetoken"
-          ]
-        },
-        {
           "group": "Subscriptions",
           "pages": [
             "api-reference/jp/subscription/create-subscription",
