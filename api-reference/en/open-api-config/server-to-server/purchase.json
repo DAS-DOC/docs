@@ -17,13 +17,13 @@
     }
   ],
   "paths": {
-    "/api/v1/server-to-server-interface/authorization": {
+    "/api/v1/server-to-server-interface/payment": {
       "post": {
-        "summary": "Authorize a Payment",
-        "description": "This endpoint allows merchants to authorize a payment transaction.",
-        "operationId": "authorizePayment",
+        "summary": "Purchase API",
+        "description": "The API captured amount immediately after authorization.",
+        "operationId": "processPayment",
         "requestBody": {
-          "description": "The request payload to authorize a payment transaction.",
+          "description": "The request payload to process a payment transaction.",
           "required": true,
           "content": {
             "application/json": {
