@@ -139,7 +139,7 @@
                   "return_url": {
                     "type": "object",
                      "additionalProperties": false,
-                    "description": "URLs for handling different transaction outcomes.",
+                    "description": "A JSON object containing the return URLs. (This field is mandatory for 3DS transactions.)",
                     "properties": {
                       "webhook_url": {
                         "type": "string",
