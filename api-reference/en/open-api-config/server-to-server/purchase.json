@@ -106,7 +106,7 @@
                   "return_url": {
                     "type": "object",
                      "additionalProperties": false,
-                    "description": "A JSON object containing the return URLs. (This field is mandatory for 3DS transactions)",
+                    "description": "A JSON object containing the Return URL. (This field is mandatory for 3DS transactions.)",
                     "properties": {
                       "webhook_url": {
                         "type": "string",
@@ -117,13 +117,13 @@
                       "success_url": {
                         "type": "string",
                         "description": "The redirect URL after successful payment.",
-                        "example": "https://www.successurl.com/",
+                        "example": "http://www.successurl.com/",
                         "maxLength": 255
                       },
                       "decline_url": {
                         "type": "string",
                         "description": "The redirect URL after failed payment.",
-                        "example": "https://www.declineurl.com/",
+                        "example": "http://www.declineurl.com/",
                         "maxLength": 255
                       }
                     }
