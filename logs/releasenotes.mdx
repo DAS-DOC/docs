@@ -11,6 +11,63 @@ This page provides a quick summary of each release, highlighting major updates a
 
 ## **Release History**
 
+<Update label="2025-02-12" description="Release 21">
+  <div style={{ fontSize: '12px', lineHeight: '1.1' }}>
+    ### Features & Enhancements Related to Merchants & Partners
+
+    * Onfido eKYC for Reseller Stakeholders
+    * Multiple statements download in DAS Gateway
+    * User preference for transaction & statement list columns
+    * Custom date-time format across DAS Gateway
+    * File type preference (Excel/CSV) for transaction & chargeback downloads
+    * Smart copy on key fields
+    * Export to Excel on Public Holiday UI
+    * Block refund (condition-based)
+    * Payment intermediate interface for seamless Merchant integration
+
+    ### UI & UX Enhancements
+
+    * Redesigned:
+      * Merchant View Page
+      * Partner Details Page
+    * Improved:
+      * Alignment for Integration Method on Transaction List UI
+      * Statement & Transaction Screens for better visibility
+      * Chargeback Notification Email content
+      * Merchant View list tooltips for product count
+    * Adjusted column widths across DAS Gateway
+    * Added:
+      * Acquirer details on Product View, Product Info, and Drawers
+      * Dropdown for IsWhitelisted filter in Statement Transactions
+      * Transaction ID column in Transaction List & Advanced Filters
+      * Tooltip for failed transactions (Response Code & Gateway Response)
+    * Removed:
+      * Excessive whitespace on Transaction List UI
+      * Decimal places for JPY currency on Statement UI
+    * Updated Password Policy to comply with PCI Guidelines
+
+    ### Minor Enhancements
+
+    * Unified field names (Subsidiary/Entity/Country) across Gateway
+    * Improved Self Onboarding: Data saving via Step buttons
+    * Prevented product display for pending DASMID on Merchant Page
+    * Limited multiple statement downloads
+    * Standardized Chargeback Email content
+    * Added Billing Dates & Next Billing Date for Subscription (HPP)
+    * Added Comment function for Subscription (HPP)
+    * Japanese Translation for Self Onboarding Final Step Page
+
+    ### Production Defect Fixes
+
+    * Fixed:
+      * Transaction download failure for external users
+      * Dispute email missing currency in amount field
+      * UI issues on HPP Page (IBEC)
+      * Multiple email notifications on successful payment refresh
+  </div>
+</Update>
+
+
 <Update label="2024-12-03" description="Release 20">
   <div style={{ fontSize: '12px', lineHeight: '1.1' }}>
     ### Features or Enhancements Related to Merchants & Partners
